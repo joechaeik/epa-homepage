@@ -1,7 +1,7 @@
 var PUBLICATIONS = [
   {
     "year": 2017,
-    "title": "Visible light sensitization of TiO2 nanoparticles by a dietary pigment, curcumin, for environmental photochemical transformations",
+    "title": "Visible light sensitization of TiO<sub>2</sub> nanoparticles by a dietary pigment, curcumin, for environmental photochemical transformations",
     "journal": "",
     "journal_info": "7, 32488-32495, 2017",
     "authors": "Jonghun Lim, Alok D. Bokare, Wonyong Choi",
