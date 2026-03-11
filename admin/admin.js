@@ -11,7 +11,9 @@ const CONFIG = {
   repo:    'epa-homepage',
   branch:  'main',
   password: 'epalab2025',          // ← 여기서 비밀번호 변경!
-  galleryDir: 'images/gallery',
+  galleryDir:      'images/gallery',
+  publicationsDir: 'images/publications',
+  membersDir:      'images/members',
 };
 
 // ── 상태 ───────────────────────────────────────────────────
@@ -367,10 +369,26 @@ function pubForm(pubs, item, idx) {
       <input type="url" name="doi" value="${esc(item.doi)}" placeholder="https://doi.org/10.xxxx/…" />
     </div>
     <div class="form-group">
-      <label>Graphical Abstract 이미지 URL <span class="label-hint">(선택)</span></label>
-      <input type="text" name="image" value="${esc(item.image)}" placeholder="https://…" />
+      <label>Graphical Abstract URL <span class="label-hint">(외부 URL 입력 또는 아래에서 업로드)</span></label>
+      <input type="text" id="pub-img-url" name="image" value="${esc(item.image)}" placeholder="https://…" />
+    </div>
+    <div class="form-group">
+      <label>파일 직접 업로드 <span class="label-hint">(GitHub images/publications/ 에 저장)</span></label>
+      <input type="file" id="pub-img-file" accept="image/*" />
+      <div id="pub-up-status" class="upload-status"></div>
     </div>`,
   async (form) => {
+    const fileInput = $('#pub-img-file');
+    const statusEl  = $('#pub-up-status');
+    let image = $('#pub-img-url').value.trim();
+
+    if (fileInput.files[0] && !image) {
+      statusEl.textContent = '업로드 중…';
+      const f    = fileInput.files[0];
+      const name = `${Date.now()}_${f.name.replace(/\s+/g, '_')}`;
+      image = await ghUploadImage(`${CONFIG.publicationsDir}/${name}`, f);
+    }
+
     const entry = {
       year:         +form.year.value,
       title:        form.title.value.trim(),
@@ -378,7 +396,7 @@ function pubForm(pubs, item, idx) {
       journal_info: form.journal_info.value.trim(),
       authors:      form.authors.value.trim(),
       doi:          form.doi.value.trim(),
-      image:        form.image.value.trim(),
+      image,
     };
     const updated = [...pubs];
     if (isNew) updated.unshift(entry); else updated[idx] = entry;
@@ -387,6 +405,16 @@ function pubForm(pubs, item, idx) {
     showToast('저장됐습니다! 약 2분 후 반영됩니다.');
     secPublications();
   });
+
+  setTimeout(() => {
+    const fi = $('#pub-img-file');
+    if (fi) fi.onchange = () => {
+      if (fi.files[0]) {
+        $('#pub-img-url').value = '';
+        $('#pub-up-status').textContent = `선택: ${fi.files[0].name} (${(fi.files[0].size/1024).toFixed(0)} KB)`;
+      }
+    };
+  }, 50);
 }
 
 // ════════════════════════════════════════════════════════════
@@ -771,16 +799,32 @@ function memberForm(members, grp, item, idx) {
         <input type="email" name="email" value="${esc(item.email)}" />
       </div>
       <div class="form-group">
-        <label>프로필 사진 URL</label>
-        <input type="text" name="photo" value="${esc(item.photo)}" placeholder="images/members/…" />
+        <label>프로필 사진 URL <span class="label-hint">(URL 입력 또는 아래에서 업로드)</span></label>
+        <input type="text" id="mem-photo-url" name="photo" value="${esc(item.photo)}" placeholder="images/members/…" />
       </div>
+    </div>
+    <div class="form-group">
+      <label>프로필 사진 파일 업로드 <span class="label-hint">(GitHub images/members/ 에 저장)</span></label>
+      <input type="file" id="mem-photo-file" accept="image/*" />
+      <div id="mem-up-status" class="upload-status"></div>
     </div>`,
   async (form) => {
+    const fileInput = $('#mem-photo-file');
+    const statusEl  = $('#mem-up-status');
+    let photo = $('#mem-photo-url')?.value?.trim() || '';
+
+    if (fileInput?.files[0] && !photo) {
+      statusEl.textContent = '업로드 중…';
+      const f    = fileInput.files[0];
+      const name = `${Date.now()}_${f.name.replace(/\s+/g, '_')}`;
+      photo = await ghUploadImage(`${CONFIG.membersDir}/${name}`, f);
+    }
+
     const entry = {
       name:  form.name.value.trim(),
       title: form.title.value.trim(),
       email: form.email?.value?.trim() || '',
-      photo: form.photo?.value?.trim() || '',
+      photo,
     };
     if (isProfessor) {
       entry.affiliation = form.affiliation?.value?.trim() || '';
@@ -798,6 +842,16 @@ function memberForm(members, grp, item, idx) {
     showToast('저장됐습니다!');
     secMembers();
   });
+
+  setTimeout(() => {
+    const fi = $('#mem-photo-file');
+    if (fi) fi.onchange = () => {
+      if (fi.files[0]) {
+        $('#mem-photo-url').value = '';
+        $('#mem-up-status').textContent = `선택: ${fi.files[0].name} (${(fi.files[0].size/1024).toFixed(0)} KB)`;
+      }
+    };
+  }, 50);
 }
 
 // ════════════════════════════════════════════════════════════
