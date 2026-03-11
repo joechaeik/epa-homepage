@@ -70,9 +70,9 @@ var NEWS = [
 
 var MEDIA = [
   {
-    "youtube_id": "https://youtu.be/ml-G6XyS9Yo?si=j9brzll6-W5dkVhP",
+    "youtube_id": "ml-G6XyS9Yo",
     "title": "광촉매, 친환경 에너지 시대를 열다",
     "description": "EBS 사이언스 다큐멘터리 - 반도체 광촉매 연구 소개",
-    "date": ""
+    "date": "2021-03-08"
   }
 ];
