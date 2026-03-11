@@ -4,7 +4,8 @@ var NEWS = [
     "date": "2026-02-03",
     "title": "희석된 CO₂도 바로 전환.. 탄소 포집과 전환을 하나로 묶은 전극 기술 개발",
     "category": "Research",
-    "link": "#"
+    "link": "https://www.veritas-a.com/news/articleView.html?idxno=595236",
+    "pinned": false
   },
   {
     "id": 66,
