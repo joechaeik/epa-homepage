@@ -4,7 +4,7 @@ var MEMBERS = {
       name: "Wonyong Choi",
       title: "Professor",
       affiliation: "Department of Energy Engineering, KENTECH",
-      email: "wychoi@kentech.ac.kr",
+      email: "wchoi@kentech.ac.kr",
       photo: "images/members/wychoi.jpg",
       links: {
         google_scholar: "https://scholar.google.com/citations?user=wonyongchoi",
