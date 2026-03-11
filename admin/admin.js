@@ -785,7 +785,7 @@ async function secMembers() {
             <div class="item-row">
               <div class="item-main">
                 <div class="item-title">${esc(p.name)}</div>
-                <div class="item-sub">${esc(p.title || '')} ${p.affiliation || p.research ? '· ' + esc(p.affiliation || p.research) : ''}</div>
+                <div class="item-sub">${esc(p.title || p.degree || '')} ${(p.affiliation || p.research || p.current) ? '· ' + esc(p.affiliation || p.research || p.current) : ''}</div>
               </div>
               <div class="item-actions">
                 <button class="btn btn-sm btn-outline" data-edit="${grp}-${i}">수정</button>
@@ -820,6 +820,7 @@ async function deleteMember(members, grp, idx) {
 function memberForm(members, grp, item, idx) {
   const isNew = !item;
   const isProfessor = grp === 'professor';
+  const isAlumni    = grp === 'alumni';
   item = item || {};
 
   const grpLabel = { professor: '교수', students: '재학생', alumni: '졸업생' }[grp];
@@ -831,9 +832,10 @@ function memberForm(members, grp, item, idx) {
         <input type="text" name="name" value="${esc(item.name)}" required />
       </div>
       <div class="form-group">
-        <label>직위 / 학위 *</label>
-        <input type="text" name="title" value="${esc(item.title)}" required
-               placeholder="${isProfessor ? 'Professor' : 'Ph.D. Student'}" />
+        <label>${isAlumni ? '학위 *' : '직위 *'}</label>
+        <input type="text" name="${isAlumni ? 'degree' : 'title'}"
+               value="${esc(isAlumni ? item.degree : item.title)}" required
+               placeholder="${isProfessor ? 'Professor' : isAlumni ? 'Ph.D. 2024' : 'Ph.D. Student'}" />
       </div>
     </div>
     ${isProfessor ? `
@@ -848,6 +850,11 @@ function memberForm(members, grp, item, idx) {
       <div class="form-group">
         <label>Google Scholar URL</label>
         <input type="url" name="scholar" value="${esc(item.links?.google_scholar)}" />
+      </div>` : isAlumni ? `
+      <div class="form-group">
+        <label>현재 소속 / 직위</label>
+        <input type="text" name="current" value="${esc(item.current)}"
+               placeholder="Professor, Seoul National University" />
       </div>` : `
       <div class="form-group">
         <label>연구 분야</label>
@@ -881,17 +888,19 @@ function memberForm(members, grp, item, idx) {
       photo = await ghUploadImage(`${CONFIG.membersDir}/${name}`, f);
     }
 
-    const entry = {
-      name:  form.name.value.trim(),
-      title: form.title.value.trim(),
-      email: form.email?.value?.trim() || '',
-      photo,
-    };
+    const entry = { name: form.name.value.trim(), photo };
     if (isProfessor) {
+      entry.title       = form.title.value.trim();
+      entry.email       = form.email?.value?.trim() || '';
       entry.affiliation = form.affiliation?.value?.trim() || '';
-      entry.bio = form.bio?.value?.trim() || '';
+      entry.bio         = form.bio?.value?.trim() || '';
       entry.links = { google_scholar: form.scholar?.value?.trim() || '', researchgate: '', website: '' };
+    } else if (isAlumni) {
+      entry.degree  = form.degree?.value?.trim() || '';
+      entry.current = form.current?.value?.trim() || '';
     } else {
+      entry.title    = form.title.value.trim();
+      entry.email    = form.email?.value?.trim() || '';
       entry.research = form.research?.value?.trim() || '';
     }
 

@@ -88,6 +88,7 @@
       <div class="section-divider"></div>
       <p class="text-slate-500 max-w-lg">Our graduates are making an impact at leading institutions and companies around the world.</p>
     </div>
+    <div id="alumni-tabs" class="flex flex-wrap gap-2 mb-8 reveal"><!-- JS --></div>
     <div id="alumni-section" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5"><!-- JS --></div>
   </div>
 </section>
@@ -186,12 +187,42 @@ function initials(name) {
   `).join('');
 })();
 
-// Alumni
-(function() {
+// Alumni — Ph.D. / M.S. filter tabs
+let activeAlumniTab = 'all';
+
+function degreeType(degree) {
+  if (!degree) return 'other';
+  if (degree.startsWith('Ph.D.')) return 'Ph.D. Degree';
+  if (degree.startsWith('M.S.'))  return 'M.S. Degree';
+  return 'other';
+}
+
+function renderAlumniTabs() {
+  const el = document.getElementById('alumni-tabs');
+  if (!el || typeof MEMBERS === 'undefined') return;
+  const tabs = ['all', 'Ph.D. Degree', 'M.S. Degree'];
+  el.innerHTML = tabs.map(t => `
+    <button class="year-tab ${activeAlumniTab === t ? 'active' : ''}" data-tab="${t}">
+      ${t === 'all' ? 'All' : t}
+    </button>
+  `).join('');
+  el.querySelectorAll('.year-tab').forEach(btn => {
+    btn.addEventListener('click', () => {
+      activeAlumniTab = btn.dataset.tab;
+      renderAlumniTabs();
+      renderAlumni();
+    });
+  });
+}
+
+function renderAlumni() {
   const el = document.getElementById('alumni-section');
   if (!el || typeof MEMBERS === 'undefined') return;
-  el.innerHTML = MEMBERS.alumni.map((m, i) => `
-    <div class="member-card reveal" style="transition-delay:${i*60}ms">
+  const list = MEMBERS.alumni.filter(m =>
+    activeAlumniTab === 'all' || degreeType(m.degree) === activeAlumniTab
+  );
+  el.innerHTML = list.map((m, i) => `
+    <div class="member-card reveal visible" style="transition-delay:${i*60}ms">
       ${m.photo
         ? `<img src="${m.photo}" alt="${m.name}" class="member-avatar opacity-80" />`
         : `<div class="member-avatar-placeholder" style="background: linear-gradient(135deg,#334155,#64748b)">${initials(m.name)}</div>`
@@ -200,8 +231,11 @@ function initials(name) {
       <div class="text-slate-500 text-xs font-semibold mt-0.5 mb-1">${m.degree}</div>
       <div class="text-slate-400 text-xs leading-snug">${m.current}</div>
     </div>
-  `).join('');
-})();
+  `).join('') || '<p class="text-slate-400 text-sm col-span-4 py-8 text-center">No alumni in this category.</p>';
+}
+
+renderAlumniTabs();
+renderAlumni();
 </script>
 <script src="assets/js/main.js"></script>
 <script>
