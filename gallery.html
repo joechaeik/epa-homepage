@@ -132,16 +132,7 @@
   </div>
 </footer>
 
-<!-- Gallery data (inline — can be moved to data/gallery.js) -->
-<script>
-// ── 사진 추가 방법 ──
-// images/gallery/ 폴더에 사진 넣고 아래 GALLERY 배열에 항목 추가
-const GALLERY = [
-  // { src: "images/gallery/2025-seminar-day3.jpg", caption: "2025 EPA Lab Seminar Day 3", category: "Seminar", year: 2025 },
-  // { src: "images/gallery/2025-group.jpg", caption: "2025 Group Photo", category: "Group", year: 2025 },
-  // 예시 항목들 — 실제 사진으로 교체하세요
-];
-</script>
+<script src="data/gallery.js"></script>
 
 <script>
 let activeGalCat = 'all';
@@ -149,11 +140,12 @@ let currentIndex = 0;
 let filteredImages = [];
 
 function getFilteredGallery() {
+  if (typeof GALLERY === 'undefined') return [];
   return GALLERY.filter(g => activeGalCat === 'all' || g.category === activeGalCat);
 }
 
 function renderGalleryTabs() {
-  const cats = ['all', ...new Set(GALLERY.map(g => g.category))];
+  const cats = ['all', ...new Set((typeof GALLERY !== 'undefined' ? GALLERY : []).map(g => g.category))];
   const el = document.getElementById('gallery-tabs');
   el.innerHTML = cats.map(c => `
     <button class="year-tab ${activeGalCat===c?'active':''}" data-cat="${c}">${c==='all'?'All':c}</button>
