@@ -327,7 +327,7 @@ async function secPublications() {
               <span class="badge">${p.year}</span>
               <span>${esc(p.journal)}</span>
             </div>
-            <div class="item-title">${esc(p.title)}</div>
+            <div class="item-title">${p.title}</div>
             <div class="item-sub">${esc(p.authors ?? '')}</div>
           </div>
           <div class="item-actions">
@@ -359,8 +359,18 @@ function pubForm(pubs, item, idx) {
       </div>
     </div>
     <div class="form-group">
-      <label>논문 제목 *</label>
-      <textarea name="title" rows="2" required>${esc(item.title)}</textarea>
+      <label style="display:flex;align-items:center;justify-content:space-between;gap:.5rem">
+        논문 제목 *
+        <span style="display:flex;gap:4px;flex-shrink:0">
+          <button type="button" id="btn-sup" class="btn btn-sm btn-outline"
+                  style="padding:2px 9px;font-size:.72rem;line-height:1.5"
+                  title="위 첨자 (superscript)">A<sup style="font-size:.6em;line-height:0">2</sup></button>
+          <button type="button" id="btn-sub" class="btn btn-sm btn-outline"
+                  style="padding:2px 9px;font-size:.72rem;line-height:1.5"
+                  title="아래 첨자 (subscript)">A<sub style="font-size:.6em;line-height:0">2</sub></button>
+        </span>
+      </label>
+      <textarea id="pub-title-input" name="title" rows="2" required>${esc(item.title)}</textarea>
     </div>
     <div class="form-group">
       <label>저자 *</label>
@@ -413,6 +423,22 @@ function pubForm(pubs, item, idx) {
   });
 
   setTimeout(() => {
+    // Sup / Sub 버튼: 선택 영역을 태그로 감싸기
+    function wrapTag(tag) {
+      const ta = $('#pub-title-input');
+      if (!ta) return;
+      const s = ta.selectionStart, e = ta.selectionEnd;
+      const sel = ta.value.substring(s, e);
+      const repl = `<${tag}>${sel}</${tag}>`;
+      ta.value = ta.value.substring(0, s) + repl + ta.value.substring(e);
+      ta.selectionStart = s;
+      ta.selectionEnd = s + repl.length;
+      ta.focus();
+    }
+    const btnSup = $('#btn-sup'), btnSub = $('#btn-sub');
+    if (btnSup) btnSup.onclick = () => wrapTag('sup');
+    if (btnSub) btnSub.onclick = () => wrapTag('sub');
+
     const fi = $('#pub-img-file');
     if (fi) fi.onchange = () => {
       if (fi.files[0]) {
