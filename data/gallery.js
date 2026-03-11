@@ -9,7 +9,10 @@
 // { src, caption, category, year }
 
 var GALLERY = [
-  // 예시 (실제 데이터로 교체하세요):
-  // { src: "images/gallery/2025-group.jpg", caption: "2025 Group Photo", category: "Group", year: 2025 },
-  // { src: "https://...", caption: "Conference", category: "Conference", year: 2024 },
+  {
+    src: "https://raw.githubusercontent.com/joechaeik/epa-homepage/main/images/gallery/lab_dinner.jpg",
+    caption: "EPA Lab Dinner",
+    category: "Group",
+    year: 2026
+  }
 ];
