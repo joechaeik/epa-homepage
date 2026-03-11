@@ -1,0 +1,42 @@
+var RESEARCH = [
+  {
+    id: 1,
+    title: "Photoelectrochemical Systems for Water Treatment",
+    summary: "Solar-driven photoelectrocatalytic processes for simultaneous water treatment and energy/resource recovery (H₂, H₂O₂, metal ions).",
+    description: "The dual functional photo(electro)catalytic process achieves water treatment along with simultaneous recovery of energy (e.g., H₂ and H₂O₂) or resources (e.g., metal ions). Using semiconductor electrodes under visible light, organic pollutants, dyes, and biomass-derived products are effectively degraded.",
+    icon: "💧",
+    keywords: ["TiO₂", "WO₃", "H₂ evolution", "organic pollutants", "PEC"],
+  },
+  {
+    id: 2,
+    title: "Solar Fuel Production & Artificial Photosynthesis",
+    summary: "Development of semiconductor photocatalysts for solar-to-fuel conversion, including hydrogen production and CO₂ reduction.",
+    description: "Semiconductor photocatalysis converts solar energy into chemical fuels. Our research focuses on designing efficient photocatalysts and photoelectrodes for water splitting, CO₂ reduction, and artificial photosynthesis using visible light.",
+    icon: "☀️",
+    keywords: ["H₂ production", "CO₂ reduction", "water splitting", "solar energy"],
+  },
+  {
+    id: 3,
+    title: "Semiconductor Photocatalysis & Photoelectrochemistry",
+    summary: "Fundamental studies on charge transfer, band engineering, and surface chemistry of semiconductor photocatalysts for environmental applications.",
+    description: "We investigate the fundamental mechanisms of photocatalytic reactions on semiconductor surfaces, including charge carrier dynamics, interfacial electron transfer, and catalyst design strategies to improve quantum efficiency and visible-light activity.",
+    icon: "⚡",
+    keywords: ["TiO₂", "band gap engineering", "charge transfer", "quantum efficiency"],
+  },
+  {
+    id: 4,
+    title: "Advanced Redox Processes for Environmental Applications",
+    summary: "Thermocatalytic and photocatalytic degradation of gaseous pollutants, VOCs, and environmental contaminants using advanced oxidation processes.",
+    description: "Advanced oxidation processes (AOPs) generate highly reactive species (OH•, O₂•⁻) to degrade persistent pollutants. Our group develops catalysts for thermocatalytic mineralization of gaseous VOCs and photoassisted AOPs for air and water purification.",
+    icon: "🔬",
+    keywords: ["AOP", "VOC degradation", "thermocatalysis", "OH radical"],
+  },
+  {
+    id: 5,
+    title: "Environmental Chemical Reactions in Ice & Frozen Solutions",
+    summary: "Investigation of unique photochemical and redox reactions occurring in ice and frozen environments, relevant to polar and atmospheric chemistry.",
+    description: "Chemical reactions in frozen water exhibit distinct kinetics and mechanisms due to concentration effects at grain boundaries and altered solvent properties. We study photochemical transformations of contaminants in ice matrices with implications for polar environmental chemistry.",
+    icon: "❄️",
+    keywords: ["ice chemistry", "freeze concentration", "photolysis", "polar environment"],
+  },
+];

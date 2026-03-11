@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EPA Lab @ KENTECH — Eco-friendly Photoenergy Application Laboratory</title>
+  <meta name="description" content="Eco-friendly Photoenergy Application Laboratory at KENTECH. Research on semiconductor photocatalysis, photoelectrochemistry, and environmental applications of solar energy." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0c4a6e',
+            accent: '#0ea5e9',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans">
+
+<!-- ═══════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════════ -->
+<nav id="navbar" class="py-4 px-6">
+  <div class="max-w-6xl mx-auto flex items-center justify-between">
+    <!-- Logo -->
+    <a href="index.html" class="flex items-center gap-3 no-underline">
+      <div class="w-8 h-8 rounded-lg bg-accent flex items-center justify-center flex-shrink-0">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/>
+          <line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/>
+          <line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+      </div>
+      <div>
+        <div class="nav-logo-text text-white font-bold text-sm leading-tight">EPA Lab</div>
+        <div class="text-white/50 text-xs leading-tight">KENTECH</div>
+      </div>
+    </a>
+
+    <!-- Desktop nav -->
+    <div class="desktop-nav flex items-center gap-8">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="research.html" class="nav-link">Research</a>
+      <a href="members.html" class="nav-link">Members</a>
+      <a href="publications.html" class="nav-link">Publications</a>
+      <a href="news.html" class="nav-link">News</a>
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="mailto:wychoi@kentech.ac.kr" class="btn-outline text-sm py-2 px-4">Contact</a>
+    </div>
+
+    <!-- Mobile hamburger -->
+    <button id="mobile-menu-btn" class="mobile-menu-btn text-white p-2 flex-col gap-1.5 cursor-pointer border-0 bg-transparent">
+      <span class="block w-6 h-0.5 bg-white rounded"></span>
+      <span class="block w-6 h-0.5 bg-white rounded"></span>
+      <span class="block w-6 h-0.5 bg-white rounded"></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile menu overlay -->
+<div id="mobile-menu">
+  <button id="mobile-menu-close" class="absolute top-6 right-6 text-white text-3xl bg-transparent border-0 cursor-pointer">✕</button>
+  <a href="index.html" class="nav-link">Home</a>
+  <a href="research.html" class="nav-link">Research</a>
+  <a href="members.html" class="nav-link">Members</a>
+  <a href="publications.html" class="nav-link">Publications</a>
+  <a href="news.html" class="nav-link">News</a>
+  <a href="gallery.html" class="nav-link">Gallery</a>
+  <a href="mailto:wychoi@kentech.ac.kr" class="btn-primary mt-4">Contact Us</a>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     HERO
+════════════════════════════════════════════ -->
+<section class="hero-bg min-h-screen flex items-center relative">
+  <div class="hero-grid"></div>
+  <!-- Decorative circles -->
+  <div class="absolute top-1/4 right-1/4 w-96 h-96 rounded-full border border-accent/10 pointer-events-none"></div>
+  <div class="absolute top-1/3 right-1/3 w-48 h-48 rounded-full border border-accent/15 pointer-events-none"></div>
+
+  <div class="relative max-w-6xl mx-auto px-6 py-32 w-full">
+    <div class="max-w-3xl">
+      <!-- Tag -->
+      <div class="flex items-center gap-2 mb-6 reveal">
+        <span class="w-8 h-0.5 bg-accent inline-block"></span>
+        <span class="text-accent text-sm font-semibold tracking-widest uppercase">KENTECH · Naju, Korea</span>
+      </div>
+
+      <!-- Title -->
+      <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.1] tracking-tight mb-6 reveal">
+        Eco-friendly<br/>
+        <span class="gradient-text">Photoenergy</span><br/>
+        Application Lab
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="text-white/60 text-lg md:text-xl leading-relaxed max-w-2xl mb-10 reveal">
+        Harnessing solar energy for environmental remediation and clean fuel production through semiconductor photocatalysis and photoelectrochemistry.
+      </p>
+
+      <!-- CTAs -->
+      <div class="flex flex-wrap gap-4 reveal">
+        <a href="research.html" class="btn-primary text-base py-3 px-6">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          Our Research
+        </a>
+        <a href="publications.html" class="btn-outline text-base py-3 px-6">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          Publications
+        </a>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="mt-20 pt-12 border-t border-white/10 grid grid-cols-2 md:grid-cols-4 gap-8 reveal">
+      <div>
+        <div class="stat-num">377+</div>
+        <div class="text-white/50 text-sm mt-1">Publications</div>
+      </div>
+      <div>
+        <div class="stat-num">25+</div>
+        <div class="text-white/50 text-sm mt-1">Years of Research</div>
+      </div>
+      <div>
+        <div class="stat-num">5</div>
+        <div class="text-white/50 text-sm mt-1">Research Areas</div>
+      </div>
+      <div>
+        <div class="stat-num">2×</div>
+        <div class="text-white/50 text-sm mt-1">Highly Cited Researcher</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/40 text-xs">
+    <span class="tracking-widest uppercase text-xs">Scroll</span>
+    <div class="w-px h-12 bg-gradient-to-b from-white/30 to-transparent"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     RESEARCH OVERVIEW (dark)
+════════════════════════════════════════════ -->
+<section class="bg-slate-900 py-24">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-16 reveal">
+      <span class="section-tag">What We Do</span>
+      <h2 class="section-title text-white mt-2">Research Areas</h2>
+      <div class="section-divider centered"></div>
+      <p class="text-white/50 max-w-2xl mx-auto">
+        We investigate the fundamental and applied aspects of solar-driven chemical processes for environmental remediation and renewable energy conversion.
+      </p>
+    </div>
+
+    <div id="research-cards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <!-- Populated by JS -->
+    </div>
+
+    <div class="text-center mt-12 reveal">
+      <a href="research.html" class="btn-outline">View All Research →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     LATEST PUBLICATIONS (light)
+════════════════════════════════════════════ -->
+<section class="bg-slate-50 py-24">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="flex items-end justify-between mb-12 reveal">
+      <div>
+        <span class="section-tag">Recent Work</span>
+        <h2 class="section-title text-slate-900 mt-2">Latest Publications</h2>
+        <div class="section-divider"></div>
+      </div>
+      <a href="publications.html" class="text-accent font-semibold text-sm hover:underline hidden md:block">View all 377+ papers →</a>
+    </div>
+
+    <div id="pub-list" class="flex flex-col gap-4">
+      <!-- Populated by JS -->
+    </div>
+
+    <div class="text-center mt-8 md:hidden reveal">
+      <a href="publications.html" class="btn-primary">View All Publications</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     NEWS + MEDIA (dark split)
+════════════════════════════════════════════ -->
+<section class="bg-slate-900 py-24">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid md:grid-cols-2 gap-16">
+
+      <!-- News column -->
+      <div class="reveal">
+        <span class="section-tag">Latest Updates</span>
+        <h2 class="section-title text-white mt-2">EPA News</h2>
+        <div class="section-divider"></div>
+        <div id="news-list" class="mt-4">
+          <!-- Populated by JS -->
+        </div>
+        <a href="news.html" class="inline-flex items-center gap-2 text-accent text-sm font-semibold mt-6 hover:underline">
+          All News →
+        </a>
+      </div>
+
+      <!-- Media column -->
+      <div class="reveal">
+        <span class="section-tag">Media</span>
+        <h2 class="section-title text-white mt-2">EPA in Media</h2>
+        <div class="section-divider"></div>
+        <div id="media-embed" class="mt-4 rounded-xl overflow-hidden bg-slate-800 aspect-video flex items-center justify-center">
+          <span class="text-white/30 text-sm">Media embed loading...</span>
+        </div>
+        <p id="media-desc" class="text-white/50 text-sm mt-3"></p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     CONTACT / CTA (accent)
+════════════════════════════════════════════ -->
+<section class="py-24 relative overflow-hidden" style="background: linear-gradient(135deg, #0c4a6e, #0ea5e9)">
+  <div class="absolute inset-0 opacity-10" style="background-image: linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px); background-size: 40px 40px;"></div>
+  <div class="relative max-w-3xl mx-auto px-6 text-center reveal">
+    <h2 class="text-4xl font-extrabold text-white mb-4">Join Our Lab</h2>
+    <p class="text-white/70 text-lg mb-8">
+      We are always looking for passionate researchers. If you are interested in photocatalysis, environmental chemistry, or solar energy, we'd love to hear from you.
+    </p>
+    <div class="flex flex-wrap gap-4 justify-center">
+      <a href="mailto:wychoi@kentech.ac.kr" class="bg-white text-primary font-bold px-8 py-3 rounded-lg hover:bg-white/90 transition-colors no-underline text-sm">
+        Get in Touch
+      </a>
+      <a href="members.html" class="btn-outline">Meet the Team</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
+<footer class="py-12 px-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid md:grid-cols-3 gap-10 mb-10">
+      <div>
+        <div class="flex items-center gap-2 mb-3">
+          <div class="w-7 h-7 rounded-md bg-accent flex items-center justify-center">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/>
+              <line x1="12" y1="21" x2="12" y2="23"/>
+            </svg>
+          </div>
+          <span class="text-white font-bold text-sm">EPA Lab @ KENTECH</span>
+        </div>
+        <p class="text-white/40 text-xs leading-relaxed">
+          Eco-friendly Photoenergy Application Laboratory<br/>
+          Department of Energy Engineering<br/>
+          KENTECH Institute for Environmental and Climate Technology
+        </p>
+      </div>
+      <div>
+        <h4 class="text-white/70 font-semibold text-xs tracking-widest uppercase mb-3">Quick Links</h4>
+        <div class="flex flex-col gap-2">
+          <a href="research.html">Research</a>
+          <a href="members.html">Members</a>
+          <a href="publications.html">Publications</a>
+          <a href="news.html">News</a>
+          <a href="gallery.html">Gallery</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-white/70 font-semibold text-xs tracking-widest uppercase mb-3">Contact</h4>
+        <address class="not-italic text-xs leading-relaxed text-white/40">
+          Korea Institute of Energy Technology (KENTECH)<br/>
+          200 Hyeoksin-ro, Naju, Jeonnam 58330<br/>
+          Republic of Korea<br/><br/>
+          Tel: +82-(0)10-4817-2608<br/>
+          <a href="mailto:wychoi@kentech.ac.kr" class="text-accent/80 hover:text-accent">wychoi@kentech.ac.kr</a>
+        </address>
+      </div>
+    </div>
+    <div class="border-t border-white/10 pt-6 flex flex-col md:flex-row items-center justify-between gap-3">
+      <p class="text-white/30 text-xs">Copyright © 2016–2026 EPA Lab. All rights reserved.</p>
+      <p class="text-white/20 text-xs">Eco-friendly Photoenergy Application Laboratory · KENTECH</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════════════
+     DATA + RENDER SCRIPTS
+════════════════════════════════════════════ -->
+<script src="data/research.js"></script>
+<script src="data/publications.js"></script>
+<script src="data/news.js"></script>
+
+<script>
+// ── Render Research Cards ──
+(function() {
+  const container = document.getElementById('research-cards');
+  if (!container || typeof RESEARCH === 'undefined') return;
+  container.innerHTML = RESEARCH.map((r, i) => `
+    <div class="research-card reveal" style="transition-delay:${i*80}ms">
+      <div class="research-num">0${r.id}</div>
+      <div class="text-3xl mb-3">${r.icon}</div>
+      <h3 class="text-white font-bold text-base leading-snug mb-2">${r.title}</h3>
+      <p class="text-white/50 text-sm leading-relaxed">${r.summary}</p>
+      <div class="mt-4 flex flex-wrap gap-1.5">
+        ${r.keywords.map(k => `<span class="text-xs px-2 py-0.5 rounded-full bg-white/5 text-accent/70 border border-white/10">${k}</span>`).join('')}
+      </div>
+    </div>
+  `).join('');
+})();
+
+// ── Render Publications ──
+(function() {
+  const container = document.getElementById('pub-list');
+  if (!container || typeof PUBLICATIONS === 'undefined') return;
+  const recent = PUBLICATIONS.slice(0, 4);
+  container.innerHTML = recent.map((p, i) => `
+    <div class="pub-card reveal" style="transition-delay:${i*80}ms">
+      <div class="pub-img">
+        ${p.image
+          ? `<img src="${p.image}" alt="graphical abstract" loading="lazy" />`
+          : `<div class="w-full h-full flex items-center justify-center text-slate-300">
+               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+             </div>`
+        }
+      </div>
+      <div class="flex-1 min-w-0">
+        <div class="flex items-center gap-2 mb-1.5">
+          <span class="year-badge">${p.year}</span>
+          <span class="journal-badge">${p.journal}</span>
+        </div>
+        <h3 class="font-semibold text-slate-800 text-sm leading-snug mb-1 line-clamp-2">${p.title}</h3>
+        <p class="text-slate-500 text-xs leading-relaxed mb-2 line-clamp-1">${p.authors}</p>
+        <p class="text-slate-400 text-xs italic">${p.journal_info}</p>
+        ${p.doi ? `<a href="${p.doi}" target="_blank" rel="noopener" class="inline-flex items-center gap-1 mt-2 text-accent text-xs font-semibold hover:underline">
+          DOI <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>` : ''}
+      </div>
+    </div>
+  `).join('');
+})();
+
+// ── Render News ──
+(function() {
+  const container = document.getElementById('news-list');
+  if (!container || typeof NEWS === 'undefined') return;
+  const pinned = NEWS.filter(n => n.pinned).slice(0, 3);
+  const items = pinned.length ? pinned : NEWS.slice(0, 4);
+  container.innerHTML = items.map(n => {
+    const d = new Date(n.date);
+    const mon = d.toLocaleString('en', {month:'short'}).toUpperCase();
+    const day = d.getDate();
+    return `
+      <a href="${n.link}" class="news-item">
+        <div class="news-date-badge">${mon}<span>${day}</span></div>
+        <div class="flex-1 min-w-0">
+          <span class="inline-block text-xs font-semibold px-2 py-0.5 rounded mb-1 ${
+            n.category === 'Award' ? 'bg-amber-900/40 text-amber-400' :
+            n.category === 'Honor' ? 'bg-sky-900/40 text-sky-400' :
+            'bg-slate-700 text-slate-300'
+          }">${n.category}</span>
+          <p class="text-white/80 text-sm font-medium leading-snug line-clamp-2">${n.title}</p>
+        </div>
+      </a>
+    `;
+  }).join('');
+})();
+
+// ── Render Media ──
+(function() {
+  const container = document.getElementById('media-embed');
+  const desc = document.getElementById('media-desc');
+  if (!container || typeof MEDIA === 'undefined' || !MEDIA[0]) return;
+  const m = MEDIA[0];
+  if (m.youtube_id && m.youtube_id !== 'your-youtube-id-here') {
+    container.innerHTML = `<iframe class="w-full h-full" src="https://www.youtube.com/embed/${m.youtube_id}" frameborder="0" allowfullscreen></iframe>`;
+  } else {
+    container.innerHTML = `<div class="flex flex-col items-center justify-center gap-2 text-white/30">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34v-7.2a8.26 8.26 0 004.83 1.55V6.22a4.85 4.85 0 01-1.06-.47z"/></svg>
+      <span class="text-xs">YouTube ID를 data/news.js에서 설정해주세요</span>
+    </div>`;
+  }
+  if (desc) desc.textContent = m.description || '';
+})();
+</script>
+
+<script src="assets/js/main.js"></script>
+
+<!-- Scroll reveal re-init for dynamically added elements -->
+<script>
+  setTimeout(() => {
+    document.querySelectorAll('.reveal:not(.visible)').forEach(el => {
+      const obs = new IntersectionObserver(e => {
+        if (e[0].isIntersecting) { e[0].target.classList.add('visible'); obs.disconnect(); }
+      }, { threshold: 0.05 });
+      obs.observe(el);
+    });
+  }, 100);
+</script>
+
+</body>
+</html>

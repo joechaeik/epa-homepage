@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Members — EPA Lab @ KENTECH</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { theme: { extend: { colors: { primary: '#0c4a6e', accent: '#0ea5e9' }, fontFamily: { sans: ['Inter','sans-serif'] } } } }</script>
+</head>
+<body class="font-sans">
+
+<!-- NAVBAR -->
+<nav id="navbar" class="py-4 px-6">
+  <div class="max-w-6xl mx-auto flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3 no-underline">
+      <div class="w-8 h-8 rounded-lg bg-accent flex items-center justify-center flex-shrink-0">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </div>
+      <div>
+        <div class="nav-logo-text text-white font-bold text-sm leading-tight">EPA Lab</div>
+        <div class="text-white/50 text-xs leading-tight">KENTECH</div>
+      </div>
+    </a>
+    <div class="desktop-nav flex items-center gap-8">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="research.html" class="nav-link">Research</a>
+      <a href="members.html" class="nav-link active">Members</a>
+      <a href="publications.html" class="nav-link">Publications</a>
+      <a href="news.html" class="nav-link">News</a>
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="mailto:wychoi@kentech.ac.kr" class="btn-outline text-sm py-2 px-4">Contact</a>
+    </div>
+    <button id="mobile-menu-btn" class="mobile-menu-btn text-white p-2 flex-col gap-1.5 cursor-pointer border-0 bg-transparent">
+      <span class="block w-6 h-0.5 bg-white rounded"></span>
+      <span class="block w-6 h-0.5 bg-white rounded"></span>
+      <span class="block w-6 h-0.5 bg-white rounded"></span>
+    </button>
+  </div>
+</nav>
+<div id="mobile-menu">
+  <button id="mobile-menu-close" class="absolute top-6 right-6 text-white text-3xl bg-transparent border-0 cursor-pointer">✕</button>
+  <a href="index.html" class="nav-link">Home</a><a href="research.html" class="nav-link">Research</a>
+  <a href="members.html" class="nav-link">Members</a><a href="publications.html" class="nav-link">Publications</a>
+  <a href="news.html" class="nav-link">News</a><a href="gallery.html" class="nav-link">Gallery</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="relative max-w-6xl mx-auto px-6">
+    <div class="flex items-center gap-2 mb-4">
+      <span class="w-8 h-0.5 bg-accent inline-block"></span>
+      <span class="text-accent text-sm font-semibold tracking-widest uppercase">Our Team</span>
+    </div>
+    <h1 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-4">Members</h1>
+    <p class="text-white/50 max-w-xl text-lg">Meet the researchers driving innovation in photocatalysis and environmental chemistry.</p>
+  </div>
+</section>
+
+<!-- PROFESSOR -->
+<section class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="flex items-center gap-3 mb-12 reveal">
+      <span class="section-tag text-base">Principal Investigator</span>
+    </div>
+    <div id="professor-section" class="reveal"><!-- JS --></div>
+  </div>
+</section>
+
+<!-- STUDENTS & RESEARCHERS -->
+<section class="py-20 bg-slate-50">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="mb-12 reveal">
+      <span class="section-tag">Current Members</span>
+      <h2 class="section-title text-slate-900 mt-2">Students & Researchers</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div id="students-section" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5"><!-- JS --></div>
+  </div>
+</section>
+
+<!-- ALUMNI -->
+<section class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="mb-12 reveal">
+      <span class="section-tag">Alumni</span>
+      <h2 class="section-title text-slate-900 mt-2">EPA Alumni</h2>
+      <div class="section-divider"></div>
+      <p class="text-slate-500 max-w-lg">Our graduates are making an impact at leading institutions and companies around the world.</p>
+    </div>
+    <div id="alumni-section" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5"><!-- JS --></div>
+  </div>
+</section>
+
+<!-- JOIN US -->
+<section class="py-20" style="background: linear-gradient(135deg, #0c1a2e, #0c4a6e)">
+  <div class="max-w-6xl mx-auto px-6 text-center reveal">
+    <h2 class="text-3xl font-extrabold text-white mb-3">Interested in Joining?</h2>
+    <p class="text-white/60 mb-8 max-w-lg mx-auto">We welcome motivated students and researchers passionate about solar energy and environmental chemistry.</p>
+    <a href="mailto:wychoi@kentech.ac.kr" class="btn-primary text-base py-3 px-8">Contact Prof. Choi</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-12 px-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid md:grid-cols-3 gap-10 mb-10">
+      <div>
+        <div class="flex items-center gap-2 mb-3">
+          <div class="w-7 h-7 rounded-md bg-accent flex items-center justify-center">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/></svg>
+          </div>
+          <span class="text-white font-bold text-sm">EPA Lab @ KENTECH</span>
+        </div>
+        <p class="text-white/40 text-xs leading-relaxed">Eco-friendly Photoenergy Application Laboratory<br/>Department of Energy Engineering, KENTECH</p>
+      </div>
+      <div>
+        <h4 class="text-white/70 font-semibold text-xs tracking-widest uppercase mb-3">Quick Links</h4>
+        <div class="flex flex-col gap-2">
+          <a href="index.html">Home</a><a href="research.html">Research</a>
+          <a href="members.html">Members</a><a href="publications.html">Publications</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-white/70 font-semibold text-xs tracking-widest uppercase mb-3">Contact</h4>
+        <address class="not-italic text-xs leading-relaxed text-white/40">
+          200 Hyeoksin-ro, Naju, Jeonnam 58330, Korea<br/>
+          <a href="mailto:wychoi@kentech.ac.kr" class="text-accent/80 hover:text-accent">wychoi@kentech.ac.kr</a>
+        </address>
+      </div>
+    </div>
+    <div class="border-t border-white/10 pt-6">
+      <p class="text-white/30 text-xs">Copyright © 2016–2026 EPA Lab. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="data/members.js"></script>
+<script>
+function initials(name) {
+  return name.split(' ').map(w => w[0]).join('').slice(0,2).toUpperCase();
+}
+
+// Professor
+(function() {
+  const el = document.getElementById('professor-section');
+  if (!el || typeof MEMBERS === 'undefined') return;
+  const prof = MEMBERS.professor[0];
+  el.innerHTML = `
+    <div class="flex flex-col md:flex-row gap-10 items-start">
+      <div class="flex-shrink-0">
+        ${prof.photo
+          ? `<img src="${prof.photo}" alt="${prof.name}" class="w-40 h-40 rounded-2xl object-cover border-4 border-slate-100 shadow-lg" />`
+          : `<div class="w-40 h-40 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center border-4 border-slate-100 shadow-lg"><span class="text-white text-4xl font-extrabold">${initials(prof.name)}</span></div>`
+        }
+      </div>
+      <div class="flex-1">
+        <h2 class="text-3xl font-extrabold text-slate-900 mb-1">${prof.name}</h2>
+        <p class="text-accent font-semibold mb-1">${prof.title}</p>
+        <p class="text-slate-500 text-sm mb-4">${prof.affiliation}</p>
+        <p class="text-slate-600 leading-relaxed max-w-2xl mb-6">${prof.bio}</p>
+        <div class="flex flex-wrap gap-3">
+          ${prof.email ? `<a href="mailto:${prof.email}" class="inline-flex items-center gap-2 text-sm font-semibold text-slate-700 border border-slate-200 rounded-lg px-4 py-2 hover:border-accent hover:text-accent transition-colors no-underline">✉ Email</a>` : ''}
+          ${prof.links?.google_scholar ? `<a href="${prof.links.google_scholar}" target="_blank" class="inline-flex items-center gap-2 text-sm font-semibold text-slate-700 border border-slate-200 rounded-lg px-4 py-2 hover:border-accent hover:text-accent transition-colors no-underline">Scholar</a>` : ''}
+        </div>
+      </div>
+    </div>
+  `;
+})();
+
+// Students
+(function() {
+  const el = document.getElementById('students-section');
+  if (!el || typeof MEMBERS === 'undefined') return;
+  el.innerHTML = MEMBERS.students.map((m, i) => `
+    <div class="member-card reveal" style="transition-delay:${i*60}ms">
+      ${m.photo
+        ? `<img src="${m.photo}" alt="${m.name}" class="member-avatar" />`
+        : `<div class="member-avatar-placeholder">${initials(m.name)}</div>`
+      }
+      <div class="font-bold text-slate-900 text-sm">${m.name}</div>
+      <div class="text-accent text-xs font-semibold mt-0.5 mb-1">${m.title}</div>
+      <div class="text-slate-500 text-xs leading-snug">${m.research}</div>
+      ${m.email ? `<a href="mailto:${m.email}" class="text-slate-400 text-xs mt-2 hover:text-accent no-underline hover:underline">✉ ${m.email}</a>` : ''}
+    </div>
+  `).join('');
+})();
+
+// Alumni
+(function() {
+  const el = document.getElementById('alumni-section');
+  if (!el || typeof MEMBERS === 'undefined') return;
+  el.innerHTML = MEMBERS.alumni.map((m, i) => `
+    <div class="member-card reveal" style="transition-delay:${i*60}ms">
+      ${m.photo
+        ? `<img src="${m.photo}" alt="${m.name}" class="member-avatar opacity-80" />`
+        : `<div class="member-avatar-placeholder" style="background: linear-gradient(135deg,#334155,#64748b)">${initials(m.name)}</div>`
+      }
+      <div class="font-bold text-slate-900 text-sm">${m.name}</div>
+      <div class="text-slate-500 text-xs font-semibold mt-0.5 mb-1">${m.degree}</div>
+      <div class="text-slate-400 text-xs leading-snug">${m.current}</div>
+    </div>
+  `).join('');
+})();
+</script>
+<script src="assets/js/main.js"></script>
+<script>
+  setTimeout(() => {
+    document.querySelectorAll('.reveal:not(.visible)').forEach(el => {
+      const obs = new IntersectionObserver(e => {
+        if (e[0].isIntersecting) { e[0].target.classList.add('visible'); obs.disconnect(); }
+      }, { threshold: 0.05 });
+      obs.observe(el);
+    });
+  }, 100);
+</script>
+</body>
+</html>

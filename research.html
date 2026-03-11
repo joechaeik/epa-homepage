@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research — EPA Lab @ KENTECH</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { theme: { extend: { colors: { primary: '#0c4a6e', accent: '#0ea5e9' }, fontFamily: { sans: ['Inter','sans-serif'] } } } }</script>
+</head>
+<body class="font-sans">
+
+<!-- NAVBAR -->
+<nav id="navbar" class="py-4 px-6">
+  <div class="max-w-6xl mx-auto flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3 no-underline">
+      <div class="w-8 h-8 rounded-lg bg-accent flex items-center justify-center flex-shrink-0">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </div>
+      <div>
+        <div class="nav-logo-text text-white font-bold text-sm leading-tight">EPA Lab</div>
+        <div class="text-white/50 text-xs leading-tight">KENTECH</div>
+      </div>
+    </a>
+    <div class="desktop-nav flex items-center gap-8">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="research.html" class="nav-link active">Research</a>
+      <a href="members.html" class="nav-link">Members</a>
+      <a href="publications.html" class="nav-link">Publications</a>
+      <a href="news.html" class="nav-link">News</a>
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="mailto:wychoi@kentech.ac.kr" class="btn-outline text-sm py-2 px-4">Contact</a>
+    </div>
+    <button id="mobile-menu-btn" class="mobile-menu-btn text-white p-2 flex-col gap-1.5 cursor-pointer border-0 bg-transparent">
+      <span class="block w-6 h-0.5 bg-white rounded"></span>
+      <span class="block w-6 h-0.5 bg-white rounded"></span>
+      <span class="block w-6 h-0.5 bg-white rounded"></span>
+    </button>
+  </div>
+</nav>
+<div id="mobile-menu">
+  <button id="mobile-menu-close" class="absolute top-6 right-6 text-white text-3xl bg-transparent border-0 cursor-pointer">✕</button>
+  <a href="index.html" class="nav-link">Home</a>
+  <a href="research.html" class="nav-link">Research</a>
+  <a href="members.html" class="nav-link">Members</a>
+  <a href="publications.html" class="nav-link">Publications</a>
+  <a href="news.html" class="nav-link">News</a>
+  <a href="gallery.html" class="nav-link">Gallery</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="relative max-w-6xl mx-auto px-6">
+    <div class="flex items-center gap-2 mb-4">
+      <span class="w-8 h-0.5 bg-accent inline-block"></span>
+      <span class="text-accent text-sm font-semibold tracking-widest uppercase">What We Investigate</span>
+    </div>
+    <h1 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-4">Research</h1>
+    <p class="text-white/50 max-w-xl text-lg">
+      Prof. Wonyong Choi's group investigates semiconductor-based photo(electro)chemical systems addressing environmental and energy challenges.
+    </p>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="py-16 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="max-w-3xl reveal">
+      <p class="text-slate-600 text-lg leading-relaxed">
+        The solar-driven photo(electro)catalytic chemical process is a key technology for sustainable utilization of solar energy. It has been widely applied to environmental remediation and solar fuel production. Our research spans five interconnected areas, all centered on <strong>harnessing light energy for chemistry</strong>.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH AREAS -->
+<section class="py-4 pb-24 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <div id="research-detail" class="flex flex-col gap-16">
+      <!-- Populated by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-12 px-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid md:grid-cols-3 gap-10 mb-10">
+      <div>
+        <div class="flex items-center gap-2 mb-3">
+          <div class="w-7 h-7 rounded-md bg-accent flex items-center justify-center">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/></svg>
+          </div>
+          <span class="text-white font-bold text-sm">EPA Lab @ KENTECH</span>
+        </div>
+        <p class="text-white/40 text-xs leading-relaxed">Eco-friendly Photoenergy Application Laboratory<br/>Department of Energy Engineering, KENTECH</p>
+      </div>
+      <div>
+        <h4 class="text-white/70 font-semibold text-xs tracking-widest uppercase mb-3">Quick Links</h4>
+        <div class="flex flex-col gap-2">
+          <a href="index.html">Home</a><a href="research.html">Research</a>
+          <a href="members.html">Members</a><a href="publications.html">Publications</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-white/70 font-semibold text-xs tracking-widest uppercase mb-3">Contact</h4>
+        <address class="not-italic text-xs leading-relaxed text-white/40">
+          200 Hyeoksin-ro, Naju, Jeonnam 58330, Korea<br/>
+          <a href="mailto:wychoi@kentech.ac.kr" class="text-accent/80 hover:text-accent">wychoi@kentech.ac.kr</a>
+        </address>
+      </div>
+    </div>
+    <div class="border-t border-white/10 pt-6">
+      <p class="text-white/30 text-xs">Copyright © 2016–2026 EPA Lab. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="data/research.js"></script>
+<script src="data/publications.js"></script>
+<script>
+// Render detailed research sections (alternating layout)
+(function() {
+  const container = document.getElementById('research-detail');
+  if (!container || typeof RESEARCH === 'undefined') return;
+
+  container.innerHTML = RESEARCH.map((r, i) => {
+    const isEven = i % 2 === 0;
+    // Filter related pubs (simple keyword match)
+    const relatedPubs = (typeof PUBLICATIONS !== 'undefined' ? PUBLICATIONS : []).filter(p =>
+      r.keywords.some(k => p.title.toLowerCase().includes(k.toLowerCase()) ||
+                           p.journal.toLowerCase().includes(k.toLowerCase()))
+    ).slice(0, 2);
+
+    return `
+      <div class="reveal grid md:grid-cols-2 gap-12 items-center py-12 border-b border-slate-100 last:border-0">
+        <!-- Number + content -->
+        <div class="${isEven ? '' : 'md:order-2'}">
+          <div class="flex items-center gap-4 mb-4">
+            <span class="text-6xl font-extrabold text-slate-100 leading-none select-none">0${r.id}</span>
+            <span class="text-4xl">${r.icon}</span>
+          </div>
+          <h2 class="text-2xl font-bold text-slate-900 mb-3 leading-snug">${r.title}</h2>
+          <p class="text-slate-600 leading-relaxed mb-4">${r.description}</p>
+          <div class="flex flex-wrap gap-2 mb-6">
+            ${r.keywords.map(k => `<span class="text-xs px-3 py-1 rounded-full bg-sky-50 text-sky-700 border border-sky-200 font-medium">${k}</span>`).join('')}
+          </div>
+          ${relatedPubs.length ? `
+            <div>
+              <p class="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-2">Related Publications</p>
+              ${relatedPubs.map(p => `
+                <a href="${p.doi || '#'}" target="_blank" class="block text-sm text-slate-700 hover:text-accent mb-1 leading-snug no-underline hover:underline">
+                  → ${p.title.length > 80 ? p.title.slice(0,80)+'…' : p.title}
+                  <span class="text-slate-400 text-xs">(${p.year})</span>
+                </a>
+              `).join('')}
+            </div>
+          ` : ''}
+        </div>
+        <!-- Visual panel -->
+        <div class="${isEven ? '' : 'md:order-1'}">
+          <div class="rounded-2xl overflow-hidden bg-gradient-to-br from-slate-900 to-primary flex items-center justify-center" style="min-height:240px">
+            <div class="text-center p-10">
+              <div class="text-8xl mb-4 opacity-80">${r.icon}</div>
+              <div class="text-white/60 text-sm font-medium">${r.title}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+  }).join('');
+})();
+</script>
+<script src="assets/js/main.js"></script>
+<script>
+  setTimeout(() => {
+    document.querySelectorAll('.reveal:not(.visible)').forEach(el => {
+      const obs = new IntersectionObserver(e => {
+        if (e[0].isIntersecting) { e[0].target.classList.add('visible'); obs.disconnect(); }
+      }, { threshold: 0.05 });
+      obs.observe(el);
+    });
+  }, 100);
+</script>
+</body>
+</html>
