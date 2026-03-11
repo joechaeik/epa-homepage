@@ -364,10 +364,10 @@ function pubForm(pubs, item, idx) {
         <span style="display:flex;gap:4px;flex-shrink:0">
           <button type="button" id="btn-sup" class="btn btn-sm btn-outline"
                   style="padding:2px 9px;font-size:.72rem;line-height:1.5"
-                  title="위 첨자 (superscript)">A<sup style="font-size:.6em;line-height:0">2</sup></button>
+                  title="위 첨자 (superscript)">위첨자</button>
           <button type="button" id="btn-sub" class="btn btn-sm btn-outline"
                   style="padding:2px 9px;font-size:.72rem;line-height:1.5"
-                  title="아래 첨자 (subscript)">A<sub style="font-size:.6em;line-height:0">2</sub></button>
+                  title="아래 첨자 (subscript)">아래 첨자</button>
         </span>
       </label>
       <textarea id="pub-title-input" name="title" rows="2" required>${esc(item.title)}</textarea>
