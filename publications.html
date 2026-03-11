@@ -131,7 +131,6 @@
   </div>
 </footer>
 
-<script src="data/publications.js"></script>
 <script>
 let activeYear = 'all';
 let searchQuery = '';
@@ -143,12 +142,13 @@ function getYears() {
 
 function filterPubs() {
   return PUBLICATIONS.filter(p => {
-    const matchYear = activeYear === 'all' || p.year === Number(activeYear);
+    const matchYear = activeYear === 'all' || +p.year === +activeYear;
     const q = searchQuery.toLowerCase();
+    const titleText = p.title.replace(/<[^>]*>/g, ''); // strip HTML tags for search
     const matchSearch = !q ||
-      p.title.toLowerCase().includes(q) ||
-      p.authors.toLowerCase().includes(q) ||
-      p.journal.toLowerCase().includes(q);
+      titleText.toLowerCase().includes(q) ||
+      (p.authors || '').toLowerCase().includes(q) ||
+      (p.journal || '').toLowerCase().includes(q);
     return matchYear && matchSearch;
   });
 }
@@ -160,8 +160,8 @@ function renderYearTabs() {
 
   let html = `<button class="year-tab ${activeYear==='all'?'active':''}" data-year="all">All (${allCount})</button>`;
   years.forEach(y => {
-    const c = PUBLICATIONS.filter(p => p.year===y).length;
-    html += `<button class="year-tab ${activeYear===String(y)?'active':''}" data-year="${y}">${y} <span class="opacity-60">(${c})</span></button>`;
+    const c = PUBLICATIONS.filter(p => +p.year === +y).length;
+    html += `<button class="year-tab ${+activeYear===+y?'active':''}" data-year="${y}">${y} <span class="opacity-60">(${c})</span></button>`;
   });
   el.innerHTML = html;
 
@@ -192,18 +192,19 @@ function renderList() {
   // Group by year
   const byYear = {};
   filtered.forEach(p => {
-    if (!byYear[p.year]) byYear[p.year] = [];
-    byYear[p.year].push(p);
+    const y = +p.year;
+    if (!byYear[y]) byYear[y] = [];
+    byYear[y].push(p);
   });
 
   let html = '';
-  Object.keys(byYear).sort((a,b) => b-a).forEach(year => {
+  Object.keys(byYear).map(Number).sort((a,b) => b-a).forEach(year => {
     html += `<div class="flex items-center gap-4 mt-6 mb-3">
       <span class="text-lg font-extrabold text-slate-800">${year}</span>
       <span class="flex-1 h-px bg-slate-200"></span>
       <span class="text-xs text-slate-400 font-medium">${byYear[year].length} papers</span>
     </div>`;
-    byYear[year].forEach((p, i) => {
+    byYear[year].forEach(p => {
       const num = PUBLICATIONS.indexOf(p) + 1;
       html += `
         <div class="pub-card visible">
@@ -235,17 +236,26 @@ function renderList() {
   container.innerHTML = html;
 }
 
-// Init
-document.getElementById('pub-count-hero').textContent = `${PUBLICATIONS.length} peer-reviewed publications`;
-
-renderYearTabs();
-renderList();
-
-// Search
-document.getElementById('search-input').addEventListener('input', function() {
-  searchQuery = this.value;
+function initPublications() {
+  document.getElementById('pub-count-hero').textContent = `${PUBLICATIONS.length} peer-reviewed publications`;
+  renderYearTabs();
   renderList();
-});
+  document.getElementById('search-input').addEventListener('input', function() {
+    searchQuery = this.value;
+    renderList();
+  });
+}
+
+// 캐시 우회: 매 페이지 로드마다 최신 데이터를 강제로 가져옴
+(function() {
+  var s = document.createElement('script');
+  s.src = 'data/publications.js?v=' + Date.now();
+  s.onload = initPublications;
+  s.onerror = function() {
+    document.getElementById('pub-count-hero').textContent = 'Failed to load publications.';
+  };
+  document.head.appendChild(s);
+})();
 </script>
 <script src="assets/js/main.js"></script>
 </body>
