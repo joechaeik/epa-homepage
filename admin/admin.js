@@ -61,7 +61,12 @@ async function ghWrite(path, content, sha, message) {
 }
 
 // 이미지 파일 업로드 → 업로드된 raw URL 반환
+const MAX_IMG_BYTES = 5 * 1024 * 1024; // 5 MB
+
 async function ghUploadImage(repoPath, file) {
+  if (file.size > MAX_IMG_BYTES) {
+    throw new Error(`파일 크기 초과: ${(file.size/1024/1024).toFixed(1)} MB (최대 5 MB)`);
+  }
   return new Promise((resolve, reject) => {
     const reader = new FileReader();
     reader.onload = async () => {
@@ -412,7 +417,10 @@ function pubForm(pubs, item, idx) {
     if (fi) fi.onchange = () => {
       if (fi.files[0]) {
         $('#pub-img-url').value = '';
-        $('#pub-up-status').textContent = `선택: ${fi.files[0].name} (${(fi.files[0].size/1024).toFixed(0)} KB)`;
+        const f = fi.files[0];
+        $('#pub-up-status').textContent = f.size > MAX_IMG_BYTES
+          ? `⚠️ 파일이 너무 큽니다: ${(f.size/1024/1024).toFixed(1)} MB (최대 5 MB)`
+          : `선택: ${f.name} (${(f.size/1024).toFixed(0)} KB)`;
       }
     };
   }, 50);
@@ -589,7 +597,10 @@ function newsForm(news, media, item, idx) {
     if (fi) fi.onchange = () => {
       if (fi.files[0]) {
         $('#news-img-url').value = '';
-        $('#news-up-status').textContent = `선택: ${fi.files[0].name} (${(fi.files[0].size/1024).toFixed(0)} KB)`;
+        const f = fi.files[0];
+        $('#news-up-status').textContent = f.size > MAX_IMG_BYTES
+          ? `⚠️ 파일이 너무 큽니다: ${(f.size/1024/1024).toFixed(1)} MB (최대 5 MB)`
+          : `선택: ${f.name} (${(f.size/1024).toFixed(0)} KB)`;
       }
     };
   }, 50);
@@ -736,7 +747,10 @@ function galleryForm(items, item, idx) {
     if (fi) fi.onchange = () => {
       if (fi.files[0]) {
         $('#gal-src').value = '';
-        $('#up-status').textContent = `선택: ${fi.files[0].name} (${(fi.files[0].size/1024).toFixed(0)} KB)`;
+        const f = fi.files[0];
+        $('#up-status').textContent = f.size > MAX_IMG_BYTES
+          ? `⚠️ 파일이 너무 큽니다: ${(f.size/1024/1024).toFixed(1)} MB (최대 5 MB)`
+          : `선택: ${f.name} (${(f.size/1024).toFixed(0)} KB)`;
       }
     };
   }, 50);
@@ -895,7 +909,10 @@ function memberForm(members, grp, item, idx) {
     if (fi) fi.onchange = () => {
       if (fi.files[0]) {
         $('#mem-photo-url').value = '';
-        $('#mem-up-status').textContent = `선택: ${fi.files[0].name} (${(fi.files[0].size/1024).toFixed(0)} KB)`;
+        const f = fi.files[0];
+        $('#mem-up-status').textContent = f.size > MAX_IMG_BYTES
+          ? `⚠️ 파일이 너무 큽니다: ${(f.size/1024/1024).toFixed(1)} MB (최대 5 MB)`
+          : `선택: ${f.name} (${(f.size/1024).toFixed(0)} KB)`;
       }
     };
   }, 50);
