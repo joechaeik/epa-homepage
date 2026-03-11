@@ -14,6 +14,7 @@ const CONFIG = {
   galleryDir:      'images/gallery',
   publicationsDir: 'images/publications',
   membersDir:      'images/members',
+  newsDir:         'images/news',
 };
 
 // ── 상태 ───────────────────────────────────────────────────
@@ -442,6 +443,7 @@ async function secNews() {
             <div class="item-badge">
               ${n.date}
               <span class="badge ${n.category === 'Award' ? 'badge-award' : n.category === 'Honor' ? 'badge-honor' : ''}">${n.category}</span>
+              ${n.body ? '<span class="badge" style="background:#1e3a5f;color:#7dd3fc">📝 게시글</span>' : ''}
               ${n.pinned ? '<span class="badge badge-pin">📌 고정</span>' : ''}
             </div>
             <div class="item-title">${esc(n.title)}</div>
@@ -522,8 +524,25 @@ function newsForm(news, media, item, idx) {
       <textarea name="title" rows="2" required>${esc(item.title)}</textarea>
     </div>
     <div class="form-group">
-      <label>링크 URL</label>
-      <input type="url" name="link" value="${esc(item.link || '#')}" />
+      <label>본문 내용
+        <span class="label-hint">(입력 시 상세 페이지 생성 · 일반 텍스트 또는 HTML 가능)</span>
+      </label>
+      <textarea id="news-body" name="body" rows="10" placeholder="본문을 입력하세요.&#10;&#10;단락 구분은 빈 줄로, HTML 태그도 사용 가능합니다.">${esc(item.body || '')}</textarea>
+    </div>
+    <div class="form-group">
+      <label>대표 이미지 URL <span class="label-hint">(URL 입력 또는 아래에서 업로드)</span></label>
+      <input type="text" id="news-img-url" name="image" value="${esc(item.image || '')}" placeholder="https://…" />
+    </div>
+    <div class="form-group">
+      <label>이미지 파일 업로드 <span class="label-hint">(GitHub images/news/ 에 저장)</span></label>
+      <input type="file" id="news-img-file" accept="image/*" />
+      <div id="news-up-status" class="upload-status"></div>
+    </div>
+    <div class="form-group">
+      <label>원문 링크 URL
+        <span class="label-hint">(본문 있으면 '원문 보기' 버튼 · 본문 없으면 클릭 시 이동)</span>
+      </label>
+      <input type="text" name="link" value="${esc(item.link && item.link !== '#' ? item.link : '')}" placeholder="https://…" />
     </div>
     <div class="form-group checkbox-group">
       <label>
@@ -532,20 +551,48 @@ function newsForm(news, media, item, idx) {
       </label>
     </div>`,
   async (form) => {
+    const fileInput = $('#news-img-file');
+    const statusEl  = $('#news-up-status');
+    let image = $('#news-img-url').value.trim();
+
+    if (fileInput.files[0] && !image) {
+      statusEl.textContent = '업로드 중…';
+      const f    = fileInput.files[0];
+      const name = `${Date.now()}_${f.name.replace(/\s+/g, '_')}`;
+      image = await ghUploadImage(`${CONFIG.newsDir}/${name}`, f);
+    }
+
+    const body = form.body.value.trim();
+    const link = form.link.value.trim() || '#';
+
     const entry = {
       id:       item.id || Date.now(),
       date:     form.date.value,
       title:    form.title.value.trim(),
       category: form.category.value,
-      link:     form.link.value.trim() || '#',
       pinned:   form.pinned.checked,
     };
+    if (body)  entry.body  = body;
+    if (image) entry.image = image;
+    if (link !== '#') entry.link = link;
+    else entry.link = '#';
+
     const updated = [...news];
     if (isNew) updated.unshift(entry); else updated[idx] = entry;
     await saveNewsFile(updated, media, `${isNew ? 'Add' : 'Update'} news: ${entry.title.slice(0, 60)}`);
     showToast('저장됐습니다!');
     secNews();
   });
+
+  setTimeout(() => {
+    const fi = $('#news-img-file');
+    if (fi) fi.onchange = () => {
+      if (fi.files[0]) {
+        $('#news-img-url').value = '';
+        $('#news-up-status').textContent = `선택: ${fi.files[0].name} (${(fi.files[0].size/1024).toFixed(0)} KB)`;
+      }
+    };
+  }, 50);
 }
 
 function mediaForm(news, media, item, idx) {

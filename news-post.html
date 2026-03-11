@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News — EPA Lab @ KENTECH</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { theme: { extend: { colors: { primary: '#0c4a6e', accent: '#0ea5e9' }, fontFamily: { sans: ['Inter','sans-serif'] } } } }</script>
+  <style>
+    .prose-body p   { margin-bottom: 1rem; }
+    .prose-body img { max-width: 100%; border-radius: .75rem; margin: 1.5rem 0; }
+    .prose-body h2  { font-size: 1.25rem; font-weight: 700; margin: 1.5rem 0 .5rem; color: #1e293b; }
+    .prose-body h3  { font-size: 1.1rem;  font-weight: 600; margin: 1.25rem 0 .4rem; color: #334155; }
+    .prose-body ul, .prose-body ol { padding-left: 1.5rem; margin-bottom: 1rem; }
+    .prose-body li  { margin-bottom: .25rem; }
+    .prose-body a   { color: #0ea5e9; text-decoration: underline; }
+    .prose-body blockquote { border-left: 3px solid #0ea5e9; padding-left: 1rem; color: #64748b; margin: 1rem 0; font-style: italic; }
+    .line-clamp-2   { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  </style>
+</head>
+<body class="font-sans">
+
+<!-- NAVBAR -->
+<nav id="navbar" class="py-4 px-6">
+  <div class="max-w-6xl mx-auto flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3 no-underline">
+      <div class="w-8 h-8 rounded-lg bg-accent flex items-center justify-center flex-shrink-0">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </div>
+      <div>
+        <div class="nav-logo-text text-white font-bold text-sm leading-tight">EPA Lab</div>
+        <div class="text-white/50 text-xs leading-tight">KENTECH</div>
+      </div>
+    </a>
+    <div class="desktop-nav flex items-center gap-8">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="research.html" class="nav-link">Research</a>
+      <a href="members.html" class="nav-link">Members</a>
+      <a href="publications.html" class="nav-link">Publications</a>
+      <a href="news.html" class="nav-link active">News</a>
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="mailto:wchoi@kentech.ac.kr" class="btn-outline text-sm py-2 px-4">Contact</a>
+    </div>
+    <button id="mobile-menu-btn" class="mobile-menu-btn text-white p-2 flex-col gap-1.5 cursor-pointer border-0 bg-transparent">
+      <span class="block w-6 h-0.5 bg-white rounded"></span>
+      <span class="block w-6 h-0.5 bg-white rounded"></span>
+      <span class="block w-6 h-0.5 bg-white rounded"></span>
+    </button>
+  </div>
+</nav>
+<div id="mobile-menu">
+  <button id="mobile-menu-close" class="absolute top-6 right-6 text-white text-3xl bg-transparent border-0 cursor-pointer">✕</button>
+  <a href="index.html" class="nav-link">Home</a><a href="research.html" class="nav-link">Research</a>
+  <a href="members.html" class="nav-link">Members</a><a href="publications.html" class="nav-link">Publications</a>
+  <a href="news.html" class="nav-link">News</a><a href="gallery.html" class="nav-link">Gallery</a>
+</div>
+
+<!-- POST CONTENT -->
+<section class="pt-32 pb-20 bg-white min-h-screen">
+  <div class="max-w-3xl mx-auto px-6">
+    <div id="post-content"></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-12 px-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid md:grid-cols-3 gap-10 mb-10">
+      <div>
+        <div class="flex items-center gap-2 mb-3">
+          <div class="w-7 h-7 rounded-md bg-accent flex items-center justify-center">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/></svg>
+          </div>
+          <span class="text-white font-bold text-sm">EPA Lab @ KENTECH</span>
+        </div>
+        <p class="text-white/40 text-xs leading-relaxed">Eco-friendly Photoenergy Application Laboratory<br/>Department of Energy Engineering, KENTECH</p>
+      </div>
+      <div>
+        <h4 class="text-white/70 font-semibold text-xs tracking-widest uppercase mb-3">Quick Links</h4>
+        <div class="flex flex-col gap-2">
+          <a href="index.html">Home</a><a href="research.html">Research</a>
+          <a href="members.html">Members</a><a href="publications.html">Publications</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-white/70 font-semibold text-xs tracking-widest uppercase mb-3">Contact</h4>
+        <address class="not-italic text-xs leading-relaxed text-white/40">
+          21 Kentech-gil, Naju-si, Jeollanam-do, 58330, Republic of Korea<br/>
+          <a href="mailto:wchoi@kentech.ac.kr" class="text-accent/80 hover:text-accent">wchoi@kentech.ac.kr</a>
+        </address>
+      </div>
+    </div>
+    <div class="border-t border-white/10 pt-6">
+      <p class="text-white/30 text-xs">Copyright © 2016–2026 EPA Lab. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="data/news.js"></script>
+<script>
+(function () {
+  const params = new URLSearchParams(location.search);
+  const id = params.get('id');
+  const el  = document.getElementById('post-content');
+
+  if (typeof NEWS === 'undefined' || !id) {
+    el.innerHTML = '<p class="text-slate-400 text-center py-20">게시글을 찾을 수 없습니다. <a href="news.html" class="text-accent underline">목록으로</a></p>';
+    return;
+  }
+
+  const post = NEWS.find(n => String(n.id) === String(id));
+  if (!post || !post.body) {
+    el.innerHTML = '<p class="text-slate-400 text-center py-20">게시글을 찾을 수 없습니다. <a href="news.html" class="text-accent underline">목록으로</a></p>';
+    return;
+  }
+
+  document.title = post.title + ' — EPA Lab @ KENTECH';
+
+  const catColor = c =>
+    c === 'Award'    ? 'bg-amber-100 text-amber-700 border-amber-200' :
+    c === 'Honor'    ? 'bg-sky-100 text-sky-700 border-sky-200'       :
+    c === 'Research' ? 'bg-emerald-100 text-emerald-700 border-emerald-200' :
+    'bg-slate-100 text-slate-600 border-slate-200';
+
+  const renderBody = body => {
+    if (!body) return '';
+    if (/<[a-z][\s\S]*>/i.test(body)) return body;
+    return body.split(/\n\n+/).map(p => `<p>${p.replace(/\n/g, '<br>')}</p>`).join('');
+  };
+
+  const d       = new Date(post.date);
+  const dateStr = d.toLocaleDateString('ko', { year: 'numeric', month: 'long', day: 'numeric' });
+
+  // Prev / Next (body posts only, sorted newest first)
+  const all  = NEWS.filter(n => n.body).sort((a, b) => new Date(b.date) - new Date(a.date));
+  const ci   = all.findIndex(n => String(n.id) === String(id));
+  const prev = all[ci + 1];
+  const next = all[ci - 1];
+
+  el.innerHTML = `
+    <a href="news.html" class="inline-flex items-center gap-2 text-sm text-slate-500 hover:text-accent mb-10 no-underline transition-colors">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+      뉴스 목록으로
+    </a>
+
+    <div class="mb-3 flex items-center gap-3 flex-wrap">
+      <span class="text-xs font-bold px-2.5 py-1 rounded border ${catColor(post.category)}">${post.category}</span>
+      <span class="text-slate-400 text-sm">${dateStr}</span>
+    </div>
+
+    <h1 class="text-2xl md:text-3xl font-extrabold text-slate-900 leading-tight mb-8">${post.title}</h1>
+
+    ${post.image ? `<img src="${post.image}" alt="${post.title}" class="w-full rounded-xl mb-8 object-cover max-h-96" />` : ''}
+
+    <div class="prose-body text-slate-700 leading-relaxed text-base border-b border-slate-100 pb-10 mb-8">
+      ${renderBody(post.body)}
+    </div>
+
+    ${(post.link && post.link !== '#') ? `
+    <div class="mb-10">
+      <a href="${post.link}" target="_blank" rel="noopener"
+         class="inline-flex items-center gap-2 text-sm font-medium text-accent hover:underline no-underline">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+        원문 보기
+      </a>
+    </div>` : ''}
+
+    <div class="flex gap-4 pt-2">
+      <div class="flex-1">
+        ${prev ? `
+        <a href="news-post.html?id=${prev.id}" class="flex flex-col gap-1 p-4 bg-slate-50 hover:bg-slate-100 rounded-xl transition-colors no-underline group">
+          <span class="text-xs text-slate-400">← 이전 글</span>
+          <span class="text-sm text-slate-700 group-hover:text-accent transition-colors font-medium line-clamp-2">${prev.title}</span>
+        </a>` : '<div></div>'}
+      </div>
+      <div class="flex-1 text-right">
+        ${next ? `
+        <a href="news-post.html?id=${next.id}" class="flex flex-col items-end gap-1 p-4 bg-slate-50 hover:bg-slate-100 rounded-xl transition-colors no-underline group">
+          <span class="text-xs text-slate-400">다음 글 →</span>
+          <span class="text-sm text-slate-700 group-hover:text-accent transition-colors font-medium line-clamp-2">${next.title}</span>
+        </a>` : '<div></div>'}
+      </div>
+    </div>
+  `;
+})();
+</script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
