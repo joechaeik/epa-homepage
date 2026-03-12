@@ -112,5 +112,11 @@ var GALLERY = [
     "caption": "2019 EPA Workshop group photo-1",
     "category": "Group",
     "year": 2019
+  },
+  {
+    "src": "https://epa.kentech.ac.kr/files/attach/images/2083/992/003/ea741013d98f75c38bc01e74aaf836e3.png",
+    "caption": "3rd Seminar of the NSFC-NRF Major International Joint Research Project-3",
+    "category": "Seminar",
+    "year": 2019
   }
 ];
