@@ -59,7 +59,7 @@ var NEWS = [
     "date": "2024-09-04",
     "title": "도레이과학진흥재단 과학기술상에 최원용·이필호 교수",
     "category": "Honor",
-    "pinned": false,
+    "pinned": true,
     "link": "#"
   },
   {
