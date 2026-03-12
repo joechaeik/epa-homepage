@@ -163,6 +163,8 @@ function initials(name) {
         <div class="flex flex-wrap gap-3">
           ${prof.email ? `<a href="mailto:${prof.email}" class="inline-flex items-center gap-2 text-sm font-semibold text-slate-700 border border-slate-200 rounded-lg px-4 py-2 hover:border-accent hover:text-accent transition-colors no-underline">✉ Email</a>` : ''}
           ${prof.links?.google_scholar ? `<a href="${prof.links.google_scholar}" target="_blank" class="inline-flex items-center gap-2 text-sm font-semibold text-slate-700 border border-slate-200 rounded-lg px-4 py-2 hover:border-accent hover:text-accent transition-colors no-underline">Scholar</a>` : ''}
+          ${prof.cv?.en ? `<a href="${prof.cv.en}" download class="inline-flex items-center gap-2 text-sm font-semibold text-slate-700 border border-slate-200 rounded-lg px-4 py-2 hover:border-accent hover:text-accent transition-colors no-underline">CV (EN)</a>` : ''}
+          ${prof.cv?.ko ? `<a href="${prof.cv.ko}" download class="inline-flex items-center gap-2 text-sm font-semibold text-slate-700 border border-slate-200 rounded-lg px-4 py-2 hover:border-accent hover:text-accent transition-colors no-underline">CV (KR)</a>` : ''}
         </div>
       </div>
     </div>
