@@ -146,7 +146,12 @@ function catColor(cat) {
 // Pinned
 (function() {
   const el = document.getElementById('pinned-news');
-  const pinned = NEWS.filter(n => n.pinned);
+  let pinned = NEWS.filter(n => n.pinned);
+  if (!pinned.length) {
+    pinned = NEWS.filter(n => n.category === 'Award' || n.category === 'Honor')
+                 .sort((a,b) => new Date(b.date)-new Date(a.date))
+                 .slice(0,4);
+  }
   if (!pinned.length) { el.closest('section').style.display = 'none'; return; }
   el.innerHTML = pinned.map((n, i) => {
     const d = new Date(n.date);

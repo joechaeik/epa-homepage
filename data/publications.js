@@ -5,7 +5,7 @@ var PUBLICATIONS = [
     "journal": "ACS Energy Lett.",
     "journal_info": "in press",
     "authors": "D. Pan, J. Yang, D. Vidyasagar, D. Kwon, U. Muliane, G.H. Gu, W. Kim, J. Kim, M.H. Oh, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acsenergylett.5c03504.s001",
     "image": ""
   },
   {
@@ -14,7 +14,7 @@ var PUBLICATIONS = [
     "journal": "Adv. Funct. Mater.",
     "journal_info": "in press",
     "authors": "F. He, S. Sun, B. Cai, R. Tian, M. W. Chung, S. Weon, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1002/adfm.202528361",
     "image": ""
   },
   {
@@ -23,7 +23,7 @@ var PUBLICATIONS = [
     "journal": "Nature Commun.",
     "journal_info": "16 (2025) 11024",
     "authors": "S. Zhao, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1038/s41467-025-66008-z",
     "image": ""
   },
   {
@@ -32,7 +32,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "59 (2025) 19502-19512",
     "authors": "Y. Hu, J. Du, H.Y. Chung, K. Kim, G. Lee, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acs.est.5c09710",
     "image": ""
   },
   {
@@ -41,7 +41,7 @@ var PUBLICATIONS = [
     "journal": "Chem Catal.",
     "journal_info": "5 (2025) 101539",
     "authors": "D. Vidyasagar, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.checat.2025.101539",
     "image": ""
   },
   {
@@ -50,7 +50,7 @@ var PUBLICATIONS = [
     "journal": "Proc. Natl. Acad. Sci. USA",
     "journal_info": "122 (2025) e2421822122",
     "authors": "Y. Won, S. Lee, S. Lee, S. H. Park, J. Lim, W. Choi, G. Lee",
-    "doi": "",
+    "doi": "https://doi.org/10.1073/pnas.2421822122",
     "image": ""
   },
   {
@@ -59,7 +59,7 @@ var PUBLICATIONS = [
     "journal": "Adv. Funct. Mater.",
     "journal_info": "2503925 (2025)",
     "authors": "Y. Wang, Q. Zeng, H. Ji, R. Wang, J. Wang, Y. Wen, W. Choi, Q. Zeng",
-    "doi": "",
+    "doi": "https://doi.org/10.1002/adfm.202503925",
     "image": ""
   },
   {
@@ -77,7 +77,7 @@ var PUBLICATIONS = [
     "journal": "ACS ES&T Eng.",
     "journal_info": "5 (2025) 942-952",
     "authors": "U. Muliane, S. N. Lou, S. Lee, F. He, S. Zhao, K. Kato, A. Yamakata, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acsestengg.4c00738.s001",
     "image": ""
   },
   {
@@ -86,7 +86,7 @@ var PUBLICATIONS = [
     "journal": "Adv. Funct. Mater.",
     "journal_info": "2424128 (2025)",
     "authors": "X. Li, Q. Dong, J. Wang, X. Liang, P. K.J. Robertson, F. Li, M. Guo, W. Choi, C. Wang",
-    "doi": "",
+    "doi": "https://doi.org/10.1002/adfm.202424128",
     "image": ""
   },
   {
@@ -113,7 +113,7 @@ var PUBLICATIONS = [
     "journal": "ACS Nano",
     "journal_info": "18 (2024) 29233-29247",
     "authors": "Y.-X. Li, Y. Hu, H.-S. Bae, J. Du, S. Zhao, D. Pan, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acsnano.4c11606",
     "image": ""
   },
   {
@@ -122,7 +122,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "58 (2024) 17948-17958",
     "authors": "Y. Wu, H. Wang, J. Du, Y. Hu, Q. Wu, W. Guo, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acs.est.4c07493",
     "image": ""
   },
   {
@@ -131,7 +131,7 @@ var PUBLICATIONS = [
     "journal": "Nature Commun.",
     "journal_info": "15 (2024) 7243",
     "authors": "D. Pan, M. Austeria P, S. Lee, H.-S. Bae, F. He, G. H. Gu, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1038/s41467-024-51256-2",
     "image": ""
   },
   {
@@ -140,7 +140,7 @@ var PUBLICATIONS = [
     "journal": "J. Photochem. Photobiol. A: Chem.",
     "journal_info": "456 (2024) 115854",
     "authors": "J. Park, J. Yi, S. Kim, G.-h. Moon, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.2139/ssrn.4846428",
     "image": ""
   },
   {
@@ -149,7 +149,7 @@ var PUBLICATIONS = [
     "journal": "Chem Catal.",
     "journal_info": "4 (2024) 101058",
     "authors": "S. Zhao, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.checat.2024.101058",
     "image": ""
   },
   {
@@ -158,7 +158,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ. Energy",
     "journal_info": "357 (2024) 124256",
     "authors": "K. T. Wong, C. E. Choong, W. Kim, Y. Yoon, W. Choi, E. H. Choi, M. Jang",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2024.124256",
     "image": ""
   },
   {
@@ -167,7 +167,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "341 (2024) 123287",
     "authors": "C. Kim, S. Kim, Y. Park, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2023.123287",
     "image": ""
   },
   {
@@ -176,7 +176,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "340 (2024) 123167",
     "authors": "T. H. Jeon, C. Park, U. Kang, G.-h. Moon, W. Kim, H. Park, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2023.123167",
     "image": ""
   },
   {
@@ -185,7 +185,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "57 (2023) 20272-20281",
     "authors": "J. Du, Y. Hu, K. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acs.est.3c07278",
     "image": ""
   },
   {
@@ -203,7 +203,7 @@ var PUBLICATIONS = [
     "journal": "Adv. Optical Mater.",
     "journal_info": "2301625 (2023)",
     "authors": "C. Yazhini, G. Mathew, M. Anpo, G. Maurin, W. Choi, B. Neppolian.",
-    "doi": "",
+    "doi": "https://doi.org/10.1002/adom.202301625",
     "image": ""
   },
   {
@@ -212,7 +212,7 @@ var PUBLICATIONS = [
     "journal": "ACS Catal.",
     "journal_info": "13 (2023) 12269-12280",
     "authors": "Y. Hu, J. Du, G.-h. Moon, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acscatal.3c03342",
     "image": ""
   },
   {
@@ -221,7 +221,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. A",
     "journal_info": "127 (2023) 6861–6864",
     "authors": "K. Cho, W. Choi, D. Bahnemann",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acs.jpca.3c04805",
     "image": ""
   },
   {
@@ -230,7 +230,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. A",
     "journal_info": "127 (2023) 6859–6860",
     "authors": "K. Cho, W. Choi, D. Bahnemann",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acs.jpca.3c04803",
     "image": ""
   },
   {
@@ -239,7 +239,7 @@ var PUBLICATIONS = [
     "journal": "Chem. Eng. J.",
     "journal_info": "468 (2023) 143680",
     "authors": "M. Wang, Z. Xu, Z. Qi, Y. Cai, G. Li, W. Choi, T. An",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.cej.2023.143680",
     "image": ""
   },
   {
@@ -248,7 +248,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. C",
     "journal_info": "127 (2023) 10968-10976",
     "authors": "B. Kim, C. W. Yoon, W. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acs.jpcc.3c02599",
     "image": ""
   },
   {
@@ -257,7 +257,7 @@ var PUBLICATIONS = [
     "journal": "Angew. Chem. Int. Ed.",
     "journal_info": "e202303890 (2023)",
     "authors": "S. Dutta, A. Gurumoorthi, S. Lee, S. W. Jang, N. Kumari, Y.-R. Hong, W. Choi, C. Y. Son, I. S. Lee",
-    "doi": "",
+    "doi": "https://doi.org/10.1002/ange.202303890",
     "image": ""
   },
   {
@@ -266,7 +266,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "57 (2023) 5317-5326",
     "authors": "J. Du, K. Kim, S. Son, D. Pan, S. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acs.est.3c00604",
     "image": ""
   },
   {
@@ -275,7 +275,7 @@ var PUBLICATIONS = [
     "journal": "Acc. Chem. Res.",
     "journal_info": "56 (2023) 867-877",
     "authors": "S. Lee, H.-S. Bae, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acs.accounts.3c00002",
     "image": ""
   },
   {
@@ -284,7 +284,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. C",
     "journal_info": "127 (2023) 5246-5254",
     "authors": "S. N. Lou, V. K. Paidi, K.-S. Lee, H. Park, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acs.jpcc.3c00452",
     "image": ""
   },
   {
@@ -293,7 +293,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "328 (2023) 122485",
     "authors": "M.-C. Kim, J. Chung, T.-Y. An, J. Lee, M.-K. Han, S. Lee, W. Choi, J. K. Kim, S. S. Han, U. Sim, T. Yu",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2023.122485",
     "image": ""
   },
   {
@@ -302,7 +302,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "327 (2023) 122432",
     "authors": "S. Lee, Y. Lee, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2023.122432",
     "image": ""
   },
   {
@@ -311,7 +311,7 @@ var PUBLICATIONS = [
     "journal": "ACS Catal.",
     "journal_info": "13 (2023) 2790-2801",
     "authors": "Y. Zhao, J. Gao, Z. Yang, L. Li, J. Cui, P. Zhang, C. Hu, C. Diao, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acscatal.2c06359",
     "image": ""
   },
   {
@@ -320,7 +320,7 @@ var PUBLICATIONS = [
     "journal": "Adv. Funct. Mater.",
     "journal_info": "2212453 (2023)",
     "authors": "B. Kim, D. Kwon, J.-O. Baeg, M. Austeria P, G. H. Gu, J.-H. Lee, J. Jeong, W. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1002/adfm.202212453",
     "image": ""
   },
   {
@@ -329,7 +329,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Energy",
     "journal_info": "5 (2023) 012004",
     "authors": "D. Bahnemann, P. Robertson, C. Wang, W. Choi, H. Daly, M. Danish, H. d. Lasa, S. Escobedo, C. Hardacre, T. H. Jeon, B. Kim, H. Kisch, W. Li, M. Long, M. Muneer, N. Skillen, J. Zhang",
-    "doi": "",
+    "doi": "https://doi.org/10.1088/2515-7655/aca9fd",
     "image": ""
   },
   {
@@ -338,7 +338,7 @@ var PUBLICATIONS = [
     "journal": "Catal. Today",
     "journal_info": "410 (2023) 45-55",
     "authors": "L. Ren, W. Huo, G. Li, W. Choi, T. An",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.cattod.2022.04.027",
     "image": ""
   },
   {
@@ -347,7 +347,7 @@ var PUBLICATIONS = [
     "journal": "ACS Appl. Energy Mater.",
     "journal_info": "6 (2023) 1126-1133",
     "authors": "C.-X. Liu, D.-L. Pan, Y. Seo, S. Park, J.-L. Kan, J. Y. Koo, W. Choi, E. Lee",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acsaem.2c03897",
     "image": ""
   },
   {
@@ -356,7 +356,7 @@ var PUBLICATIONS = [
     "journal": "Chemosphere",
     "journal_info": "308 (2022) 136350",
     "authors": "M. Lee, H. Yim, B. Kim, S. Kim, W. Choi, W. Kim, H.-i. Kim",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.chemosphere.2022.136350",
     "image": ""
   },
   {
@@ -365,7 +365,7 @@ var PUBLICATIONS = [
     "journal": "ACS Catal.",
     "journal_info": "12 (2022) 11436-11443",
     "authors": "Z. Wei, S. Zhao, W. Li, X. Zhao, C. Chen, D. L. Phillips, Y. Zhu, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acscatal.2c03288",
     "image": ""
   },
   {
@@ -374,7 +374,7 @@ var PUBLICATIONS = [
     "journal": "Chem Catal.",
     "journal_info": "2 (2022) 1517-1519",
     "authors": "Y.-X. Li, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.checat.2022.06.019",
     "image": ""
   },
   {
@@ -383,7 +383,7 @@ var PUBLICATIONS = [
     "journal": "ACS ES&T Engineering",
     "journal_info": "2 (2022) 1116-1129",
     "authors": "S. N. Lou, J. Lim, T. H. Jeon, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acsestengg.2c00009",
     "image": ""
   },
   {
@@ -392,7 +392,7 @@ var PUBLICATIONS = [
     "journal": "ACS ES&T Engineering",
     "journal_info": "2 (2022) 940-941",
     "authors": "W. Choi, F. Dong, M. Hatzell, G. Mul",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acsestengg.2c00182",
     "image": ""
   },
   {
@@ -401,7 +401,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. C",
     "journal_info": "126 (2022) 6982-6989",
     "authors": "T. H. Jeon, Z.-Y. Wu, F.-Y. Chen, W. Choi, P. Alvarez, H. Wang",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acs.jpcc.1c10781",
     "image": ""
   },
   {
@@ -410,7 +410,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "56 (2022) 1007-1016",
     "authors": "J. Du, K. Kim, D. W. Min, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acs.est.1c06747",
     "image": ""
   },
   {
@@ -419,7 +419,7 @@ var PUBLICATIONS = [
     "journal": "ACS Energy Lett.",
     "journal_info": "7 (2022) 59-66",
     "authors": "T. H. Jeon, S. Han, B. Kim, C. Park, W. Kim, H. Park, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acsenergylett.1c02430",
     "image": ""
   },
   {
@@ -428,7 +428,7 @@ var PUBLICATIONS = [
     "journal": "ACS ES&T Engineering",
     "journal_info": "2 (2022) 232-241",
     "authors": "C. Kim, S. Chae, Y. Park, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acsestengg.1c00363.s001",
     "image": ""
   },
   {
@@ -437,7 +437,7 @@ var PUBLICATIONS = [
     "journal": "Chem. Eng. J.",
     "journal_info": "429 (2022) 132108",
     "authors": "C. Kim, J. Lim, S. Kim, Y. Park, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.cej.2021.132108",
     "image": ""
   },
   {
@@ -446,7 +446,7 @@ var PUBLICATIONS = [
     "journal": "Chem. Eng. J.",
     "journal_info": "428 (2022) 131177",
     "authors": "K. Vikrant, K.-H. Kim, F. Dong, D. W. Boukhvalov, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.cej.2021.131177",
     "image": ""
   },
   {
@@ -455,7 +455,7 @@ var PUBLICATIONS = [
     "journal": "Chem. Eng. J.",
     "journal_info": "428 (2022) 131134",
     "authors": "K. Kim, N. T. H. Le, A. Q. K. Nguyen, Y.-Y. Ahn, B. Kim, G. Shin, W. Choi, J. Kim",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.cej.2021.131134",
     "image": ""
   },
   {
@@ -464,7 +464,7 @@ var PUBLICATIONS = [
     "journal": "ACS Catal.",
     "journal_info": "11 (2021) 14941-14955",
     "authors": "Y. Hu, P. Zhang, J. Du, C. Kim, S. Han, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acscatal.1c04564",
     "image": ""
   },
   {
@@ -482,7 +482,7 @@ var PUBLICATIONS = [
     "journal": "Electrochimica Acta",
     "journal_info": "395 (2021) 139190",
     "authors": "J. Lim, H. Lim, B. Kim, S. M. Kim, J.-B. Lee, K. R. Cho, H. Choi, S. Sultan, W. Choi, W. Kim, Y. Kwon",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.electacta.2021.139190",
     "image": ""
   },
   {
@@ -491,7 +491,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "299 (2021) 120666",
     "authors": "H. Kim, K. Shim, K. E. Lee, J. W. Han, Y. Zhu, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2021.120666",
     "image": ""
   },
   {
@@ -500,7 +500,7 @@ var PUBLICATIONS = [
     "journal": "ACS ES&T Engineering",
     "journal_info": "1 (2021) 1287-1297",
     "authors": "M. S. Koo, S. Han, K. Cho, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acsestengg.1c00119",
     "image": ""
   },
   {
@@ -509,7 +509,7 @@ var PUBLICATIONS = [
     "journal": "Mater. Chem. Frontiers",
     "journal_info": "5 (2021) 6592-6602",
     "authors": "T. H. Jeon, H.-i. Cho, H. Park, H.-i. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1039/d1qm00847a",
     "image": ""
   },
   {
@@ -518,7 +518,7 @@ var PUBLICATIONS = [
     "journal": "Energy Environ. Sci.",
     "journal_info": "14 (2021) 4437-4450",
     "authors": "S. Lee, S. Kim, C. Park, W. Kim, S. Ryu, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1039/d1ee01342d",
     "image": ""
   },
   {
@@ -527,7 +527,7 @@ var PUBLICATIONS = [
     "journal": "Nature Commun.",
     "journal_info": "12 (2021) 3701",
     "authors": "Y. Zhao, P. Zhang, Z. Yang, L. Li, J. Gao, S. Chen, T. Xie, C. Diao, S. Xi, B. Xiao, C. Hu, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1038/s41467-021-24048-1",
     "image": ""
   },
   {
@@ -536,7 +536,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "294 (2021) 120252",
     "authors": "X. Yang, H. Sun, G. Li, T. An, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2021.120252",
     "image": ""
   },
   {
@@ -545,7 +545,7 @@ var PUBLICATIONS = [
     "journal": "Nature Commun.",
     "journal_info": "12 (2021) 2528",
     "authors": "F. He, W. Jeon, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1038/s41467-021-22839-0",
     "image": ""
   },
   {
@@ -554,7 +554,7 @@ var PUBLICATIONS = [
     "journal": "Energy Environ. Sci.",
     "journal_info": "14 (2021) 3110-3119",
     "authors": "T. H. Jeon, B. Kim, C. Kim, C. Xia, H. Wang, P.J.J. Alvarez, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1039/d0ee03567j",
     "image": ""
   },
   {
@@ -563,7 +563,7 @@ var PUBLICATIONS = [
     "journal": "Chem. Eng. J.",
     "journal_info": "412 (2021) 128612",
     "authors": "H. Rajput, E. E. Kwon, S. A. Younis, S. Weon, T. H. Jeon, W. Choi, K.-H. Kim",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.cej.2021.128612",
     "image": ""
   },
   {
@@ -572,7 +572,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "286 (2021) 119905",
     "authors": "J. Y. Hwang, G.-h. Moon, B. Kim, T. Tachikawa, T. Majima, S. Hong, K. Cho, W. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2021.119905",
     "image": ""
   },
   {
@@ -581,7 +581,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "283 (2021) 119663",
     "authors": "R. Yin, Y. Chen, J. Hu, G. Lu, L. Zeng, W. Choi, M. Zhu",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2020.119663",
     "image": ""
   },
   {
@@ -590,7 +590,7 @@ var PUBLICATIONS = [
     "journal": "ACS EST Engg.",
     "journal_info": "1 (2021) 228−238",
     "authors": "M. S. Koo, H. Kim, K. E. Lee, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acsestengg.0c00070",
     "image": ""
   },
   {
@@ -599,7 +599,7 @@ var PUBLICATIONS = [
     "journal": "ACS ES&T Engineering",
     "journal_info": "1 (2021) 154-156",
     "authors": "W. Choi, N. G. Love, J.-H. Kim, J. Ma.",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acsestengg.1c00031",
     "image": ""
   },
   {
@@ -608,7 +608,7 @@ var PUBLICATIONS = [
     "journal": "ACS EST Engg.",
     "journal_info": "1 (2021) 1-2",
     "authors": "W. Choi, N. G. Love, J.-H. Kim, J. Ma.",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acsestengg.0c00130",
     "image": ""
   },
   {
@@ -617,7 +617,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "281 (2021) 119547",
     "authors": "J. Yang, H. Miao, J. Jing, Y. Zhu, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2020.119547",
     "image": ""
   },
   {
@@ -626,7 +626,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "54 (2020) 14413-14421",
     "authors": "D. W. Min, K. Kim, B. Kim, G. Lee, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acs.est.0c04851",
     "image": ""
   },
   {
@@ -635,7 +635,7 @@ var PUBLICATIONS = [
     "journal": "ACS Nano",
     "journal_info": "14 (2020) 10578-10588",
     "authors": "S. W. Jang, S. Dutta, A. Kumar, Y.-R. Hong, H. Kang, S. Lee, S. Ryu, W. Choi, I. S. Lee",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acsnano.0c04628",
     "image": ""
   },
   {
@@ -644,7 +644,7 @@ var PUBLICATIONS = [
     "journal": "Carbon Energy",
     "journal_info": "2 (2020) 308-349",
     "authors": "Y. Guo, H. Li, W. Ma, W. Shi, Y. Zhu, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1002/cey2.66",
     "image": ""
   },
   {
@@ -653,7 +653,7 @@ var PUBLICATIONS = [
     "journal": "Angew. Chem. Int. Ed.",
     "journal_info": "59 (2020) 16209-16217",
     "authors": "P. Zhang, Y. Tong, Y. Liu, J. J. M. Vequizo, H. Sun, C. Yang, A. Yamakata, F. Fan, W. Lin, X. Wang, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1002/anie.202006747",
     "image": ""
   },
   {
@@ -662,7 +662,7 @@ var PUBLICATIONS = [
     "journal": "Phys. Chem. Chem. Phys.",
     "journal_info": "22 (2020) 16532-16535",
     "authors": "Y. S. Baek, K. Kim, A. Saiz-Lopez, D. W. Min, B. Kim, W. Choi, C. H. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1039/d0cp02966a",
     "image": ""
   },
   {
@@ -671,7 +671,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "275 (2020) 119145",
     "authors": "F. He, U. Muliane, S. Weon, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2020.119145",
     "image": ""
   },
   {
@@ -689,7 +689,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "54 (2020) 6427-6437",
     "authors": "H. Sun, F. He, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acs.est.0c00817",
     "image": ""
   },
   {
@@ -698,7 +698,7 @@ var PUBLICATIONS = [
     "journal": "ACS Sustain. Chem. Eng.",
     "journal_info": "8 (2020) 3709-3717",
     "authors": "S. Lee, S. Kim, C. Park, G.-h. Moon, H.-J. Son, J.-O. Baeg, W. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acssuschemeng.9b06797",
     "image": ""
   },
   {
@@ -716,7 +716,7 @@ var PUBLICATIONS = [
     "journal": "Chem. Eng. J.",
     "journal_info": "388 (2020) 124226",
     "authors": "N. T. H. Le, J. Ju, B. Kim, S. Kim, W. Choi, K. Kim, J. Kim",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.cej.2020.124226",
     "image": ""
   },
   {
@@ -734,7 +734,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "54 (2020) 497-506",
     "authors": "J. Lim, H. Kim, J. Park, G.-h. Moon, J. J. M. Vequizo, A. Yamakata, J. Lee, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acs.est.9b05044.s001",
     "image": ""
   },
   {
@@ -743,7 +743,7 @@ var PUBLICATIONS = [
     "journal": "Nano Energy",
     "journal_info": "69 (2020) 104409",
     "authors": "Z. Zeng, X. Quan, W. Choi, G. Zhang, N. Liu, S. Chen, H. Yu, B. Kim, S. Zhang",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.nanoen.2019.104409",
     "image": ""
   },
   {
@@ -761,7 +761,7 @@ var PUBLICATIONS = [
     "journal": "J. Hazard. Mater.",
     "journal_info": "384 (2020) 121298",
     "authors": "S. P. M. Menacherry, D. W. Min, D. Jeong, C. T. Aravindakumar, W. Lee, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.jhazmat.2019.121298",
     "image": ""
   },
   {
@@ -770,7 +770,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "260 (2020) 118146",
     "authors": "D.-h. Kim, G.-h. Moon, M. S. Koo, H.-i. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2019.118146",
     "image": ""
   },
   {
@@ -779,7 +779,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci.: Nano",
     "journal_info": "6 (2019) 3185-3214",
     "authors": "S. Weon, F. He, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1039/c9en00891h",
     "image": ""
   },
   {
@@ -788,7 +788,7 @@ var PUBLICATIONS = [
     "journal": "Chem. Eur. J.",
     "journal_info": "25 (2019) 13609-13623",
     "authors": "P. S. Kim, S. Choi, S.-Y. Kim, J. H. Jo, Y. S. Lee, B. Kim, W. Kim, W. Choi, C. H. Kim, Ho-Jin Son, C. Pac, S. O. Kang",
-    "doi": "",
+    "doi": "https://doi.org/10.1002/chem.201903136",
     "image": ""
   },
   {
@@ -797,7 +797,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "259 (2019) 118066",
     "authors": "Y. Park, C. Kim, M. Kim, S. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2019.118066",
     "image": ""
   },
   {
@@ -815,7 +815,7 @@ var PUBLICATIONS = [
     "journal": "J. Catal.",
     "journal_info": "377 (2019) 72-80",
     "authors": "Z. Zeng, X. Quan, H. Yu, S. Chen, W. Choi, B. Kim, S. Zhang",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.jcat.2019.07.018",
     "image": ""
   },
   {
@@ -824,7 +824,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "257 (2019) 117912",
     "authors": "J. Chen, Z. He, Y. Ji, G. Li, T. An, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2019.117912",
     "image": ""
   },
   {
@@ -833,7 +833,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "257 (2019) 117875",
     "authors": "S. Son, J. M. Lee, S.-J. Kim, H. Kim, X. Jin, K. K. Wang, M. Kim, J. W. Hwang, W. Choi, Y.-R. Kim, H. Kim, S.-J. Hwang",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2019.117875",
     "image": ""
   },
   {
@@ -842,7 +842,7 @@ var PUBLICATIONS = [
     "journal": "J. Advances in Modeling Earth Systems",
     "journal_info": "11 (2019) 2259-2289",
     "authors": "R. P. Fernandez, A. Carmona-Balea, C. A. Cuevas, J. A. Barrera, D. E. Kinnison, J.-F. Lamarque, C. Blaszczak-Boxe, K. Kim, W. Choi, T. Hay, A.-M. Blechschmidt, A. Schönhardt, J. P. Burrows, A. Saiz-Lopez",
-    "doi": "",
+    "doi": "https://doi.org/10.1029/2019ms001655",
     "image": ""
   },
   {
@@ -851,7 +851,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci.: Nano",
     "journal_info": "6 (2019) 2084-2093",
     "authors": "J. Lim, J. M. Lee, C. Kim, S.-J. Hwang, J. Lee, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1039/c9en00500e",
     "image": ""
   },
   {
@@ -860,7 +860,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "53 (2019) 7410-7418",
     "authors": "D. W. Min, K. Kim, K. H. Lui, B. Kim, S. Kim, J. Cho, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acs.est.9b00950",
     "image": ""
   },
   {
@@ -869,7 +869,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "53 (2019) 7355-7362",
     "authors": "K. Kim, S. P. M. Menacherry, J. Kim, H. Y. Chung, D. Jeong, A. Saiz-Lopez, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acs.est.8b06659",
     "image": ""
   },
   {
@@ -878,7 +878,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "53 (2019) 4892–4900",
     "authors": "K. Kim, J. Ju, B. Kim, H. Y. Chung, L. Vetrakova, D. Heger, A. Saiz-Lopez, W. Choi, J. Kim",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acs.est.8b06638",
     "image": ""
   },
   {
@@ -887,7 +887,7 @@ var PUBLICATIONS = [
     "journal": "ACS Appl. Mater. Interfaces",
     "journal_info": "11 (2019) 13304−13318",
     "authors": "A. Hagstrom, S. Weon, W. Choi, J.-H. Kim",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acsami.9b01945",
     "image": ""
   },
   {
@@ -896,7 +896,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "53 (2019) 2918−2925",
     "authors": "H. Kim, J. Lim, S. Lee, H.-H. Kim, C. Lee, J. Lee, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acs.est.8b06353",
     "image": ""
   },
   {
@@ -914,7 +914,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "53 (2019) 2937−2947",
     "authors": "S. Loeb, P. Alvarez, J. Brame, E. Cates, W. Choi, J. Crittenden, D. D. Dionysiou, Q. Li, G. Li Puma, X. Quan, D. Sedlak, T. D. Waite, P. Westerhoff, J.-H. Kim",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acs.est.8b05041",
     "image": ""
   },
   {
@@ -932,7 +932,7 @@ var PUBLICATIONS = [
     "journal": "Chem. Eng. J.",
     "journal_info": "358 (2019) 1594-1600",
     "authors": "C.-H. Choi, D.-H. Ko, B. Park, Y. Choi, W. Choi, D.-P. Kim",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.cej.2018.10.126",
     "image": ""
   },
   {
@@ -941,7 +941,7 @@ var PUBLICATIONS = [
     "journal": "Chem. Eng. J.",
     "journal_info": "358 (2019) 497-503",
     "authors": "S. Y. Yang, H. W. Jeong, B.-j. Kim, D. S. Han, W. Choi, H. Park",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.cej.2018.09.192",
     "image": ""
   },
   {
@@ -950,7 +950,7 @@ var PUBLICATIONS = [
     "journal": "J. Hazard. Mater.",
     "journal_info": "372 (2019) 121-128",
     "authors": "D.-h. Kim, D. Lee, D. Monllor-Satoca, K. Kim, W. Lee, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.jhazmat.2018.03.055",
     "image": ""
   },
   {
@@ -959,7 +959,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "52 (2018) 13766-13773",
     "authors": "S. P. Menacherry, K. Kim, W. Lee, C. H. Choi, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acs.est.8b04484",
     "image": ""
   },
   {
@@ -977,7 +977,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "52 (2018) 9330-9340",
     "authors": "S. Weon, E. Choi, H. Kim, J. Y. Kim, H.-J. Park, S.-m. Kim, W. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acs.est.8b02282",
     "image": ""
   },
   {
@@ -986,7 +986,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "237 (2018) 772-782",
     "authors": "Z. He, C. Kim, T. H. Jeon, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2018.06.008",
     "image": ""
   },
   {
@@ -995,7 +995,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "237 (2018) 432-441",
     "authors": "E.-T. Yun, G.-H. Moon, H. Lee, T. H. Jeon, C. Lee, W. Choi, J. Lee",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2018.04.067",
     "image": ""
   },
   {
@@ -1004,7 +1004,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "236 (2018) 154-161",
     "authors": "Y. Mun, K. Kim, S. Kim, S. Lee, S. Lee, S. Kim, W. Choi, S.-k. Kim, J. W. Han, J. Lee",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2018.05.025",
     "image": ""
   },
   {
@@ -1022,7 +1022,7 @@ var PUBLICATIONS = [
     "journal": "ACS Catal.",
     "journal_info": "8 (2018) 4241-4256",
     "authors": "C. H. Choi, L. Lin, S. Gim, S. Lee, H. Kim, X. Wang, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acscatal.7b03512",
     "image": ""
   },
   {
@@ -1031,7 +1031,7 @@ var PUBLICATIONS = [
     "journal": "Chem. Eng. J.",
     "journal_info": "346 (2018) 249-257",
     "authors": "Y. Jo, C. Kim, G.-H. Moon, J. Lee, T. An, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.cej.2018.03.150",
     "image": ""
   },
   {
@@ -1040,7 +1040,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "232 (2018) 11-18",
     "authors": "W. Zhang, G. Li, W. Wang, Y. Qin, T. An, X. Xiao, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2018.03.006",
     "image": ""
   },
   {
@@ -1049,7 +1049,7 @@ var PUBLICATIONS = [
     "journal": "ACS Catal.",
     "journal_info": "8 (2018) 2313-2325",
     "authors": "I. Ivanova, T. A. Kandiel, Y.-J. Cho, W. Choi, D. Bahnemann",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acscatal.7b04326",
     "image": ""
   },
   {
@@ -1058,7 +1058,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "229 (2018) 121-129",
     "authors": "H.-i. Kim, Y. Choi, S. Hu, W. Choi, J.-H. Kim",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2018.01.060",
     "image": ""
   },
   {
@@ -1067,7 +1067,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "225 (2018) 487-495",
     "authors": "J. Seo, H. Lee, H.-J. Lee, M. S. Kim, S. W. Hong, J. Lee, K. Cho, W. Choi, C. Lee",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2017.12.009",
     "image": ""
   },
   {
@@ -1076,7 +1076,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "225 (2018) 406-414",
     "authors": "J. Lim, D.-y. Kwak, F. Sieland, C. Kim, D. W. Bahnemann, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2017.12.025",
     "image": ""
   },
   {
@@ -1085,7 +1085,7 @@ var PUBLICATIONS = [
     "journal": "J. Catal.",
     "journal_info": "357 (2018) 51-58",
     "authors": "S. Kim, G.-h. Moon, H. Kim, Y. Mun, P. Zhang, J. Lee, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.jcat.2017.10.002",
     "image": ""
   },
   {
@@ -1094,7 +1094,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "220 (2018) 1-8",
     "authors": "S. Weon, J. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2017.08.036",
     "image": ""
   },
   {
@@ -1103,7 +1103,7 @@ var PUBLICATIONS = [
     "journal": "ACS Appl. Mater. Interfaces",
     "journal_info": "9 (2017) 40360-40368",
     "authors": "H. Kim, S. Gim, T. H. Jeon, H. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acsami.7b14191",
     "image": ""
   },
   {
@@ -1112,7 +1112,7 @@ var PUBLICATIONS = [
     "journal": "Nano Energy",
     "journal_info": "42 (2017) 58-68",
     "authors": "Z. He, C. Kim, L. Lin, T. H. Jeon, S. Lin, X. Wang, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.nanoen.2017.10.043",
     "image": ""
   },
   {
@@ -1121,7 +1121,7 @@ var PUBLICATIONS = [
     "journal": "J. Mater. Chem. A",
     "journal_info": "5 (2017) 21883-21892",
     "authors": "S. Jo, P. Verma, Y. Kuwahara, K. Mori, W. Choi, H. Yamashita",
-    "doi": "",
+    "doi": "https://doi.org/10.1039/c7ta07264c",
     "image": ""
   },
   {
@@ -1130,7 +1130,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. C",
     "journal_info": "121 (2017) 15063-15070",
     "authors": "J. S. Jang, C. W. Ahn, S. S. Won, J. H. Kim, W. Choi, B.-S. Lee, J.-H. Yoon, H. G. Kim, J. S. Lee",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acs.jpcc.7b03081",
     "image": ""
   },
   {
@@ -1139,7 +1139,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "218 (2017) 819-824",
     "authors": "G.-h. Moon, S. Kim, Y.-J. Cho, J. Lim, D.-h. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2017.07.021",
     "image": ""
   },
   {
@@ -1148,7 +1148,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "51 (2017) 8368-8375",
     "authors": "D. W. Min, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acs.est.7b00915",
     "image": ""
   },
   {
@@ -1157,7 +1157,7 @@ var PUBLICATIONS = [
     "journal": "Nano Energy",
     "journal_info": "39 (2017) 211-218",
     "authors": "T. H. Jeon, G.-h. Moon, H. Park, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.nanoen.2017.06.049",
     "image": ""
   },
   {
@@ -1175,7 +1175,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "51 (2017) 6590-6598",
     "authors": "M. S. Koo, K. Cho, J. Yoon, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acs.est.7b00774",
     "image": ""
   },
   {
@@ -1184,7 +1184,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "217 (2017) 615-621",
     "authors": "S. K. Choi, G. Piao, W. Choi, H. Park",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2017.06.020",
     "image": ""
   },
   {
@@ -1193,7 +1193,7 @@ var PUBLICATIONS = [
     "journal": "ACS Appl. Mater. Interfaces",
     "journal_info": "9 (2017) 16252-16260",
     "authors": "M. Choi, J. Lim, W. Choi, W. Kim, K. Yong",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acsami.7b03481",
     "image": ""
   },
   {
@@ -1202,7 +1202,7 @@ var PUBLICATIONS = [
     "journal": "Angew. Chem. Int. Ed.",
     "journal_info": "56 (2017) 6583-6588",
     "authors": "J. S. Kang, Y. Noh, J. Kim, H. Choi, T. H. Jeon, D. Ahn, J.-Y. Kim, S.-H. Yu, H. Park, J.-H. Yum, W. Choi, D. C. Dunand, H. Choe, Y.-E. Sung",
-    "doi": "",
+    "doi": "https://doi.org/10.1002/anie.201703326",
     "image": ""
   },
   {
@@ -1211,7 +1211,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "51 (2017) 3973-3981",
     "authors": "Y. Choi, M. S. Koo, A. Bokare, D.-h. Kim, D. Bahnemann, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acs.est.6b06303",
     "image": ""
   },
   {
@@ -1220,7 +1220,7 @@ var PUBLICATIONS = [
     "journal": "ACS Catal.",
     "journal_info": "7 (2017) 2886-2895",
     "authors": "G.-h. Moon, M. Fujitsuka, S. Kim, T. Majima, X. Wang, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acscatal.6b03334",
     "image": ""
   },
   {
@@ -1229,7 +1229,7 @@ var PUBLICATIONS = [
     "journal": "J. Catal.",
     "journal_info": "349 (2017) 128-135",
     "authors": "S. Hamid, I. Ivanova, T. H. Jeon, R. Dillert, W. Choi, D.W. Bahnemann",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.jcat.2017.02.033",
     "image": ""
   },
   {
@@ -1238,7 +1238,7 @@ var PUBLICATIONS = [
     "journal": "Int. J. Life Cycle Assess",
     "journal_info": "22 (2017) 1901-1911",
     "authors": "D. Kyung, D. Kim, S. Yi, W. Choi, W. Lee",
-    "doi": "",
+    "doi": "https://doi.org/10.1007/s11367-017-1288-9",
     "image": ""
   },
   {
@@ -1247,7 +1247,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "205 (2017) 386-392",
     "authors": "S. Weon, J. Choi, T. Park, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2016.12.048",
     "image": ""
   },
   {
@@ -1256,7 +1256,7 @@ var PUBLICATIONS = [
     "journal": "J. Catal.",
     "journal_info": "346 (2017) 92-100",
     "authors": "S. Kim, G.-h. Moon, G. Kim, U. Kang, H. Park, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.jcat.2016.11.027",
     "image": ""
   },
   {
@@ -1265,7 +1265,7 @@ var PUBLICATIONS = [
     "journal": "Catal. Today",
     "journal_info": "282 (2017) 65-70",
     "authors": "S.-H. Kang, A. D. Bokare, Y. Park, C. H. Choi, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.cattod.2016.03.009",
     "image": ""
   },
   {
@@ -1274,7 +1274,7 @@ var PUBLICATIONS = [
     "journal": "Catal. Today",
     "journal_info": "282 (2017) 57-64",
     "authors": "Y.Y. Ahn, S.Y. Yang, C. Choi, W. Choi, S. Kim and H. Park",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.cattod.2016.03.011",
     "image": ""
   },
   {
@@ -1283,7 +1283,7 @@ var PUBLICATIONS = [
     "journal": "Catal. Today",
     "journal_info": "281 (2017) 109-116",
     "authors": "G. Zhang, C. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.cattod.2016.06.048",
     "image": ""
   },
   {
@@ -1292,7 +1292,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "201 (2017) 591-599",
     "authors": "T. H. Jeon, A. D. Bokare, D. S. Han, A. Abdel-Wahab, H. Park, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2016.08.059",
     "image": ""
   },
   {
@@ -1301,7 +1301,7 @@ var PUBLICATIONS = [
     "journal": "ACS Catal.",
     "journal_info": "6 (2016) 8350-8360",
     "authors": "H.-i. Kim, H. Kim, S. Weon, G.-h. Moon, J.-H. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acscatal.6b02726",
     "image": ""
   },
   {
@@ -1310,7 +1310,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "50 (2016) 11184-11192",
     "authors": "H.-i. Kim, S. Weon, H. Kang, A. L. Hagstrom, O. S. Kwon, Y.-S. Lee, W. Choi, J.-H. Kim",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acs.est.6b02729",
     "image": ""
   },
   {
@@ -1319,7 +1319,7 @@ var PUBLICATIONS = [
     "journal": "Green Chem.",
     "journal_info": "18 (2016) 5391-5411",
     "authors": "D. Friedmann, A. Hakki, H. Kim, W. Choi, D. Bahnemann",
-    "doi": "",
+    "doi": "https://doi.org/10.1039/c6gc01582d",
     "image": ""
   },
   {
@@ -1328,7 +1328,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "50 (2016) 10545-10553",
     "authors": "J. Lim, H. Kim, P. Alvarez, J. Lee, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acs.est.6b03250",
     "image": ""
   },
   {
@@ -1337,7 +1337,7 @@ var PUBLICATIONS = [
     "journal": "J. Mater. Chem. A",
     "journal_info": "4 (2016) 14008-14016",
     "authors": "S. K. Choi, W.-S. Chae, B. Song, C.-H. Cho, J. Choi, D. S. Han, W. Choi, H. Park",
-    "doi": "",
+    "doi": "https://doi.org/10.1039/c6ta05200b",
     "image": ""
   },
   {
@@ -1346,7 +1346,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "50 (2016) 10134-10142",
     "authors": "H. Lee, H.-i. Kim, S. Weon, W. Choi, Y. S. Hwang, J. Seo, C. Lee, J.-H. Kim",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acs.est.6b02079",
     "image": ""
   },
   {
@@ -1355,7 +1355,7 @@ var PUBLICATIONS = [
     "journal": "Chem. Comm.",
     "journal_info": "52 (2016) 9636 - 9639",
     "authors": "Y.-J. Cho, G.-h. Moon, T. Kanazawa, K. Maeda, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1039/c6cc04260k",
     "image": ""
   },
   {
@@ -1364,7 +1364,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. A: General",
     "journal_info": "521 (2016) 174-181",
     "authors": "H.-i. Kim, D. Kim, W. Kim, Y.-C. Ha, S.-J. Sim, S. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcata.2015.10.039",
     "image": ""
   },
   {
@@ -1373,7 +1373,7 @@ var PUBLICATIONS = [
     "journal": "ACS Catal.",
     "journal_info": "6 (2016) 3914-3920",
     "authors": "H. Shin, H.-i. Kim, D. Y. Chung, J. M. Yoo, S. Weon, W. Choi, Y.-E. Sung",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acscatal.6b00384",
     "image": ""
   },
   {
@@ -1382,7 +1382,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "50 (2016) 2556-2563",
     "authors": "S. Weon, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acs.est.5b05418",
     "image": ""
   },
   {
@@ -1391,7 +1391,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "50 (2016) 1280-1287",
     "authors": "K. Kim, A. Yabushita, M. Okumura, A. Saiz-Lopez, C. Cuevas, C. Blaszczak-Boxe, D. W. Min, H.-I. Yoon, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acs.est.5b05148",
     "image": ""
   },
   {
@@ -1400,7 +1400,7 @@ var PUBLICATIONS = [
     "journal": "Energy Environ. Sci.",
     "journal_info": "9 (2016) 1063-1073",
     "authors": "H.-i. Kim, O. S. Kwon, S. Kim, W. Choi, J.-H. Kim",
-    "doi": "",
+    "doi": "https://doi.org/10.1039/c5ee03115j",
     "image": ""
   },
   {
@@ -1409,7 +1409,7 @@ var PUBLICATIONS = [
     "journal": "ACS Catal.",
     "journal_info": "6 (2016) 821-828",
     "authors": "Y. Choi, H.-i. Kim, G.-h. Moon, S. Jo, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acscatal.5b02376",
     "image": ""
   },
   {
@@ -1418,7 +1418,7 @@ var PUBLICATIONS = [
     "journal": "Energy Environ. Sci.",
     "journal_info": "9 (2016) 411-433",
     "authors": "H. Park, H.-i. Kim, G.-h. Moon, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1039/c5ee02575c",
     "image": ""
   },
   {
@@ -1427,7 +1427,7 @@ var PUBLICATIONS = [
     "journal": "J. Hazard. Mater.",
     "journal_info": "304 (2016) 313-319",
     "authors": "A. D. Bokare, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.jhazmat.2015.10.063",
     "image": ""
   },
   {
@@ -1436,7 +1436,7 @@ var PUBLICATIONS = [
     "journal": "Solar Energy Mater. Solar Cells",
     "journal_info": "144 (2016) 247-255",
     "authors": "A. Annamalai, P. S. Shinde, T. H. Jeon, H. H. Lee, H. G. Kim, W. Choi, J. S. Jang",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.solmat.2015.09.016",
     "image": ""
   },
   {
@@ -1445,7 +1445,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "49 (2015) 14392-14400",
     "authors": "A. D. Bokare, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acs.est.5b04119",
     "image": ""
   },
   {
@@ -1454,7 +1454,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "49 (2015) 12816-12822",
     "authors": "D. Jeong, K. Kim, D. W. Min, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acs.est.5b04211",
     "image": ""
   },
   {
@@ -1463,7 +1463,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "49 (2015) 10937-10944",
     "authors": "K. Kim, J. Kim, A. D. Bokare, W. Choi, H.-I. Yoon, J. Kim",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/acs.est.5b02702",
     "image": ""
   },
   {
@@ -1472,7 +1472,7 @@ var PUBLICATIONS = [
     "journal": "J. Catal.",
     "journal_info": "330 (2015) 387-395",
     "authors": "Y.-J. Cho, H.-i. Kim, S. Lee, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.jcat.2015.07.007",
     "image": ""
   },
   {
@@ -1481,7 +1481,7 @@ var PUBLICATIONS = [
     "journal": "Energy Environ. Sci.",
     "journal_info": "8 (2015) 2638-2643",
     "authors": "U. Kang, S. K. Choi, D. J. Ham, S. M. Ji, W. Choi, D. S. Han, A. Abdel-Wahab, H. Park",
-    "doi": "",
+    "doi": "https://doi.org/10.1039/c5ee01410g",
     "image": ""
   },
   {
@@ -1490,7 +1490,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "176 (2015) 76-82",
     "authors": "E.-H. Kong, J. Lim, J. H. Lee, W. Choi, H. M. Jang",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2015.03.036",
     "image": ""
   },
   {
@@ -1499,7 +1499,7 @@ var PUBLICATIONS = [
     "journal": "J. Environ. Sci.",
     "journal_info": "31 (2015) 175-183",
     "authors": "P. Feng, X. Guan, Y. Sun, W. Choi, H. Qin, J. Wang, J. Qiao, L. Li",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.jes.2014.10.017",
     "image": ""
   },
   {
@@ -1508,7 +1508,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "49 (2015) 3506-3513",
     "authors": "D.-h. Kim, A. D. Bokare, M. S. Koo, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/es5056897",
     "image": ""
   },
   {
@@ -1517,7 +1517,7 @@ var PUBLICATIONS = [
     "journal": "ACS Appl. Mater. Interfaces",
     "journal_info": "7 (2015) 1907-1914",
     "authors": "S. Y. Yang, W. Choi, H. Park",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/am5076748",
     "image": ""
   },
   {
@@ -1526,7 +1526,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. C",
     "journal_info": "119 (2015) 1271-1279",
     "authors": "N. Naseri, M. Qorbani, H.-i. Kim, W. Choi, A. Moshfegh",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/jp507988c",
     "image": ""
   },
   {
@@ -1535,7 +1535,7 @@ var PUBLICATIONS = [
     "journal": "J. Mater. Chem. A",
     "journal_info": "3 (2015) 232-239",
     "authors": "K. L. V. Joseph, J. Lim, A. Anthonysamy, H.-i. Kim, W. Choi, J. K. Kim",
-    "doi": "",
+    "doi": "https://doi.org/10.1039/c4ta04313h",
     "image": ""
   },
   {
@@ -1544,7 +1544,7 @@ var PUBLICATIONS = [
     "journal": "Energy Environ. Sci.",
     "journal_info": "8 (2015) 247-257",
     "authors": "H.-i. Kim, D. Monllor-Satoca, W. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1039/c4ee02169j",
     "image": ""
   },
   {
@@ -1553,7 +1553,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "162 (2015) 463-469",
     "authors": "G. Kim, S.-H. Lee, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2014.07.027",
     "image": ""
   },
   {
@@ -1562,7 +1562,7 @@ var PUBLICATIONS = [
     "journal": "J. Ind. Eng. Chem.",
     "journal_info": "22 (2015) 350-356",
     "authors": "Y. Cho, J.-Y. Lee, A. D. Bokare, S.-B. Kwon, D.-S. Park, W.-S. Jung, J.-S. Choi, Y.-M. Yang, J.-Y. Lee, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.jiec.2014.07.030",
     "image": ""
   },
   {
@@ -1571,7 +1571,7 @@ var PUBLICATIONS = [
     "journal": "Rapid Commun. Photoscience",
     "journal_info": "4 (2015) 73-75",
     "authors": "H. Kyung, Y.-J. Cho, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.5857/rcp.2015.4.3.73",
     "image": ""
   },
   {
@@ -1589,7 +1589,7 @@ var PUBLICATIONS = [
     "journal": "Energy Environ. Sci.",
     "journal_info": "7 (2014) 4023-4028",
     "authors": "G.-h. Moon, W. Kim, A. D. Bokare, N.-e. Sung, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1039/c4ee02757d",
     "image": ""
   },
   {
@@ -1598,7 +1598,7 @@ var PUBLICATIONS = [
     "journal": "Angew. Chem. Int. Ed.",
     "journal_info": "53 (2014) 14036-14041",
     "authors": "W. Kim, T. Tachikawa, G.-h. Moon, T. Majima, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1002/anie.201406625",
     "image": ""
   },
   {
@@ -1607,7 +1607,7 @@ var PUBLICATIONS = [
     "journal": "Electrochim. Acta",
     "journal_info": "141 (2014) 113-119",
     "authors": "C. Kim, S. Kim, J. Choi, J. Lee, J. S. Kang, Y.-E. Sung, J. Lee, W. Choi, J. Yoon",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.electacta.2014.07.062",
     "image": ""
   },
   {
@@ -1616,7 +1616,7 @@ var PUBLICATIONS = [
     "journal": "J. Hazard. Mater.",
     "journal_info": "275 (2014) 121-135",
     "authors": "A. D. Bokare, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.jhazmat.2014.04.054",
     "image": ""
   },
   {
@@ -1625,7 +1625,7 @@ var PUBLICATIONS = [
     "journal": "J. Hazard. Mater.",
     "journal_info": "274 (2014) 79-86",
     "authors": "J. Lee, J. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.jhazmat.2014.03.056",
     "image": ""
   },
   {
@@ -1634,7 +1634,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "147 (2014) 8-16",
     "authors": "J. Choi, H. Lee, Y. Choi, S. Kim, S. Lee, S. Lee, W. Choi, J. Lee",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2013.08.032",
     "image": ""
   },
   {
@@ -1643,7 +1643,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "48 (2014) 4030-4037",
     "authors": "D.-h. Kim, J. Lee, J. Ryu, K. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/es500001q",
     "image": ""
   },
   {
@@ -1652,7 +1652,7 @@ var PUBLICATIONS = [
     "journal": "Chem. Eng. J.",
     "journal_info": "249 (2014) 285-292",
     "authors": "Q. Zheng, H.-J. Lee, J. Lee, W. Choi, N.-B. Park, C. Lee",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.cej.2014.03.111",
     "image": ""
   },
   {
@@ -1661,7 +1661,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol. Lett.",
     "journal_info": "1 (2014) 185-190",
     "authors": "G.-h. Moon, D.-h. Kim, H.-i. Kim, A. D. Bokare, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/ez5000012",
     "image": ""
   },
   {
@@ -1670,7 +1670,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "152-153, 233-240 (2014)",
     "authors": "J. Lim, D. Monllor-Satoca, J. S. Jang, S. Lee, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2014.01.026",
     "image": ""
   },
   {
@@ -1679,7 +1679,7 @@ var PUBLICATIONS = [
     "journal": "Catal. Today",
     "journal_info": "224 (2014) 21-28",
     "authors": "S. Bae, S. Kim, S. Lee, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.cattod.2013.12.019",
     "image": ""
   },
   {
@@ -1688,7 +1688,7 @@ var PUBLICATIONS = [
     "journal": "Energy Environ. Sci.",
     "journal_info": "7 (2014) 954-966",
     "authors": "G. Zhang, G. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1039/c3ee43147a",
     "image": ""
   },
   {
@@ -1697,7 +1697,7 @@ var PUBLICATIONS = [
     "journal": "Carbon",
     "journal_info": "69 (2014) 92-100",
     "authors": "Y. Choi, Y. Ye, Y. Mackeyev, M. Cho, L. J. Wilson, J. Lee, P. J. Alvarez, W. Choi, J. Lee",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.carbon.2013.11.065",
     "image": ""
   },
   {
@@ -1706,7 +1706,7 @@ var PUBLICATIONS = [
     "journal": "Water Research",
     "journal_info": "49 (2014) 371-380",
     "authors": "L. Liang, W. Sun, X. Guan, Y. Huang, W. Choi, H. Bao, L. Li, Z. Jiang",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.watres.2013.10.026",
     "image": ""
   },
   {
@@ -1715,7 +1715,7 @@ var PUBLICATIONS = [
     "journal": "J. Catal.",
     "journal_info": "310 (2014) 91-99",
     "authors": "J. Lim, P. Murugan, N. Lakshminarasimhan, J. Kim, J. Lee, S.-H. Lee, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.jcat.2013.05.014",
     "image": ""
   },
   {
@@ -1724,7 +1724,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "147 (2014) 642-650",
     "authors": "W. Kim, T. Tachikawa, H. Kim, N. Lakshminarasimhan, P. Murugan, H. Park, T. Majima, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2013.09.034",
     "image": ""
   },
   {
@@ -1733,7 +1733,7 @@ var PUBLICATIONS = [
     "journal": "J. Catal.",
     "journal_info": "309 (2014) 49-57",
     "authors": "H.-i. Kim; S. Kim; J.-K. Kang; W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.jcat.2013.08.028",
     "image": ""
   },
   {
@@ -1742,7 +1742,7 @@ var PUBLICATIONS = [
     "journal": "Energy Environ. Sci.",
     "journal_info": "6 (2013) 3732-3739",
     "authors": "W. Kim, T. Tachikawa, D. Monllor-Satoca, H.-i. Kim, T. Majima, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1039/c3ee42151a",
     "image": ""
   },
   {
@@ -1751,7 +1751,7 @@ var PUBLICATIONS = [
     "journal": "New J. Chem.",
     "journal_info": "37 (2013) 3174-3182",
     "authors": "H.-J. Park, W. Kim, W. Choi, Y. K. Chung",
-    "doi": "",
+    "doi": "https://doi.org/10.1039/c3nj00014a",
     "image": ""
   },
   {
@@ -1760,7 +1760,7 @@ var PUBLICATIONS = [
     "journal": "J. Mater. Chem. A",
     "journal_info": "1 (2013) 203-207",
     "authors": "D. K. Lee, K. S. Han, W. H. Shin, J. W. Lee, J. H. Choi, K. M. Choi, Y. Lee, H.-i. Kim, W. Choi, J. K. Kang",
-    "doi": "",
+    "doi": "https://doi.org/10.1039/c2ta00558a",
     "image": ""
   },
   {
@@ -1769,7 +1769,7 @@ var PUBLICATIONS = [
     "journal": "Nanoscale",
     "journal_info": "5 (2013) 6291-6296",
     "authors": "G.-h. Moon, Y. Shin, D. Choi, B. W. Arey, G. J. Exarhos, C. Wang, W. Choi, J. Liu",
-    "doi": "",
+    "doi": "https://doi.org/10.1039/c3nr01387a",
     "image": ""
   },
   {
@@ -1778,7 +1778,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "47 (2013) 9381-9387",
     "authors": "J. Ryu, D. Monllor-Satoca, D.-h. Kim, J. Yeo, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/es402011g",
     "image": ""
   },
   {
@@ -1787,7 +1787,7 @@ var PUBLICATIONS = [
     "journal": "Energy Environ. Sci.",
     "journal_info": "6 (2013) 2932-2938",
     "authors": "G. Kim, C. Jo, W. Kim, J. Chun, S. Yoon, J. Lee, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1039/c3ee41880d",
     "image": ""
   },
   {
@@ -1796,7 +1796,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. C",
     "journal_info": "117 (2013) 9104-9112",
     "authors": "H. W. Jeong, T. H. Jeon, J. S. Jang, W. Choi, H. Park",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/jp400415m",
     "image": ""
   },
   {
@@ -1805,7 +1805,7 @@ var PUBLICATIONS = [
     "journal": "Catal. Sci. Technol.",
     "journal_info": "3 (2013) 1790-1797",
     "authors": "G. Zhang, D. Monllor-Satoca, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1039/c3cy00066d",
     "image": ""
   },
   {
@@ -1814,7 +1814,7 @@ var PUBLICATIONS = [
     "journal": "Phys. Chem. Chem. Phys.",
     "journal_info": "15 (2013) 6499-6507",
     "authors": "S. K. Choi, W. Choi, H. Park",
-    "doi": "",
+    "doi": "https://doi.org/10.1039/c3cp00073g",
     "image": ""
   },
   {
@@ -1823,7 +1823,7 @@ var PUBLICATIONS = [
     "journal": "J. Photochem. Photobiol., C: Photochem. Rev.",
     "journal_info": "15 (2013) 1-20",
     "authors": "H. Park, Y. Park, W. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.jphotochemrev.2012.10.001",
     "image": ""
   },
   {
@@ -1832,7 +1832,7 @@ var PUBLICATIONS = [
     "journal": "Int. J. Hydrogen Energy",
     "journal_info": "38 (2013) 2117-2125",
     "authors": "N. Naseri, H. Kim, W. Choi, A. Z. Moshfegh",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.ijhydene.2012.11.132",
     "image": ""
   },
   {
@@ -1841,7 +1841,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. Lett.",
     "journal_info": "4 (2013) 189-194",
     "authors": "Y. Park, W. Kim, D. Monllor-Satoca, T. Tachikawa, T. Majima, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/jz301881d",
     "image": ""
   },
   {
@@ -1850,7 +1850,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. Lett.",
     "journal_info": "3 (2012) 3781-3785",
     "authors": "J. U. Bang, S. J. Lee, J. S. Jang, W. Choi, H. Song",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/jz301732n",
     "image": ""
   },
   {
@@ -1859,7 +1859,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. C",
     "journal_info": "116 (2012) 25444-25453",
     "authors": "Z. Bian, T. Tachikawa, W. Kim, W. Choi, T. Majima",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/jp309683f",
     "image": ""
   },
   {
@@ -1868,7 +1868,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "46 (2012) 13160-13166",
     "authors": "K. Kim, H.-I. Yoon, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/es302003z",
     "image": ""
   },
   {
@@ -1877,7 +1877,7 @@ var PUBLICATIONS = [
     "journal": "Org. Biomol. Chem.",
     "journal_info": "10 (2012) 8410–8417",
     "authors": "A. S. Rao, S. Singha, W. Choi, K. H. Ahn",
-    "doi": "",
+    "doi": "https://doi.org/10.1039/c2ob26000j",
     "image": ""
   },
   {
@@ -1886,7 +1886,7 @@ var PUBLICATIONS = [
     "journal": "Atmos. Chem. Phys.",
     "journal_info": "12 (2012) 11125-11133",
     "authors": "D. Jeong, K. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.5194/acp-12-11125-2012",
     "image": ""
   },
   {
@@ -1895,7 +1895,7 @@ var PUBLICATIONS = [
     "journal": "Chem. Commun.",
     "journal_info": "48 (2012) 10621-10623",
     "authors": "G. Zhang, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1039/c2cc35751h",
     "image": ""
   },
   {
@@ -1904,7 +1904,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "46 (2012) 9606-9613",
     "authors": "H. Kim, W. Kim, Y. Mackeyev, G.-S. Lee, H.-J. Kim, T. Tachikawa, S. Hong, S. Lee, J. Kim, L. J. Wilson, T. Majima, P. J. J. Alvarez, W. Choi, J. Lee",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/es301775k",
     "image": ""
   },
   {
@@ -1913,7 +1913,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. C",
     "journal_info": "116 (2012) 17531-17539",
     "authors": "N. Lakshminarasimhan, A. D. Bokare, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/jp303118q",
     "image": ""
   },
   {
@@ -1922,7 +1922,7 @@ var PUBLICATIONS = [
     "journal": "Colloid Polym. Sci.",
     "journal_info": "290 (2012) 1567-1573",
     "authors": "G.-h. Moon, Y. Shin, B. W. Arey, C. Wang, G. J. Exarhos, W. Choi, J. Liu",
-    "doi": "",
+    "doi": "https://doi.org/10.1007/s00396-012-2729-4",
     "image": ""
   },
   {
@@ -1931,7 +1931,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. C",
     "journal_info": "116 (2012) 10090-10097",
     "authors": "J. Yi, C. Bahrini, C. Schoemaecker, C. Fittschen, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/jp301405e",
     "image": ""
   },
   {
@@ -1940,7 +1940,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "46 (2012) 5519-5527",
     "authors": "D. Monllor-Satoca, R. Gómez, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/es203922g",
     "image": ""
   },
   {
@@ -1949,7 +1949,7 @@ var PUBLICATIONS = [
     "journal": "Small",
     "journal_info": "8 (2012) 1038-1048",
     "authors": "I. Y. Kim, J. M. Lee, T. W. Kim, H. N. Kim, H.-i. Kim, W. Choi, S.-J. Hwang",
-    "doi": "",
+    "doi": "https://doi.org/10.1002/smll.201101703",
     "image": ""
   },
   {
@@ -1958,7 +1958,7 @@ var PUBLICATIONS = [
     "journal": "Energy Environ. Sci.",
     "journal_info": "5 (2012) 7647-7656",
     "authors": "J. Kim, D. Monllor-Satoca, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1039/c2ee21310a",
     "image": ""
   },
   {
@@ -1967,7 +1967,7 @@ var PUBLICATIONS = [
     "journal": "Chem. Eur. J.",
     "journal_info": "18 (2012) 2762-2767",
     "authors": "J.-W. Jang, S. Choi, G.-H. Moon, K. Ihm, J. Y. Kim, D. H. Youn, S. Lee, Y. H. Lee, W. Choi, K.-H. Lee, J. S. Lee",
-    "doi": "",
+    "doi": "https://doi.org/10.1002/chem.201103212",
     "image": ""
   },
   {
@@ -1976,7 +1976,7 @@ var PUBLICATIONS = [
     "journal": "Energy Environ. Sci.",
     "journal_info": "5 (2012) 6066-6070",
     "authors": "W. Kim, T. Seok, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1039/c2ee03338k",
     "image": ""
   },
   {
@@ -1985,7 +1985,7 @@ var PUBLICATIONS = [
     "journal": "RSC Adv.",
     "journal_info": "2 (2012) 2205-2207",
     "authors": "G.-H. Moon, H.-I. Kim, Y. Shin, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1039/c2ra00875k",
     "image": ""
   },
   {
@@ -1994,7 +1994,7 @@ var PUBLICATIONS = [
     "journal": "Green Chem.",
     "journal_info": "14 (2012) 618-621",
     "authors": "G. Zhang, I. Y. Song, T. Park, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1039/c2gc16409d",
     "image": ""
   },
   {
@@ -2003,7 +2003,7 @@ var PUBLICATIONS = [
     "journal": "Separation and Purification Technol.",
     "journal_info": "91 (2012) 18-22",
     "authors": "J. Yeo, D.-h. Kim, A. Bokare, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.seppur.2011.08.015",
     "image": ""
   },
   {
@@ -2012,7 +2012,7 @@ var PUBLICATIONS = [
     "journal": "Int. J. Hydrogen Energy",
     "journal_info": "37 (2012) 3056-3065",
     "authors": "N. Naseri, H. Kim, W. Choi, A. Z. Moshfegh",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.ijhydene.2011.11.041",
     "image": ""
   },
   {
@@ -2021,7 +2021,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. C",
     "journal_info": "116 (2012) 1535-1543",
     "authors": "H.-I. Kim, G.-H. Moon, D. Monllor-Satoca, Y. Park, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/jp209035e",
     "image": ""
   },
   {
@@ -2030,7 +2030,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "115-116, 74-80 (2012)",
     "authors": "H. Park, A. Bak, T. H. Jeon, S. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2011.12.006",
     "image": ""
   },
   {
@@ -2039,7 +2039,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "45 (2011) 9816-9817",
     "authors": "D. Monllor-Satoca, W. Choi, Comment on",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/es200574h",
     "image": ""
   },
   {
@@ -2048,7 +2048,7 @@ var PUBLICATIONS = [
     "journal": "Phys. Chem. Chem. Phys.",
     "journal_info": "13 (2011) 21392-21401",
     "authors": "T. H. Jeon, W. Choi, H. Park",
-    "doi": "",
+    "doi": "https://doi.org/10.1039/c1cp23135a",
     "image": ""
   },
   {
@@ -2057,7 +2057,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "110 (2011) 207-215",
     "authors": "A. Bak, W. Choi, H. Park",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2011.09.002",
     "image": ""
   },
   {
@@ -2066,7 +2066,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "45 (2011) 9332-9338",
     "authors": "A. Bokare, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/es2021704",
     "image": ""
   },
   {
@@ -2075,7 +2075,7 @@ var PUBLICATIONS = [
     "journal": "Macromolecules",
     "journal_info": "44 (2011) 7594-7599",
     "authors": "G. Zhang, I. Y. Song, K. H. Ahn, T. Park, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/ma201546c",
     "image": ""
   },
   {
@@ -2084,7 +2084,7 @@ var PUBLICATIONS = [
     "journal": "Langmuir",
     "journal_info": "27 (2011) 10243-10250",
     "authors": "S. Cho, J.-W. Jang, J. Kim, J. S. Lee, W. Choi, K.-H. Lee",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/la201755w",
     "image": ""
   },
   {
@@ -2093,7 +2093,7 @@ var PUBLICATIONS = [
     "journal": "J. Hazard. Mater.",
     "journal_info": "192 (2011) 928-931",
     "authors": "D.-h. Kim, J. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.jhazmat.2011.05.075",
     "image": ""
   },
   {
@@ -2102,7 +2102,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "106 (2011) 39-45",
     "authors": "J. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2011.05.002",
     "image": ""
   },
   {
@@ -2111,7 +2111,7 @@ var PUBLICATIONS = [
     "journal": "Carbon",
     "journal_info": "49 (2011) 3454-3462",
     "authors": "G.-h. Moon, Y. Park, W. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.carbon.2011.04.042",
     "image": ""
   },
   {
@@ -2120,7 +2120,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. C",
     "journal_info": "115 (2011) 9797-9805",
     "authors": "H.-I. Kim, J. Kim, W. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/jp1122823",
     "image": ""
   },
   {
@@ -2129,7 +2129,7 @@ var PUBLICATIONS = [
     "journal": "Phys. Chem. Chem. Phys.",
     "journal_info": "13 (2011) 9425-9431",
     "authors": "Y. Park, S.-H. Kang, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1039/c1cp20697d",
     "image": ""
   },
   {
@@ -2138,7 +2138,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. C",
     "journal_info": "115 (2011) 7134-7142",
     "authors": "T. H. Jeon, W. Choi, H. Park",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/jp201215t",
     "image": ""
   },
   {
@@ -2147,7 +2147,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. C",
     "journal_info": "115 (2011) 6141-6148",
     "authors": "H. Park, Y. K. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/jp2015319",
     "image": ""
   },
   {
@@ -2156,7 +2156,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "104 (2011) 6-11",
     "authors": "H. Kang, C.-S. Lee, D.-Y. Kim, J. Kim, W. Choi, H. Kim",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2011.03.010",
     "image": ""
   },
   {
@@ -2165,7 +2165,7 @@ var PUBLICATIONS = [
     "journal": "Micro. Meso. Mater.",
     "journal_info": "143 (2011) 149-156",
     "authors": "J. Hwang, J. Kim, E. Ramasamy, W. Choi, J. Lee",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.micromeso.2011.02.021",
     "image": ""
   },
   {
@@ -2174,7 +2174,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "45 (2011) 3183-3184",
     "authors": "J. Kim, W. Choi, Response to Comment on",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/es101981r",
     "image": ""
   },
   {
@@ -2183,7 +2183,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "45 (2011) 2202-2208",
     "authors": "K. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/es103513u",
     "image": ""
   },
   {
@@ -2192,7 +2192,7 @@ var PUBLICATIONS = [
     "journal": "J. Hazard. Mater.",
     "journal_info": "188 (2011) 198-205",
     "authors": "G. Zhang, W. Choi, S. H. Kim, S. B. Hong",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.jhazmat.2011.01.105",
     "image": ""
   },
   {
@@ -2201,7 +2201,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "45 (2011) 2030-2031",
     "authors": "D. Monllor-Satoca, T. Tachikawa, T. Majima, W. Choi, Response to Comment on",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/es102507u",
     "image": ""
   },
   {
@@ -2210,7 +2210,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "102 (2011) 132-139",
     "authors": "G. Zhang, J. Yi, J. Shim, J. Lee, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2010.11.034",
     "image": ""
   },
   {
@@ -2219,7 +2219,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "44 (2010) 9099-9104",
     "authors": "W. Choi, J. Yeo, J. Ryu, T. Tachikawa, T. Majima",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/es102507u",
     "image": ""
   },
   {
@@ -2228,7 +2228,7 @@ var PUBLICATIONS = [
     "journal": "Energy Environ. Sci.",
     "journal_info": "3 (2010) 1789-1795",
     "authors": "W. Kim, T. Tachikawa, T. Majima, C. Li, H.-J. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1039/c0ee00205d",
     "image": ""
   },
   {
@@ -2237,7 +2237,7 @@ var PUBLICATIONS = [
     "journal": "Chem. Eur. J.",
     "journal_info": "16 (2010) 5586-5599",
     "authors": "C. Y. Lee, J. K. Jang, C. H. Kim, J. Jung, B. K. Park, J. Park, W. Choi, Y.-K. Han, T. Joo, J. T. Park",
-    "doi": "",
+    "doi": "https://doi.org/10.1002/chem.201000215",
     "image": ""
   },
   {
@@ -2246,7 +2246,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "100 (2010) 77-83",
     "authors": "G. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2010.07.014",
     "image": ""
   },
   {
@@ -2255,7 +2255,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "44 (2010) 7232-7237",
     "authors": "A. Bokare, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/es903930h",
     "image": ""
   },
   {
@@ -2264,7 +2264,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "44 (2010) 6849-6854",
     "authors": "J. Kim, C. W. Lee, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/es101981r",
     "image": ""
   },
   {
@@ -2273,7 +2273,7 @@ var PUBLICATIONS = [
     "journal": "Energy Environ. Sci.",
     "journal_info": "3 (2010) 1042-1045",
     "authors": "J. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1039/c003858j",
     "image": ""
   },
   {
@@ -2282,7 +2282,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "44 (2010) 4142-4148",
     "authors": "K. Kim, W. Choi, M. R. Hoffmann, H.-I. Yoon, B.-K. Park",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/es9037808",
     "image": ""
   },
   {
@@ -2291,7 +2291,7 @@ var PUBLICATIONS = [
     "journal": "Thin Solid Film",
     "journal_info": "518 (2010) 4757-4761",
     "authors": "C.-S. Lee, J. Kim, G. H. Gu, D,-H. Jo, C. G. Park, W. Choi, H. Kim",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.tsf.2010.01.015",
     "image": ""
   },
   {
@@ -2300,7 +2300,7 @@ var PUBLICATIONS = [
     "journal": "Res. Chem. Intermed.",
     "journal_info": "36 (2010) 127-140",
     "authors": "J. Kim, W. Choi, H. Park",
-    "doi": "",
+    "doi": "https://doi.org/10.1007/s11164-010-0123-8",
     "image": ""
   },
   {
@@ -2309,7 +2309,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. Lett.",
     "journal_info": "1 (2010) 1351-1355",
     "authors": "J. Park, J. Yi, T. Tachikawa, T. Majima, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/jz100292v",
     "image": ""
   },
   {
@@ -2318,7 +2318,7 @@ var PUBLICATIONS = [
     "journal": "Chem. Commun.",
     "journal_info": "46 (2010) 2477-2479",
     "authors": "Y. Park, S.-H. Lee, S. O. Kang, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1039/b924829c",
     "image": ""
   },
   {
@@ -2327,7 +2327,7 @@ var PUBLICATIONS = [
     "journal": "Org. Lett.",
     "journal_info": "12 (2010) 460-463",
     "authors": "S.-H. Lee, Y. Park, K.-R. Wee, H.-J. Son, D. W. Cho, C. Pac, W. Choi, S. O. Kang",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/ol9026182",
     "image": ""
   },
   {
@@ -2336,7 +2336,7 @@ var PUBLICATIONS = [
     "journal": "(article in Korean), J. Korean Soc. Water Wastewater",
     "journal_info": "24 (2010) 775-788",
     "authors": "B. G. Kwon, W. Choi, J. Yoon",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/S0043-1354(98)00424-2",
     "image": ""
   },
   {
@@ -2345,7 +2345,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "43 (2009) 7130-7135.(2009.9.15)",
     "authors": "A. Bokare, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/es9013823",
     "image": ""
   },
   {
@@ -2354,7 +2354,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. C",
     "journal_info": "113 (2009) 20974–20979",
     "authors": "J. Park, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/jp9011608",
     "image": ""
   },
   {
@@ -2363,7 +2363,7 @@ var PUBLICATIONS = [
     "journal": "Chem. Eur. J.",
     "journal_info": "15 (2009) 10843-10850. (2009.10.19)",
     "authors": "Y. Park, N. J. Singh, K. S. Kim, T. Tachikawa, T. Majima, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1002/chem.200901704",
     "image": ""
   },
   {
@@ -2372,7 +2372,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "91 (2009) 628-633",
     "authors": "C.-S. Lee, J. Kim, J. Y. Son, W. Choi, H. Kim",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2009.06.037",
     "image": ""
   },
   {
@@ -2381,7 +2381,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "91 (2009) 355-361. (2009.9.7)",
     "authors": "Y. Park, W. Kim, H. Park, T. Tachikawa, T. Majima, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2009.06.001",
     "image": ""
   },
   {
@@ -2390,7 +2390,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "91 (2009) 157-164. (2009.9.7)",
     "authors": "S. Artkla, W. Kim, W. Choi, J. Wittayakun",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2009.05.019",
     "image": ""
   },
   {
@@ -2399,7 +2399,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. C",
     "journal_info": "113 (2009) 10603-10609",
     "authors": "W. Kim, T. Tachikawa, T. Majima, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/jp9008114",
     "image": ""
   },
   {
@@ -2408,7 +2408,7 @@ var PUBLICATIONS = [
     "journal": "J. Renewable and Sustainable Energy",
     "journal_info": "1 (2009) 023101",
     "authors": "B. I. Lee, S. Kaewgun, W. Kim, W. Choi, J. S. Lee, E. Kim",
-    "doi": "",
+    "doi": "https://doi.org/10.1063/1.3096606",
     "image": ""
   },
   {
@@ -2417,7 +2417,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "43 (2009) 3784-3788",
     "authors": "J. Yeo, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/es900602n",
     "image": ""
   },
   {
@@ -2426,7 +2426,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "43 (2009) 3966-3967",
     "authors": "S.-H. Kang, W. Choi, Response to Comment on",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/es900076m",
     "image": ""
   },
   {
@@ -2435,7 +2435,7 @@ var PUBLICATIONS = [
     "journal": "J. Photochem. Photobiol. A: Chem.",
     "journal_info": "203 (2009) 112-118",
     "authors": "H. Park, Y. Park, E. Bae, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.jphotochem.2008.12.025",
     "image": ""
   },
   {
@@ -2444,7 +2444,7 @@ var PUBLICATIONS = [
     "journal": "J. Electrochem. Soc.",
     "journal_info": "156 (2009) D188-D192",
     "authors": "C.-S. Lee, J. Kim, J. Y. Son, W. J. Maeng, D.-H. Jo, W. Choi, H. Kim",
-    "doi": "",
+    "doi": "https://doi.org/10.1149/1.3095515",
     "image": ""
   },
   {
@@ -2453,7 +2453,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "43 (2009) 878-883. (2009.2.1)",
     "authors": "S.-H. Kang, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/es900076m",
     "image": ""
   },
   {
@@ -2462,7 +2462,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. A",
     "journal_info": "113 (2009) 690-696",
     "authors": "H. Park, C. D. Vecitis, J. Cheng, W. Choi, B. T. Mader, M. R. Hoffmann",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/jp807116q",
     "image": ""
   },
   {
@@ -2471,7 +2471,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Asia",
     "journal_info": "1 (2009) 41-48",
     "authors": "S. Artkla, W. Choi, J. Wittayakun",
-    "doi": "",
+    "doi": "https://doi.org/10.14456/ea.2009.7",
     "image": ""
   },
   {
@@ -2480,7 +2480,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. C",
     "journal_info": "112 (2008) 20451-20457. (2008.12.25)",
     "authors": "N. Lakshminarasimhan, W. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/jp808541v",
     "image": ""
   },
   {
@@ -2489,7 +2489,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. A",
     "journal_info": "346 (2008) 149-154",
     "authors": "J. S. Jang, D. J. Ham, N. Lakshminarasimhan, W. Choi, J. S. Lee",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcata.2008.05.020",
     "image": ""
   },
   {
@@ -2498,7 +2498,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. C",
     "journal_info": "112 (2008) 12069-12073. (2008.8.14)",
     "authors": "L. A. Silva, S. Y. Ryu, J. Choi, W. Choi, M. R. Hoffmann",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/jp8037279",
     "image": ""
   },
   {
@@ -2507,7 +2507,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "84 (2008) 148-155. (2008.10.25)",
     "authors": "S. Kim, J. Yeo, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2008.03.012",
     "image": ""
   },
   {
@@ -2516,7 +2516,7 @@ var PUBLICATIONS = [
     "journal": "J. Mater. Chem.",
     "journal_info": "18 (2008) 2379-2385",
     "authors": "H. Park, W. Choi, M. R. Hoffmann",
-    "doi": "",
+    "doi": "https://doi.org/10.1039/b718759a",
     "image": ""
   },
   {
@@ -2525,7 +2525,7 @@ var PUBLICATIONS = [
     "journal": "Chemosphere",
     "journal_info": "72 (2008) 174-181",
     "authors": "E. Bae, J. W. Lee, B. H. Hwang, J. Yeo, J. Yoon, H. J. Cha, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.chemosphere.2008.01.071",
     "image": ""
   },
   {
@@ -2534,7 +2534,7 @@ var PUBLICATIONS = [
     "journal": "Adv. Mater.",
     "journal_info": "20 (2008) 539-542",
     "authors": "T. W. Kim, S.-J. Hwang, S. H. Jhung, J.-S. Chang, H. Park, W. Choi, J.-H. Choy",
-    "doi": "",
+    "doi": "https://doi.org/10.1002/adma.200701677",
     "image": ""
   },
   {
@@ -2543,7 +2543,7 @@ var PUBLICATIONS = [
     "journal": "Chem. Phys. Lett.",
     "journal_info": "452 (2008) 264-268",
     "authors": "N. Lakshminarasimhan, Y. Park, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.cplett.2007.12.050",
     "image": ""
   },
   {
@@ -2552,7 +2552,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. C",
     "journal_info": "112 (2008) 491-499",
     "authors": "W. Kim, J. Park, H. J. Jo, H.-J. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/jp0747151",
     "image": ""
   },
   {
@@ -2561,7 +2561,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. C",
     "journal_info": "112 (2008) 885-889",
     "authors": "H. Park, C. D. Vecitis, W. Choi, O. Weres, M. R. Hoffmann",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/jp710723p",
     "image": ""
   },
   {
@@ -2570,7 +2570,7 @@ var PUBLICATIONS = [
     "journal": "Chem. Commun.",
     "journal_info": "756-758 (2008)",
     "authors": "J. Kim, J. Lee, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1039/b715868h",
     "image": ""
   },
   {
@@ -2579,7 +2579,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "42 (2008) 294-300",
     "authors": "J. Ryu, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/es071470x",
     "image": ""
   },
   {
@@ -2588,7 +2588,7 @@ var PUBLICATIONS = [
     "journal": "J. Ind. Eng. Chem.",
     "journal_info": "14 (2008) 315-321",
     "authors": "Y. Cho, Y. Park, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.jiec.2008.01.003",
     "image": ""
   },
   {
@@ -2597,7 +2597,7 @@ var PUBLICATIONS = [
     "journal": "Sol. Energy Mater. Sol. Cells",
     "journal_info": "91 (2007) 1749-1754",
     "authors": "J. Park, H.-J. Koo, B. Yoo, K. Yoo, K. Kim, W. Choi, N.-G. Park",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.solmat.2007.06.002",
     "image": ""
   },
   {
@@ -2606,7 +2606,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. C",
     "journal_info": "111 (2007) 15244-15250",
     "authors": "N. Lakshminarasimhan, E. Bae, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/jp0752724",
     "image": ""
   },
   {
@@ -2615,7 +2615,7 @@ var PUBLICATIONS = [
     "journal": "Mater. Res. Bull.",
     "journal_info": "42 (2007) 1914-1920",
     "authors": "T. W. Kim, S. G. Hur, S.-J. Hwang, H. Park, Y. Park, W. Choi, J.-H. Choy",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.materresbull.2006.12.010",
     "image": ""
   },
   {
@@ -2624,7 +2624,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "41 (2007) 6313-6314",
     "authors": "J. Ryu, W. Choi, Response to Comment on",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/es0612403",
     "image": ""
   },
   {
@@ -2633,7 +2633,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "41 (2007) 5433-5438",
     "authors": "J. Lee, J. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/es070474z",
     "image": ""
   },
   {
@@ -2642,7 +2642,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "41 (2007) 3335-3340",
     "authors": "J. Lee, J. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/es062430g",
     "image": ""
   },
   {
@@ -2651,7 +2651,7 @@ var PUBLICATIONS = [
     "journal": "Chem. Phys. Lett.",
     "journal_info": "434 (2007) 251-255",
     "authors": "S.T. Lim, T. W. Kim, S. G. Hur, S.-J. Hwang, H. Park, W. Choi, J.-H. Choy",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.cplett.2006.12.030",
     "image": ""
   },
   {
@@ -2660,7 +2660,7 @@ var PUBLICATIONS = [
     "journal": "Adv. Functional Mater.",
     "journal_info": "17 (2007) 307-314",
     "authors": "T. W. Kim, S. G. Hur, S.-J. Hwang, H. Park, W. Choi, J.-H. Choy",
-    "doi": "",
+    "doi": "https://doi.org/10.1002/adfm.200600022",
     "image": ""
   },
   {
@@ -2669,7 +2669,7 @@ var PUBLICATIONS = [
     "journal": "Chemosphere",
     "journal_info": "67 (2007) 652-659",
     "authors": "J. Jeong, J. Y. Kim, M. Cho, W. Choi, J. Yoon",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.chemosphere.2006.11.035",
     "image": ""
   },
   {
@@ -2678,7 +2678,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. C",
     "journal_info": "111 (2007) 1658-1664",
     "authors": "T. W. Kim, S.-J. Hwang, Y. Park, W. Choi, J.-H. Choy",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/jp0662552",
     "image": ""
   },
   {
@@ -2687,7 +2687,7 @@ var PUBLICATIONS = [
     "journal": "Chem. Lett.",
     "journal_info": "36 (2007) 176-177",
     "authors": "J. Lee, J. Ryu, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1246/cl.2007.176",
     "image": ""
   },
   {
@@ -2696,7 +2696,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "69 (2007) 127-132",
     "authors": "H. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2006.06.011",
     "image": ""
   },
   {
@@ -2714,7 +2714,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "40 (2006) 7034-7039",
     "authors": "J. Ryu, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/es0612403",
     "image": ""
   },
   {
@@ -2723,7 +2723,7 @@ var PUBLICATIONS = [
     "journal": "Water Res.",
     "journal_info": "40 (2006) 3580-3586",
     "authors": "M. Cho, Y. Lee, W. Choi, H. Chung, J. Yoon",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.watres.2006.05.043",
     "image": ""
   },
   {
@@ -2732,7 +2732,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. B",
     "journal_info": "110 (2006) 14792-14799",
     "authors": "E. Bae, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/jp062540+",
     "image": ""
   },
   {
@@ -2741,7 +2741,7 @@ var PUBLICATIONS = [
     "journal": "J. Nanosci. Nanotechnol.",
     "journal_info": "6 (2006) 3642-3646",
     "authors": "J. S. Jang, S. H. Choi, H. Park, W. Choi, J. Lee",
-    "doi": "",
+    "doi": "https://doi.org/10.1166/jnn.2006.073",
     "image": ""
   },
   {
@@ -2750,7 +2750,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. B",
     "journal_info": "110 (2006) 8740-8749",
     "authors": "H. Park, E. Bae, J.-J. Lee, J. Park, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/jp060397e",
     "image": ""
   },
   {
@@ -2759,7 +2759,7 @@ var PUBLICATIONS = [
     "journal": "Langmuir",
     "journal_info": "22 (2006) 2906-2911.*",
     "authors": "H. Park, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/la0526176",
     "image": ""
   },
   {
@@ -2768,7 +2768,7 @@ var PUBLICATIONS = [
     "journal": "Catalysis Surveys from Asia",
     "journal_info": "10 (2006) 16-28",
     "authors": "W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1007/s10563-006-9000-2",
     "image": ""
   },
   {
@@ -2777,7 +2777,7 @@ var PUBLICATIONS = [
     "journal": "Catalysis Today",
     "journal_info": "111 (2006) 259-265",
     "authors": "H. Park, J. Lee, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.cattod.2005.10.035",
     "image": ""
   },
   {
@@ -2786,7 +2786,7 @@ var PUBLICATIONS = [
     "journal": "Limnol. Oceanogr.",
     "journal_info": "51 (2006) 331-338",
     "authors": "H.-C. Kim, K. Lee, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.4319/lo.2006.51.1.0331",
     "image": ""
   },
   {
@@ -2795,7 +2795,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. B",
     "journal_info": "109 (2005) 24260-24267",
     "authors": "S. Kim, S.-J. Hwang, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/jp055278y",
     "image": ""
   },
   {
@@ -2804,7 +2804,7 @@ var PUBLICATIONS = [
     "journal": "Chem. Lett.",
     "journal_info": "34 (2005) 1630-1631",
     "authors": "J. S. Park, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1246/cl.2005.1630",
     "image": ""
   },
   {
@@ -2813,7 +2813,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "39 (2005) 6800-6807",
     "authors": "J. Lee, W. Choi, J. Yoon",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/es0481777",
     "image": ""
   },
   {
@@ -2822,7 +2822,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. B",
     "journal_info": "109 (2005) 15001-15007",
     "authors": "S. G. Hur, T. W. Kim, S.-J. Hwang, H. Park, W. Choi, S. J. Kim, J.-H. Choy",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/jp0582235",
     "image": ""
   },
   {
@@ -2831,7 +2831,7 @@ var PUBLICATIONS = [
     "journal": "Angew. Chem. Int. Ed.",
     "journal_info": "44 (2005) 4585-4589",
     "authors": "H. G. Kim, P. H. Borse, W. Choi, J. S. Lee",
-    "doi": "",
+    "doi": "https://doi.org/10.1002/anie.200500064",
     "image": ""
   },
   {
@@ -2840,7 +2840,7 @@ var PUBLICATIONS = [
     "journal": "Chem. Phys. Lett.",
     "journal_info": "410 (2005) 142-146",
     "authors": "J. E. Lee, W. Choi, S. Odde, B. J. Mhin, K. Balasubramanian",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.cplett.2005.05.018",
     "image": ""
   },
   {
@@ -2849,7 +2849,7 @@ var PUBLICATIONS = [
     "journal": "Chem. Lett.",
     "journal_info": "34 (2005) 816-817",
     "authors": "S.-K. Lee, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1246/cl.2005.816",
     "image": ""
   },
   {
@@ -2858,7 +2858,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. B",
     "journal_info": "109 (2005) 11667-11674",
     "authors": "H. Park, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/jp051222s",
     "image": ""
   },
   {
@@ -2867,7 +2867,7 @@ var PUBLICATIONS = [
     "journal": "J. Appl. Electrochem.",
     "journal_info": "35 (2005) 757-763",
     "authors": "M. S. Vohra, J. Lee, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1007/s10800-005-1365-9",
     "image": ""
   },
   {
@@ -2876,7 +2876,7 @@ var PUBLICATIONS = [
     "journal": "Water Sci. Technol.",
     "journal_info": "51 (2005) 491-497",
     "authors": "J. Ryu, W. Choi, K.-H. Choo",
-    "doi": "",
+    "doi": "https://doi.org/10.2166/wst.2005.0672",
     "image": ""
   },
   {
@@ -2885,7 +2885,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. B",
     "journal_info": "109 (2005) 7399-7406",
     "authors": "J. Lee, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/jp044425+",
     "image": ""
   },
   {
@@ -2894,7 +2894,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "39 (2005) 2376-2382",
     "authors": "H. Kyung, J. Lee, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/es0492788",
     "image": ""
   },
   {
@@ -2903,7 +2903,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. B",
     "journal_info": "109 (2005) 5143-5149",
     "authors": "S. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/jp045806q",
     "image": ""
   },
   {
@@ -2912,7 +2912,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "39 (2005) 2101-2106",
     "authors": "C. Lee, W. Choi, Y. G. Kim, J. Yoon",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/es0488941",
     "image": ""
   },
   {
@@ -2921,7 +2921,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "39 (2005) 9702-9709",
     "authors": "C. Lee, W. Choi, J. Yoon",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/es051235j",
     "image": ""
   },
   {
@@ -2930,7 +2930,7 @@ var PUBLICATIONS = [
     "journal": "Catalysis Today",
     "journal_info": "101 (2005) 291-297",
     "authors": "H. Park, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.cattod.2005.03.014",
     "image": ""
   },
   {
@@ -2939,7 +2939,7 @@ var PUBLICATIONS = [
     "journal": "J. Solid State Chem.",
     "journal_info": "178 (2005) 185-193",
     "authors": "D.-K. Lee, J.-I. Jeon, M.-H. Kim, W. Choi, H.-I. Yoo",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.jssc.2004.07.034",
     "image": ""
   },
   {
@@ -2948,7 +2948,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Environ. Microbiol.",
     "journal_info": "71 (2005) 270-275",
     "authors": "M. Cho, H. Chung, W. Choi, J. Yoon",
-    "doi": "",
+    "doi": "https://doi.org/10.1128/aem.71.1.270-275.2005",
     "image": ""
   },
   {
@@ -2957,7 +2957,7 @@ var PUBLICATIONS = [
     "journal": "Langmuir",
     "journal_info": "20 (2004) 11523-11527",
     "authors": "J. S. Park, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/la048051n",
     "image": ""
   },
   {
@@ -2966,7 +2966,7 @@ var PUBLICATIONS = [
     "journal": "Adv. Mater.",
     "journal_info": "16 (2004) 1661-1664",
     "authors": "J. L. Yang, S. J. An, W. I. Park, G.-C. Yi, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1002/adma.200306673",
     "image": ""
   },
   {
@@ -2975,7 +2975,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. B",
     "journal_info": "108 (2004) 14093-14101",
     "authors": "E. Bae, W. Choi, J. Park, H. S. Shin, S. B. Kim, J. S. Lee",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/jp047777p",
     "image": ""
   },
   {
@@ -2984,7 +2984,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "38 (2004) 4026-4033",
     "authors": "J. Lee, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/es034954b",
     "image": ""
   },
   {
@@ -3002,7 +3002,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "52 (2004) 23-32",
     "authors": "Y. Cho, H. Kyung, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.apcatb.2004.03.013",
     "image": ""
   },
   {
@@ -3011,7 +3011,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "38 (2004) 2928-2933",
     "authors": "J. Ryu, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/es034725p",
     "image": ""
   },
   {
@@ -3020,7 +3020,7 @@ var PUBLICATIONS = [
     "journal": "J. Photochem. Photobiol. A: Chem.",
     "journal_info": "165 (2004) 43-50",
     "authors": "Y. Cho, H. Park, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.jphotochem.2004.02.019",
     "image": ""
   },
   {
@@ -3029,7 +3029,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. B",
     "journal_info": "108 (2004) 4086-4093",
     "authors": "H. Park, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/jp036735i",
     "image": ""
   },
   {
@@ -3038,7 +3038,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "38 (2004) 2082-2088",
     "authors": "J. Choi, W. Choi, B. J. Mhin",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/es034916s",
     "image": ""
   },
   {
@@ -3047,7 +3047,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. A",
     "journal_info": "108 (2004) 607-614",
     "authors": "J. E. Lee, W. Choi, B. J. Mhin, K. Balasubramanian",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/jp036084q.s001",
     "image": ""
   },
   {
@@ -3056,7 +3056,7 @@ var PUBLICATIONS = [
     "journal": "Water Research",
     "journal_info": "38 (2004) 1069-1077",
     "authors": "M. Cho, H. Chung, W. Choi, J. Yoon",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/j.watres.2003.10.029",
     "image": ""
   },
   {
@@ -3065,7 +3065,7 @@ var PUBLICATIONS = [
     "journal": "J. Ind. Eng. Chem.",
     "journal_info": "10 (2004) 107-114",
     "authors": "M. C. Lee, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/jp049789g",
     "image": ""
   },
   {
@@ -3074,7 +3074,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "46 (2003) 49-63",
     "authors": "S. Hwang, M. C. Lee, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/s0926-3373(03)00162-0",
     "image": ""
   },
   {
@@ -3083,7 +3083,7 @@ var PUBLICATIONS = [
     "journal": "J. Photochem. Photobiol. A: Chem.",
     "journal_info": "160 (2003) 55-60",
     "authors": "M. S. Vohra, S. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/s1010-6030(03)00221-1",
     "image": ""
   },
   {
@@ -3092,7 +3092,7 @@ var PUBLICATIONS = [
     "journal": "J. Photochem. Photobiol. A: Chem.",
     "journal_info": "159 (2003) 241-247",
     "authors": "H. Park, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/s1010-6030(03)00141-2",
     "image": ""
   },
   {
@@ -3101,7 +3101,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. B",
     "journal_info": "107 (2003) 3885-3890",
     "authors": "H. Park, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/jp027732t",
     "image": ""
   },
   {
@@ -3110,7 +3110,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. A",
     "journal_info": "107 (2003) 2693-2699",
     "authors": "J. E. Lee, W. Choi, B. J. Mhin",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/jp027133m",
     "image": ""
   },
   {
@@ -3119,7 +3119,7 @@ var PUBLICATIONS = [
     "journal": "Microporous Mesoporous Mater.",
     "journal_info": "58 (2003) 131-135",
     "authors": "S. Han, S. Kim, H. Lim, W. Choi, H. Park, J. Yoon, T. Hyeon",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/s1387-1811(02)00611-x",
     "image": ""
   },
   {
@@ -3128,7 +3128,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "37 (2003) 147-152",
     "authors": "E. Bae, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/es025617q",
     "image": ""
   },
   {
@@ -3137,7 +3137,7 @@ var PUBLICATIONS = [
     "journal": "Bull. Korean Chem. Soc.",
     "journal_info": "24 (2003) 792-796",
     "authors": "J. E. Lee, W. Choi, B. J. Mhin",
-    "doi": "",
+    "doi": "https://doi.org/10.5012/bkcs.2003.24.6.792",
     "image": ""
   },
   {
@@ -3146,7 +3146,7 @@ var PUBLICATIONS = [
     "journal": "J. Ind. Eng. Chem.",
     "journal_info": "9 (2003) 96-101",
     "authors": "W. Choi, J. Lee, S. Kim, S. Hwang, M. C. Lee, T. K. Lee",
-    "doi": "",
+    "doi": "https://www.cheric.org/PDF/JIEC/IE09/IE09-1-0096.pdf",
     "image": ""
   },
   {
@@ -3155,7 +3155,7 @@ var PUBLICATIONS = [
     "journal": "J. Ind. Eng. Chem.",
     "journal_info": "9 (2003) 83-88",
     "authors": "S. K. Lee, J. Lee, J. Joo, T. Hyeon, W. S. Ahn, H.-I. Lee, C.-H. Lee, W. Choi",
-    "doi": "",
+    "doi": "https://www.cheric.org/research/tech/periodicals/view.php?seq=395436",
     "image": ""
   },
   {
@@ -3173,7 +3173,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. B",
     "journal_info": "106 (2002) 13311-13317",
     "authors": "S. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/jp0262261",
     "image": ""
   },
   {
@@ -3182,7 +3182,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "36 (2002) 5462-5468",
     "authors": "J. Lee, H. Park, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/es025930s",
     "image": ""
   },
   {
@@ -3191,7 +3191,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. B",
     "journal_info": "106 (2002) 11818-11822",
     "authors": "M.C. Lee, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/jp026617f",
     "image": ""
   },
   {
@@ -3200,7 +3200,7 @@ var PUBLICATIONS = [
     "journal": "Chemosphere",
     "journal_info": "49 (2002) 205-216",
     "authors": "M. G. Ikonomou, P. Sather, J.-E. Oh, W. Choi, Y.-S. Chang",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/s0045-6535(02)00102-9",
     "image": ""
   },
   {
@@ -3209,7 +3209,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "36 (2002) 3872-3878",
     "authors": "H. Lee, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/es0158197",
     "image": ""
   },
   {
@@ -3218,7 +3218,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. B",
     "journal_info": "106 (2002) 4775-4781",
     "authors": "H. Park, K.Y. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/jp025519r",
     "image": ""
   },
   {
@@ -3227,7 +3227,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "36 (2002) 2019-2025",
     "authors": "S. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/es015560s",
     "image": ""
   },
   {
@@ -3236,7 +3236,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "36 (2002) 1367-1371",
     "authors": "M.C. Lee, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/es010698w",
     "image": ""
   },
   {
@@ -3245,7 +3245,7 @@ var PUBLICATIONS = [
     "journal": "J. Am. Chem. Soc.",
     "journal_info": "124 (2002) 144-148",
     "authors": "B. J. Mhin, J. E. Lee, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/ja016913q",
     "image": ""
   },
   {
@@ -3254,7 +3254,7 @@ var PUBLICATIONS = [
     "journal": "J. Photochem. Photobiol. A: Chem.",
     "journal_info": "148 (2002) 129-135",
     "authors": "Y. Cho, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/s1010-6030(02)00082-5",
     "image": ""
   },
   {
@@ -3272,7 +3272,7 @@ var PUBLICATIONS = [
     "journal": "J. Photochem. Photobiol. A: Chem.",
     "journal_info": "143 (2001) 221-228",
     "authors": "S. Cho, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/s1010-6030(01)00499-3",
     "image": ""
   },
   {
@@ -3281,7 +3281,7 @@ var PUBLICATIONS = [
     "journal": "J. Am. Chem. Soc.",
     "journal_info": "123 (2001) 3584-3587",
     "authors": "B. J. Mhin, J. Choi, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/ja0055615",
     "image": ""
   },
   {
@@ -3290,7 +3290,7 @@ var PUBLICATIONS = [
     "journal": "Appl. Catal. B: Environ.",
     "journal_info": "31 (2001) 209-220",
     "authors": "W. Choi, J. Y. Ko, H. Park, J. S. Chung",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/s0926-3373(00)00281-2",
     "image": ""
   },
   {
@@ -3299,7 +3299,7 @@ var PUBLICATIONS = [
     "journal": "Ind. Eng. Chem. Res.",
     "journal_info": "40 (2001) 1712-1719",
     "authors": "S.-A. Lee, K.-H. Choo, C.-H. Lee, H.-I. Lee, T. Hyeon, W. Choi, H.-H. Kwon",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/ie000738p",
     "image": ""
   },
   {
@@ -3308,7 +3308,7 @@ var PUBLICATIONS = [
     "journal": "Chem. Commun.",
     "journal_info": "281-282 (2001)",
     "authors": "H. Park, K.Y. Kim, W. Choi",
-    "doi": "",
+    "doi": "https://doi.org/10.1039/b008106j",
     "image": ""
   },
   {
@@ -3317,7 +3317,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "35 (2001) 966-970",
     "authors": "Y. Cho, W. Choi, C.-H. Lee, T. Hyeon, H.-I. Lee",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/es001245e",
     "image": ""
   },
   {
@@ -3326,7 +3326,7 @@ var PUBLICATIONS = [
     "journal": "Bull. Korean Chem. Soc.",
     "journal_info": "22 (2001) 1371-1374",
     "authors": "H.-J. Kim, L. Lu, J.-H. Kim, C.-H. Lee, T. Hyeon, W. Choi, H.-I. Lee",
-    "doi": "",
+    "doi": "https://doi.org/10.1002/chin.200222012",
     "image": ""
   },
   {
@@ -3335,7 +3335,7 @@ var PUBLICATIONS = [
     "journal": "Korean J. Chem. Eng.",
     "journal_info": "18 (2001) 898-902",
     "authors": "W. Choi, S. Kim, S. Cho, H.-I. Yoo, M.-H. Kim",
-    "doi": "",
+    "doi": "https://doi.org/10.1007/bf02705615",
     "image": ""
   },
   {
@@ -3344,7 +3344,7 @@ var PUBLICATIONS = [
     "journal": "Korean J. Chem. Eng.",
     "journal_info": "18 (2001) 873-878",
     "authors": "M.-H. Kim, S.-I. Lee, T.-K. Song, H. Park, W. Choi, H.-I. Yoo, T.-G. Park",
-    "doi": "",
+    "doi": "https://doi.org/10.1007/bf02705611",
     "image": ""
   },
   {
@@ -3353,7 +3353,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "34 (2000) 4810-4815",
     "authors": "W. Choi, S. J. Hong, Y.-S. Chang, Y. Cho",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/es0011461",
     "image": ""
   },
   {
@@ -3362,7 +3362,7 @@ var PUBLICATIONS = [
     "journal": "J. Chem. Phys.",
     "journal_info": "112 (2000) 723-730",
     "authors": "D. Majumdar, G.-S. Kim, J. Kim, K. S. Oh, J. Y. Lee, K. S. Kim, W. Choi, S.-H. Lee, M.-H. Kang, B. J. Mhin",
-    "doi": "",
+    "doi": "https://doi.org/10.1063/1.480605",
     "image": ""
   },
   {
@@ -3371,7 +3371,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem. A",
     "journal_info": "102 (1998) 7618-7630",
     "authors": "W. Choi, M.-T. Leu",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/jp981647x",
     "image": ""
   },
   {
@@ -3389,7 +3389,7 @@ var PUBLICATIONS = [
     "journal": "Geophys. Res. Lett.",
     "journal_info": "24 (1997) 2957-2960",
     "authors": "W. Choi, M.-T. Leu",
-    "doi": "",
+    "doi": "https://doi.org/10.1029/97gl03103",
     "image": ""
   },
   {
@@ -3398,7 +3398,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "31 (1997) 89-95",
     "authors": "W. Choi, M. R. Hoffmann",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/es960157k",
     "image": ""
   },
   {
@@ -3407,7 +3407,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem.",
     "journal_info": "100 (1996) 2161-2169",
     "authors": "W. Choi, M. R. Hoffmann",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/jp951431k",
     "image": ""
   },
   {
@@ -3416,7 +3416,7 @@ var PUBLICATIONS = [
     "journal": "Environ. Sci. Technol.",
     "journal_info": "29 (1995) 1646-1654",
     "authors": "W. Choi, M. R. Hoffmann",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/es00006a031",
     "image": ""
   },
   {
@@ -3425,7 +3425,7 @@ var PUBLICATIONS = [
     "journal": "Chem. Rev.",
     "journal_info": "95 (1995) 69-96",
     "authors": "M. R. Hoffmann, S. T. Martin, W. Choi, D. W. Bahnemann",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/cr00033a004",
     "image": ""
   },
   {
@@ -3434,7 +3434,7 @@ var PUBLICATIONS = [
     "journal": "J. Phys. Chem.",
     "journal_info": "98 (1994) 13669-13679",
     "authors": "W. Choi, A. Termin, M. R. Hoffmann",
-    "doi": "",
+    "doi": "https://doi.org/10.1021/j100102a038",
     "image": ""
   },
   {
@@ -3443,7 +3443,7 @@ var PUBLICATIONS = [
     "journal": "J. Chem. Soc. Faraday Trans.",
     "journal_info": "90 (1994) 3315-3322",
     "authors": "S. T. Martin, H. Hermann, W. Choi, M. R. Hoffmann",
-    "doi": "",
+    "doi": "https://doi.org/10.1039/FT9949003315",
     "image": ""
   },
   {
@@ -3452,7 +3452,7 @@ var PUBLICATIONS = [
     "journal": "Angew. Chem. Int. Ed. Engl.",
     "journal_info": "33 (1994) 1091-1092",
     "authors": "W. Choi, A. Termin, M. R. Hoffmann",
-    "doi": "",
+    "doi": "https://doi.org/10.1002/anie.199410911",
     "image": ""
   },
   {
@@ -3461,7 +3461,7 @@ var PUBLICATIONS = [
     "journal": "Surface Science",
     "journal_info": "281 (1993) 323-335",
     "authors": "W. Choi, C. Kim, H. Kang",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/0167-2584(93)91211-6",
     "image": ""
   },
   {
@@ -3470,7 +3470,7 @@ var PUBLICATIONS = [
     "journal": "Radiation Effects and Defects in Solids",
     "journal_info": "115 (1990) 65-72",
     "authors": "C. D. Park, W. Y. Choi, H. Kang",
-    "doi": "",
+    "doi": "https://doi.org/10.1080/10420159008220554",
     "image": ""
   },
   {
@@ -3479,7 +3479,7 @@ var PUBLICATIONS = [
     "journal": "Chem. Phys. Lett.",
     "journal_info": "173 (1990) 316-318",
     "authors": "W. Y. Choi, H. Kang",
-    "doi": "",
+    "doi": "https://doi.org/10.1016/0009-2614(90)85276-i",
     "image": ""
   },
   {
@@ -3488,7 +3488,7 @@ var PUBLICATIONS = [
     "journal": "Bull. Korean Chem. Soc.",
     "journal_info": "11 (1990) 290-296",
     "authors": "W. Y. Choi, T. H. Kang, H. Kang",
-    "doi": "",
+    "doi": "https://doi.org/10.1524/zpch.1995.191.part_2.281",
     "image": ""
   }
 ];
