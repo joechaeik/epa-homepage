@@ -18,8 +18,14 @@ var GALLERY = [
     "year": 2025
   },
   {
+    "src": "https://epa.kentech.ac.kr/files/attach/images/2083/171/005/0f5f4f0ee2d82e23e2ef1dd8c1ec785f.jpg",
+    "caption": "2025 group photo(cafe madang)",
+    "category": "Group",
+    "year": 2025
+  },
+  {
     "src": "https://raw.githubusercontent.com/joechaeik/epa-homepage/main/images/gallery/lab_dinner.jpg",
-    "caption": "EPA Lab Dinner",
+    "caption": "2025 Teachers' day",
     "category": "Group",
     "year": 2025
   },
@@ -40,11 +46,5 @@ var GALLERY = [
     "caption": "EPA summer retreat",
     "category": "Group",
     "year": 2014
-  },
-  {
-    "src": "https://epa.kentech.ac.kr/files/attach/images/2083/171/005/0f5f4f0ee2d82e23e2ef1dd8c1ec785f.jpg",
-    "caption": "2025 group photo(cafe madang)",
-    "category": "Group",
-    "year": 2025
   }
 ];
