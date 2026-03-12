@@ -58,5 +58,11 @@ var GALLERY = [
     "caption": "EPA summer retreat",
     "category": "Group",
     "year": 2014
+  },
+  {
+    "src": "https://epa.kentech.ac.kr/files/attach/images/2083/086/005/9aeb9837c706ea27ef1fa3ea0d623cfe.jpg",
+    "caption": "2024 Teachers' Day",
+    "category": "Group",
+    "year": 2026
   }
 ];
