@@ -29,6 +29,9 @@ var NEWS = [
     "date": "2023-11-17",
     "title": "Prof. Wonyong Choi selected as a \"Highly Cited Researcher 2023\"",
     "category": "Honor",
+    "pinned": false,
+    "body": "Prof. Wonyong Choi (Director of KENTECH Institute for Environmental & Climate Technology) has been named as a Highly Cited Researcher(HCR) for 2023 listed by Clarivate.\n\nA Highly Cited Researcher is an individual who has demonstrated significant influence in their filed(s) of research. Clarivate identifies the world’s most influential researchers who have authored multiple Highly Cited Papers, which rank in the top 1% by citations for their filed(s) and publication year in the Web of Science over the past decade.\n\nProf. Choi has been recognized for his exceptional researches in the field of photoenergy application and photocatalysis technology​. He has been selected as a Highly Cited Researcher for five consecutive years (2019 ~ 2023).",
+    "image": "https://raw.githubusercontent.com/joechaeik/epa-homepage/main/images/news/1773293072983_20231115_Prof.W.choi_selected_Highly_Cited_Researcher-1_(1).png",
     "link": "#"
   },
   {
