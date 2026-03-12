@@ -1,7 +1,7 @@
 var PUBLICATIONS = [
   {
     "year": 2025,
-    "title": "Integrated Capture and Conversion of Dilute CO2 Using Oxygen-Tolerant Porous Carbon-modified Gas Diffusion Electrode",
+    "title": "Integrated Capture and Conversion of Dilute CO<sub>2</sub> Using Oxygen-Tolerant Porous Carbon-modified Gas Diffusion Electrode",
     "journal": "ACS Energy Lett.",
     "journal_info": "in press",
     "authors": "D. Pan, J. Yang, D. Vidyasagar, D. Kwon, U. Muliane, G.H. Gu, W. Kim, J. Kim, M.H. Oh, W. Choi",
