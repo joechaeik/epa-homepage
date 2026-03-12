@@ -84,15 +84,15 @@ var GALLERY = [
     "year": 2022
   },
   {
-    "src": "https://epa.kentech.ac.kr/files/attach/images/2083/984/003/49d9effa33bd4ebba531c21480926af4.jpg",
-    "caption": "EPA summer retreat",
-    "category": "Group",
-    "year": 2014
-  },
-  {
     "src": "https://epa.kentech.ac.kr/files/attach/images/2083/613/004/3706d284f2bea2f061720a12883ec7aa.jpg",
     "caption": "2022 Teacher's Day",
     "category": "Group",
     "year": 2022
+  },
+  {
+    "src": "https://epa.kentech.ac.kr/files/attach/images/2083/984/003/49d9effa33bd4ebba531c21480926af4.jpg",
+    "caption": "EPA summer retreat",
+    "category": "Group",
+    "year": 2014
   }
 ];
