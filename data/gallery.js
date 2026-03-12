@@ -2,7 +2,7 @@ var GALLERY = [
   {
     "src": "https://raw.githubusercontent.com/joechaeik/epa-homepage/main/images/gallery/1773300488047_KakaoTalk_20251019_141923158_08.jpg",
     "caption": "2025 EPA lab seminar day3",
-    "category": "Group",
+    "category": "Seminar",
     "year": 2025
   },
   {
@@ -78,15 +78,15 @@ var GALLERY = [
     "year": 2022
   },
   {
-    "src": "https://epa.kentech.ac.kr/files/attach/images/2083/984/003/49d9effa33bd4ebba531c21480926af4.jpg",
-    "caption": "EPA summer retreat",
-    "category": "Group",
-    "year": 2014
-  },
-  {
     "src": "https://epa.kentech.ac.kr/files/attach/images/2083/716/004/cbfd0db935c21463ddd1f499431b814c.jpg",
     "caption": "2022 Korean Society of PhotoScience",
     "category": "Seminar",
     "year": 2022
+  },
+  {
+    "src": "https://epa.kentech.ac.kr/files/attach/images/2083/984/003/49d9effa33bd4ebba531c21480926af4.jpg",
+    "caption": "EPA summer retreat",
+    "category": "Group",
+    "year": 2014
   }
 ];
