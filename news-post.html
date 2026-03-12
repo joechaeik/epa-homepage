@@ -97,14 +97,14 @@
   </div>
 </footer>
 
-<script src="data/news.js"></script>
 <script>
-(function () {
+(async function () {
+  eval(await fetch('data/news.js', { cache: 'no-store' }).then(r => r.text()));
   const params = new URLSearchParams(location.search);
   const id = params.get('id');
   const el  = document.getElementById('post-content');
 
-  if (typeof NEWS === 'undefined' || !id) {
+  if (!id) {
     el.innerHTML = '<p class="text-slate-400 text-center py-20">게시글을 찾을 수 없습니다. <a href="news.html" class="text-accent underline">목록으로</a></p>';
     return;
   }

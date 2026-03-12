@@ -131,8 +131,9 @@
   </div>
 </footer>
 
-<script src="data/news.js"></script>
 <script>
+(async () => {
+  eval(await fetch('data/news.js', { cache: 'no-store' }).then(r => r.text()));
 let activeCategory = 'all';
 
 function catColor(cat) {
@@ -229,6 +230,7 @@ renderAllNews();
     </div>
   `).join('');
 })();
+})(); // end async IIFE
 </script>
 <script src="assets/js/main.js"></script>
 <script>
