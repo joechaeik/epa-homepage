@@ -19,6 +19,9 @@ var NEWS = [
     "date": "2023-11-17",
     "title": "Bupmo Kim (Ph.D. course) won \"Best Poster award in ACS Publications\"",
     "category": "Award",
+    "pinned": false,
+    "body": "Bupmo Kim (Ph. D. course) won \"Best Poster award in ACS Publications\"\n\nCongratulations!!",
+    "image": "https://raw.githubusercontent.com/joechaeik/epa-homepage/main/images/news/1773293015687_231117_B.Kim_Best_Poster_award_in_ACS_Publications.jpg",
     "link": "#"
   },
   {
