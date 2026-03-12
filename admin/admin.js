@@ -15,6 +15,7 @@ const CONFIG = {
   publicationsDir: 'images/publications',
   membersDir:      'images/members',
   newsDir:         'images/news',
+  cvDir:           'files/cv',
 };
 
 // ── 상태 ───────────────────────────────────────────────────
@@ -1158,6 +1159,28 @@ function memberForm(members, grp, item, idx) {
       <div class="form-group">
         <label>Google Scholar URL</label>
         <input type="url" name="scholar" value="${esc(item.links?.google_scholar)}" />
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>이력서 (영문) URL <span class="label-hint">(URL 입력 또는 아래에서 업로드)</span></label>
+          <input type="text" id="cv-en-url" name="cv_en" value="${esc(item.cv?.en)}" placeholder="files/cv/…" />
+        </div>
+        <div class="form-group">
+          <label>이력서 (한글) URL <span class="label-hint">(URL 입력 또는 아래에서 업로드)</span></label>
+          <input type="text" id="cv-ko-url" name="cv_ko" value="${esc(item.cv?.ko)}" placeholder="files/cv/…" />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>이력서 (영문) 파일 업로드 <span class="label-hint">(PDF, 최대 5 MB)</span></label>
+          <input type="file" id="cv-en-file" accept=".pdf,application/pdf" />
+          <div id="cv-en-status" class="upload-status"></div>
+        </div>
+        <div class="form-group">
+          <label>이력서 (한글) 파일 업로드 <span class="label-hint">(PDF, 최대 5 MB)</span></label>
+          <input type="file" id="cv-ko-file" accept=".pdf,application/pdf" />
+          <div id="cv-ko-status" class="upload-status"></div>
+        </div>
       </div>` : isAlumni ? `
       <div class="form-group">
         <label>현재 소속 / 직위</label>
@@ -1196,6 +1219,26 @@ function memberForm(members, grp, item, idx) {
       photo = await ghUploadImage(`${CONFIG.membersDir}/${name}`, f);
     }
 
+    let cvEn = '', cvKo = '';
+    if (isProfessor) {
+      cvEn = $('#cv-en-url')?.value?.trim() || '';
+      cvKo = $('#cv-ko-url')?.value?.trim() || '';
+      const cvEnFile = $('#cv-en-file');
+      const cvKoFile = $('#cv-ko-file');
+      if (cvEnFile?.files[0] && !cvEn) {
+        statusEl.textContent = '영문 이력서 업로드 중…';
+        const f = cvEnFile.files[0];
+        const name = `cv_en_${Date.now()}_${f.name.replace(/\s+/g, '_')}`;
+        cvEn = await ghUploadImage(`${CONFIG.cvDir}/${name}`, f);
+      }
+      if (cvKoFile?.files[0] && !cvKo) {
+        statusEl.textContent = '한글 이력서 업로드 중…';
+        const f = cvKoFile.files[0];
+        const name = `cv_ko_${Date.now()}_${f.name.replace(/\s+/g, '_')}`;
+        cvKo = await ghUploadImage(`${CONFIG.cvDir}/${name}`, f);
+      }
+    }
+
     const entry = { name: form.name.value.trim(), photo };
     if (isProfessor) {
       entry.title       = form.title.value.trim();
@@ -1203,6 +1246,7 @@ function memberForm(members, grp, item, idx) {
       entry.affiliation = form.affiliation?.value?.trim() || '';
       entry.bio         = form.bio?.value?.trim() || '';
       entry.links = { google_scholar: form.scholar?.value?.trim() || '', researchgate: '', website: '' };
+      entry.cv = { en: cvEn, ko: cvKo };
     } else if (isAlumni) {
       entry.degree  = form.degree?.value?.trim() || '';
       entry.current = form.current?.value?.trim() || '';
@@ -1228,6 +1272,26 @@ function memberForm(members, grp, item, idx) {
         $('#mem-photo-url').value = '';
         const f = fi.files[0];
         $('#mem-up-status').textContent = f.size > MAX_IMG_BYTES
+          ? `⚠️ 파일이 너무 큽니다: ${(f.size/1024/1024).toFixed(1)} MB (최대 5 MB)`
+          : `선택: ${f.name} (${(f.size/1024).toFixed(0)} KB)`;
+      }
+    };
+    const cvEnFi = $('#cv-en-file');
+    if (cvEnFi) cvEnFi.onchange = () => {
+      if (cvEnFi.files[0]) {
+        $('#cv-en-url').value = '';
+        const f = cvEnFi.files[0];
+        $('#cv-en-status').textContent = f.size > MAX_IMG_BYTES
+          ? `⚠️ 파일이 너무 큽니다: ${(f.size/1024/1024).toFixed(1)} MB (최대 5 MB)`
+          : `선택: ${f.name} (${(f.size/1024).toFixed(0)} KB)`;
+      }
+    };
+    const cvKoFi = $('#cv-ko-file');
+    if (cvKoFi) cvKoFi.onchange = () => {
+      if (cvKoFi.files[0]) {
+        $('#cv-ko-url').value = '';
+        const f = cvKoFi.files[0];
+        $('#cv-ko-status').textContent = f.size > MAX_IMG_BYTES
           ? `⚠️ 파일이 너무 큽니다: ${(f.size/1024/1024).toFixed(1)} MB (최대 5 MB)`
           : `선택: ${f.name} (${(f.size/1024).toFixed(0)} KB)`;
       }
