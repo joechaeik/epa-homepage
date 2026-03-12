@@ -16,5 +16,11 @@ var GALLERY = [
     "caption": "240430 group photo",
     "category": "Group",
     "year": 2024
+  },
+  {
+    "src": "https://raw.githubusercontent.com/joechaeik/epa-homepage/main/images/gallery/1773300488047_KakaoTalk_20251019_141923158_08.jpg",
+    "caption": "2025 EPA lab seminar day3",
+    "category": "Group",
+    "year": 2025
   }
 ];
