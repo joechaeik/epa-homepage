@@ -194,15 +194,16 @@ let activeAlumniTab = 'all';
 
 function degreeType(degree) {
   if (!degree) return 'other';
-  if (degree.startsWith('Ph.D.')) return 'Ph.D. Degree';
-  if (degree.startsWith('M.S.'))  return 'M.S. Degree';
+  if (degree.startsWith('Ph.D.'))    return 'Ph.D. Degree';
+  if (degree.startsWith('M.S.'))     return 'M.S. Degree';
+  if (degree.startsWith('Visitor'))  return 'Visitor';
   return 'other';
 }
 
 function renderAlumniTabs() {
   const el = document.getElementById('alumni-tabs');
   if (!el || typeof MEMBERS === 'undefined') return;
-  const tabs = ['all', 'Ph.D. Degree', 'M.S. Degree'];
+  const tabs = ['all', 'Ph.D. Degree', 'M.S. Degree', 'Visitor'];
   el.innerHTML = tabs.map(t => `
     <button class="year-tab ${activeAlumniTab === t ? 'active' : ''}" data-tab="${t}">
       ${t === 'all' ? 'All' : t}

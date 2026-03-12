@@ -1142,9 +1142,23 @@ function memberForm(members, grp, item, idx) {
       </div>
       <div class="form-group">
         <label>${isAlumni ? '학위 *' : '직위 *'}</label>
-        <input type="text" name="${isAlumni ? 'degree' : 'title'}"
-               value="${esc(isAlumni ? item.degree : item.title)}" required
-               placeholder="${isProfessor ? 'Professor' : isAlumni ? 'Ph.D. 2024' : 'Ph.D. Student'}" />
+        ${isAlumni ? (() => {
+          const dm = (item.degree || '').match(/^(Ph\.D\.|M\.S\.|Visitor)\s*(.*)$/);
+          const dt = dm ? dm[1] : 'Ph.D.';
+          const dy = dm ? (dm[2] || '') : '';
+          return `<div style="display:flex;gap:8px;align-items:center">
+            <select name="degreeType" required
+              onchange="this.parentElement.querySelector('[name=degreeYear]').style.display=this.value==='Visitor'?'none':'block'">
+              <option value="Ph.D." ${dt==='Ph.D.'?'selected':''}>Ph.D.</option>
+              <option value="M.S."  ${dt==='M.S.'?'selected':''}>M.S.</option>
+              <option value="Visitor" ${dt==='Visitor'?'selected':''}>Visitor</option>
+            </select>
+            <input type="text" name="degreeYear" value="${esc(dy)}" placeholder="2024"
+              style="max-width:90px;${dt==='Visitor'?'display:none':''}" />
+          </div>`;
+        })() : `<input type="text" name="title"
+               value="${esc(item.title)}" required
+               placeholder="${isProfessor ? 'Professor' : 'Ph.D. Student'}" />`}
       </div>
     </div>
     ${isProfessor ? `
@@ -1248,7 +1262,9 @@ function memberForm(members, grp, item, idx) {
       entry.links = { google_scholar: form.scholar?.value?.trim() || '', researchgate: '', website: '' };
       entry.cv = { en: cvEn, ko: cvKo };
     } else if (isAlumni) {
-      entry.degree  = form.degree?.value?.trim() || '';
+      const degType = form.degreeType?.value || '';
+      const degYear = form.degreeYear?.value?.trim() || '';
+      entry.degree  = (degType + (degYear ? ' ' + degYear : '')).trim();
       entry.current = form.current?.value?.trim() || '';
     } else {
       entry.title    = form.title.value.trim();
