@@ -124,5 +124,11 @@ var GALLERY = [
     "caption": "3rd Seminar of the NSFC-NRF Major International Joint Research Project-2",
     "category": "Seminar",
     "year": 2019
+  },
+  {
+    "src": "https://epa.kentech.ac.kr/files/attach/images/2083/083/003/60874854772675de154e49879ec10ba6.jpg",
+    "caption": "3rd Seminar of the NSFC-NRF Major International Joint Research Project-1",
+    "category": "Seminar",
+    "year": 2019
   }
 ];
