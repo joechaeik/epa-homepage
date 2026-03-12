@@ -8,9 +8,60 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script>tailwind.config = { theme: { extend: { colors: { primary: '#0c4a6e', accent: '#0ea5e9' }, fontFamily: { sans: ['Inter','sans-serif'] } } } }</script>
   <style>
-    .pub-row { display: none; }
-    .pub-row.visible { display: flex; }
     #search-input::placeholder { color: #94a3b8; }
+
+    /* ── 연도 틀 고정 (sticky year header) ─────────────────── */
+    .year-divider {
+      position: sticky;
+      background: white;
+      z-index: 20;
+      padding: 8px 0 6px;
+      box-shadow: 0 6px 10px -6px rgba(0,0,0,0.07);
+    }
+
+    /* ── 표시 개수 선택 버튼 ───────────────────────────────── */
+    .per-page-btn {
+      padding: 3px 9px;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      font-size: .75rem;
+      font-weight: 500;
+      color: #475569;
+      background: white;
+      cursor: pointer;
+      transition: all .15s;
+    }
+    .per-page-btn:hover  { background: #f1f5f9; border-color: #cbd5e1; }
+    .per-page-btn.active { background: #0c4a6e; color: white; border-color: #0c4a6e; }
+
+    /* ── 페이지 네비게이션 ─────────────────────────────────── */
+    .page-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 34px;
+      height: 34px;
+      padding: 0 8px;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      font-size: .8125rem;
+      font-weight: 500;
+      color: #475569;
+      background: white;
+      cursor: pointer;
+      transition: all .15s;
+    }
+    .page-btn:hover  { background: #f1f5f9; border-color: #cbd5e1; }
+    .page-btn.active { background: #0c4a6e; color: white; border-color: #0c4a6e; }
+    .page-ellipsis {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 34px;
+      height: 34px;
+      color: #94a3b8;
+      font-size: .875rem;
+    }
   </style>
 </head>
 <body class="font-sans">
@@ -78,10 +129,14 @@
     <!-- Year tabs -->
     <div id="year-tabs" class="flex flex-wrap gap-2 mb-10 reveal"><!-- JS --></div>
 
-    <!-- Stats bar -->
-    <div class="flex items-center justify-between mb-6 text-sm reveal">
+    <!-- Stats bar + per-page selector -->
+    <div class="flex items-center justify-between mb-4 text-sm reveal flex-wrap gap-3">
       <span id="showing-count" class="text-slate-500"></span>
-      <span class="text-slate-400">Sorted by year (newest first)</span>
+      <div class="flex items-center gap-2 text-slate-500 flex-shrink-0">
+        <span class="text-xs text-slate-400">표시:</span>
+        <div id="per-page-btns" class="flex gap-1"><!-- JS --></div>
+        <span class="text-xs text-slate-400">개</span>
+      </div>
     </div>
 
     <!-- List -->
@@ -93,6 +148,9 @@
       <p class="text-lg font-semibold">No publications found</p>
       <p class="text-sm">Try a different search term or year</p>
     </div>
+
+    <!-- Pagination -->
+    <div id="pagination" class="flex items-center justify-center gap-1.5 mt-10 flex-wrap"></div>
 
   </div>
 </section>
@@ -132,78 +190,165 @@
 </footer>
 
 <script>
-let activeYear = 'all';
+let activeYear  = 'all';
 let searchQuery = '';
+let currentPage = 1;
+let itemsPerPage = 10;
+let NAV_H = 72;
 
+// ── 연도 목록 ────────────────────────────────────────────────
 function getYears() {
-  const years = [...new Set(PUBLICATIONS.map(p => p.year))].sort((a,b) => b-a);
-  return years;
+  return [...new Set(PUBLICATIONS.map(p => +p.year))].sort((a, b) => b - a);
 }
 
+// ── 필터 ────────────────────────────────────────────────────
 function filterPubs() {
   return PUBLICATIONS.filter(p => {
     const matchYear = activeYear === 'all' || +p.year === +activeYear;
     const q = searchQuery.toLowerCase();
-    const titleText = p.title.replace(/<[^>]*>/g, ''); // strip HTML tags for search
+    const titleText = (p.title || '').replace(/<[^>]*>/g, '');
     const matchSearch = !q ||
       titleText.toLowerCase().includes(q) ||
-      (p.authors || '').toLowerCase().includes(q) ||
-      (p.journal || '').toLowerCase().includes(q);
+      (p.authors  || '').toLowerCase().includes(q) ||
+      (p.journal  || '').toLowerCase().includes(q);
     return matchYear && matchSearch;
   });
 }
 
+// ── 연도 탭 ─────────────────────────────────────────────────
 function renderYearTabs() {
-  const years = getYears();
   const el = document.getElementById('year-tabs');
+  const years = getYears();
   const allCount = PUBLICATIONS.length;
 
-  let html = `<button class="year-tab ${activeYear==='all'?'active':''}" data-year="all">All (${allCount})</button>`;
+  let html = `<button class="year-tab ${activeYear === 'all' ? 'active' : ''}" data-year="all">All (${allCount})</button>`;
   years.forEach(y => {
-    const c = PUBLICATIONS.filter(p => +p.year === +y).length;
-    html += `<button class="year-tab ${+activeYear===+y?'active':''}" data-year="${y}">${y} <span class="opacity-60">(${c})</span></button>`;
+    const c = PUBLICATIONS.filter(p => +p.year === y).length;
+    html += `<button class="year-tab ${+activeYear === y ? 'active' : ''}" data-year="${y}">${y} <span class="opacity-60">(${c})</span></button>`;
   });
   el.innerHTML = html;
 
   el.querySelectorAll('.year-tab').forEach(btn => {
     btn.addEventListener('click', () => {
-      activeYear = btn.dataset.year;
+      activeYear  = btn.dataset.year;
+      currentPage = 1;
       renderYearTabs();
       renderList();
     });
   });
 }
 
-function renderList() {
-  const filtered = filterPubs();
-  const container = document.getElementById('pub-list');
-  const empty = document.getElementById('empty-state');
-  const count = document.getElementById('showing-count');
+// ── 표시 개수 선택 버튼 ──────────────────────────────────────
+function renderPerPageBtns() {
+  const el = document.getElementById('per-page-btns');
+  if (!el) return;
+  el.innerHTML = [5, 10, 15, 20].map(n =>
+    `<button class="per-page-btn${n === itemsPerPage ? ' active' : ''}" data-n="${n}">${n}</button>`
+  ).join('');
+  el.querySelectorAll('.per-page-btn').forEach(btn => {
+    btn.onclick = () => {
+      itemsPerPage = +btn.dataset.n;
+      currentPage  = 1;
+      renderPerPageBtns();
+      renderList();
+    };
+  });
+}
 
-  count.textContent = `Showing ${filtered.length} of ${PUBLICATIONS.length} publications`;
+// ── 페이지 네비게이션 ────────────────────────────────────────
+function renderPagination(totalPages) {
+  const el = document.getElementById('pagination');
+  if (!el) return;
+  if (totalPages <= 1) { el.innerHTML = ''; return; }
+
+  // 표시할 페이지 번호 범위 계산
+  const pages = [];
+  if (totalPages <= 7) {
+    for (let i = 1; i <= totalPages; i++) pages.push(i);
+  } else if (currentPage <= 4) {
+    pages.push(1, 2, 3, 4, 5, '…', totalPages);
+  } else if (currentPage >= totalPages - 3) {
+    pages.push(1, '…', totalPages - 4, totalPages - 3, totalPages - 2, totalPages - 1, totalPages);
+  } else {
+    pages.push(1, '…', currentPage - 1, currentPage, currentPage + 1, '…', totalPages);
+  }
+
+  let html = '';
+  if (currentPage > 1)
+    html += `<button class="page-btn" data-page="${currentPage - 1}">&#8249;</button>`;
+  pages.forEach(p => {
+    if (p === '…') {
+      html += `<span class="page-ellipsis">…</span>`;
+    } else {
+      html += `<button class="page-btn${p === currentPage ? ' active' : ''}" data-page="${p}">${p}</button>`;
+    }
+  });
+  if (currentPage < totalPages)
+    html += `<button class="page-btn" data-page="${currentPage + 1}">&#8250;</button>`;
+
+  el.innerHTML = html;
+  el.querySelectorAll('[data-page]').forEach(btn => {
+    btn.onclick = () => {
+      currentPage = +btn.dataset.page;
+      renderList();
+      // 목록 상단으로 부드럽게 스크롤
+      const listEl = document.getElementById('pub-list');
+      const top = listEl.getBoundingClientRect().top + window.scrollY - NAV_H - 16;
+      window.scrollTo({ top, behavior: 'smooth' });
+    };
+  });
+}
+
+// ── 목록 렌더링 ──────────────────────────────────────────────
+function renderList() {
+  const filtered   = filterPubs();
+  const container  = document.getElementById('pub-list');
+  const empty      = document.getElementById('empty-state');
+  const countEl    = document.getElementById('showing-count');
+
+  const totalPages = Math.max(1, Math.ceil(filtered.length / itemsPerPage));
+  if (currentPage > totalPages) currentPage = totalPages;
+
+  const start     = (currentPage - 1) * itemsPerPage;
+  const end       = start + itemsPerPage;
+  const pageItems = filtered.slice(start, end);
+
+  const from = filtered.length === 0 ? 0 : start + 1;
+  const to   = Math.min(end, filtered.length);
+  countEl.textContent = filtered.length === 0
+    ? ''
+    : `Showing ${from}–${to} of ${filtered.length} publications`;
 
   if (filtered.length === 0) {
     container.innerHTML = '';
     empty.classList.remove('hidden');
+    renderPagination(0);
     return;
   }
   empty.classList.add('hidden');
 
-  // Group by year
+  // 현재 페이지 항목을 연도별로 그룹화
   const byYear = {};
-  filtered.forEach(p => {
+  pageItems.forEach(p => {
     const y = +p.year;
     if (!byYear[y]) byYear[y] = [];
     byYear[y].push(p);
   });
 
   let html = '';
-  Object.keys(byYear).map(Number).sort((a,b) => b-a).forEach(year => {
-    html += `<div class="flex items-center gap-4 mt-6 mb-3">
-      <span class="text-lg font-extrabold text-slate-800">${year}</span>
-      <span class="flex-1 h-px bg-slate-200"></span>
-      <span class="text-xs text-slate-400 font-medium">${byYear[year].length} papers</span>
-    </div>`;
+  Object.keys(byYear).map(Number).sort((a, b) => b - a).forEach(year => {
+    const yearTotal = PUBLICATIONS.filter(p => +p.year === year).length;
+
+    // 연도 헤더 — position:sticky로 스크롤해도 연도 표시 유지
+    html += `
+      <div class="year-divider" style="top:${NAV_H}px">
+        <div class="flex items-center gap-4">
+          <span class="text-lg font-extrabold text-slate-800">${year}</span>
+          <span class="flex-1 h-px bg-slate-200"></span>
+          <span class="text-xs text-slate-400 font-medium">${yearTotal} papers</span>
+        </div>
+      </div>`;
+
     byYear[year].forEach(p => {
       const num = PUBLICATIONS.indexOf(p) + 1;
       html += `
@@ -229,29 +374,35 @@ function renderList() {
               View Paper
             </a>` : ''}
           </div>
-        </div>
-      `;
+        </div>`;
     });
   });
+
   container.innerHTML = html;
+  renderPagination(totalPages);
 }
 
+// ── 초기화 ──────────────────────────────────────────────────
 function initPublications() {
-  document.getElementById('pub-count-hero').textContent = `${PUBLICATIONS.length} peer-reviewed publications`;
+  NAV_H = document.getElementById('navbar')?.offsetHeight ?? 72;
+  document.getElementById('pub-count-hero').textContent =
+    `${PUBLICATIONS.length} peer-reviewed publications`;
+  renderPerPageBtns();
   renderYearTabs();
   renderList();
-  document.getElementById('search-input').addEventListener('input', function() {
+  document.getElementById('search-input').addEventListener('input', function () {
     searchQuery = this.value;
+    currentPage = 1;
     renderList();
   });
 }
 
 // 캐시 우회: 매 페이지 로드마다 최신 데이터를 강제로 가져옴
-(function() {
+(function () {
   var s = document.createElement('script');
   s.src = 'data/publications.js?v=' + Date.now();
   s.onload = initPublications;
-  s.onerror = function() {
+  s.onerror = function () {
     document.getElementById('pub-count-hero').textContent = 'Failed to load publications.';
   };
   document.head.appendChild(s);
