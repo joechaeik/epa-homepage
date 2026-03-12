@@ -86,6 +86,12 @@ var MEMBERS = {
       "degree": "Ph.D. 2016",
       "current": "Assistant Professor, Sungshin Women's University",
       "photo": ""
+    },
+    {
+      "name": "Sunil Paul Mathew M.",
+      "photo": "https://epa.kentech.ac.kr/layouts/board_3_1/images/pic_sunil.jpg",
+      "degree": "Visitors",
+      "current": "Ice Chemistry, Advanced Oxidation Processes (AOPs)"
     }
   ]
 };
