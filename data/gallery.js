@@ -30,6 +30,12 @@ var GALLERY = [
     "year": 2025
   },
   {
+    "src": "https://epa.kentech.ac.kr/files/attach/images/2083/154/005/06545635b513fbaf62df48689a667444.jpg",
+    "caption": "2025 Group photo",
+    "category": "Group",
+    "year": 2025
+  },
+  {
     "src": "https://raw.githubusercontent.com/joechaeik/epa-homepage/main/images/gallery/1773274352755_240207_group_photo.jpg",
     "caption": "240207 group photo",
     "category": "Group",
@@ -46,11 +52,5 @@ var GALLERY = [
     "caption": "EPA summer retreat",
     "category": "Group",
     "year": 2014
-  },
-  {
-    "src": "https://epa.kentech.ac.kr/files/attach/images/2083/154/005/06545635b513fbaf62df48689a667444.jpg",
-    "caption": "2025 Group photo",
-    "category": "Group",
-    "year": 2025
   }
 ];
