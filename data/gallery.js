@@ -8,7 +8,7 @@ var GALLERY = [
   {
     "src": "https://epa.kentech.ac.kr/files/attach/images/2083/231/005/485ff06d889b683f091cb5283032aea0.jpg",
     "caption": "2025 EPA lab seminar day 2",
-    "category": "Group",
+    "category": "Seminar",
     "year": 2025
   },
   {
