@@ -676,38 +676,94 @@ async function secGallery() {
   const el = $('#sec');
   el.innerHTML = '<div class="loading">불러오는 중…</div>';
   const { data: items } = await readFile('gallery.js', 'GALLERY');
+  let galItems = [...items];
+  let dragSrcIdx = null;
+
+  function renderGrid() {
+    const grid = $('#gal-grid');
+    if (!grid) return;
+    grid.innerHTML = galItems.map((g, i) => `
+      <div class="gallery-admin-item" draggable="true" data-idx="${i}">
+        <div class="drag-handle" title="드래그로 순서 변경">⠿</div>
+        <div class="gallery-admin-thumb">
+          <img src="${esc(g.src)}" alt="${esc(g.caption)}" loading="lazy"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <div class="thumb-fallback" style="display:none">📷</div>
+        </div>
+        <div class="gallery-admin-info">
+          <div class="item-title" style="font-size:.8rem;white-space:normal">${esc(g.caption)}</div>
+          <div class="item-badge" style="margin-top:.2rem">${esc(g.category || '')} ${g.year || ''}</div>
+        </div>
+        <div class="item-actions" style="padding:.3rem .8rem .8rem">
+          <button class="btn btn-sm btn-outline" data-edit="${i}">수정</button>
+          <button class="btn btn-sm btn-danger"  data-del="${i}">삭제</button>
+        </div>
+      </div>`).join('');
+
+    $$('.gallery-admin-item', grid).forEach(item => {
+      item.addEventListener('dragstart', e => {
+        dragSrcIdx = +item.dataset.idx;
+        setTimeout(() => item.classList.add('dragging'), 0);
+        e.dataTransfer.effectAllowed = 'move';
+      });
+      item.addEventListener('dragend', () => {
+        $$('.gallery-admin-item', grid).forEach(i => i.classList.remove('dragging', 'drag-over'));
+      });
+      item.addEventListener('dragover', e => {
+        e.preventDefault();
+        e.dataTransfer.dropEffect = 'move';
+        $$('.gallery-admin-item', grid).forEach(i => i.classList.remove('drag-over'));
+        if (+item.dataset.idx !== dragSrcIdx) item.classList.add('drag-over');
+      });
+      item.addEventListener('dragleave', () => item.classList.remove('drag-over'));
+      item.addEventListener('drop', e => {
+        e.preventDefault();
+        const destIdx = +item.dataset.idx;
+        if (dragSrcIdx === null || dragSrcIdx === destIdx) return;
+        const [moved] = galItems.splice(dragSrcIdx, 1);
+        galItems.splice(destIdx, 0, moved);
+        const saveBtn = $('#save-order');
+        if (saveBtn) { saveBtn.style.display = ''; saveBtn.className = 'btn btn-primary'; }
+        renderGrid();
+      });
+    });
+
+    $$('[data-edit]', grid).forEach(b => b.onclick = () => galleryForm(galItems, galItems[+b.dataset.edit], +b.dataset.edit));
+    $$('[data-del]',  grid).forEach(b => b.onclick = () =>
+      deleteItem('gallery.js', 'GALLERY', galItems, +b.dataset.del, 'gallery', secGallery));
+  }
 
   el.innerHTML = `
     <div class="section-header">
       <div>
         <h2 class="section-title">Gallery</h2>
-        <p class="section-sub">총 ${items.length}장 · 외부 URL 또는 파일 업로드 지원</p>
+        <p class="section-sub">총 ${galItems.length}장 · 드래그(⠿)로 순서 변경 가능</p>
       </div>
-      <button class="btn btn-primary" id="add-gal">+ 사진 추가</button>
+      <div style="display:flex;gap:.5rem;align-items:center">
+        <button class="btn btn-outline" id="save-order" style="display:none">순서 저장</button>
+        <button class="btn btn-primary" id="add-gal">+ 사진 추가</button>
+      </div>
     </div>
-    <div class="gallery-admin-grid" id="gal-grid">
-      ${items.map((g, i) => `
-        <div class="gallery-admin-item">
-          <div class="gallery-admin-thumb">
-            <img src="${esc(g.src)}" alt="${esc(g.caption)}" loading="lazy"
-                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
-            <div class="thumb-fallback" style="display:none">📷</div>
-          </div>
-          <div class="gallery-admin-info">
-            <div class="item-title" style="font-size:.8rem;white-space:normal">${esc(g.caption)}</div>
-            <div class="item-badge" style="margin-top:.2rem">${esc(g.category || '')} ${g.year || ''}</div>
-          </div>
-          <div class="item-actions" style="padding:.3rem .8rem .8rem">
-            <button class="btn btn-sm btn-outline" data-edit="${i}">수정</button>
-            <button class="btn btn-sm btn-danger"  data-del="${i}">삭제</button>
-          </div>
-        </div>`).join('')}
-    </div>`;
+    <div class="gallery-admin-grid" id="gal-grid"></div>`;
 
-  $('#add-gal').onclick = () => galleryForm(items, null, -1);
-  $$('[data-edit]', el).forEach(b => b.onclick = () => galleryForm(items, items[+b.dataset.edit], +b.dataset.edit));
-  $$('[data-del]',  el).forEach(b => b.onclick = () =>
-    deleteItem('gallery.js', 'GALLERY', items, +b.dataset.del, 'gallery', secGallery));
+  renderGrid();
+
+  $('#add-gal').onclick = () => galleryForm(galItems, null, -1);
+  $('#save-order').onclick = async () => {
+    const btn = $('#save-order');
+    btn.textContent = '저장 중…';
+    btn.disabled = true;
+    try {
+      await saveFile('gallery.js', 'GALLERY', galItems, 'Reorder gallery images');
+      showToast('순서가 저장됐습니다!');
+      btn.style.display = 'none';
+    } catch (e) {
+      showToast('오류: ' + e.message, 'error');
+    } finally {
+      btn.textContent = '순서 저장';
+      btn.disabled = false;
+    }
+  };
 }
 
 function galleryForm(items, item, idx) {
