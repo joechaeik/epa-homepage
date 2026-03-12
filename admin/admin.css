@@ -295,6 +295,14 @@ body {
   user-select: none;
 }
 .drag-handle:active { cursor: grabbing; }
+.item-row.dragging {
+  opacity: 0.4;
+  border-color: var(--accent);
+}
+.item-row.drag-over {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px var(--accent);
+}
 .gallery-admin-item.dragging {
   opacity: 0.4;
   border-color: var(--accent);

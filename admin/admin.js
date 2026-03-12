@@ -310,38 +310,94 @@ async function deleteItem(filename, varName, arr, idx, label, reload) {
 async function secPublications() {
   const el = $('#sec');
   el.innerHTML = '<div class="loading">불러오는 중…</div>';
-  const { data: pubs } = await readFile('publications.js', 'PUBLICATIONS');
+  const { data: items } = await readFile('publications.js', 'PUBLICATIONS');
+  let pubs = [...items];
+  let dragSrcIdx = null;
+
+  function renderList() {
+    const list = $('#pub-list');
+    if (!list) return;
+    list.innerHTML = pubs.map((p, i) => `
+      <div class="item-row" draggable="true" data-idx="${i}">
+        <div class="drag-handle" title="드래그로 순서 변경">⠿</div>
+        <div class="item-main">
+          <div class="item-badge">
+            <span class="badge">${p.year}</span>
+            <span>${esc(p.journal)}</span>
+          </div>
+          <div class="item-title">${p.title}</div>
+          <div class="item-sub">${esc(p.authors ?? '')}</div>
+        </div>
+        <div class="item-actions">
+          <button class="btn btn-sm btn-outline" data-edit="${i}">수정</button>
+          <button class="btn btn-sm btn-danger"  data-del="${i}">삭제</button>
+        </div>
+      </div>`).join('');
+
+    $$('.item-row', list).forEach(item => {
+      item.addEventListener('dragstart', e => {
+        dragSrcIdx = +item.dataset.idx;
+        setTimeout(() => item.classList.add('dragging'), 0);
+        e.dataTransfer.effectAllowed = 'move';
+      });
+      item.addEventListener('dragend', () => {
+        $$('.item-row', list).forEach(i => i.classList.remove('dragging', 'drag-over'));
+      });
+      item.addEventListener('dragover', e => {
+        e.preventDefault();
+        e.dataTransfer.dropEffect = 'move';
+        $$('.item-row', list).forEach(i => i.classList.remove('drag-over'));
+        if (+item.dataset.idx !== dragSrcIdx) item.classList.add('drag-over');
+      });
+      item.addEventListener('dragleave', () => item.classList.remove('drag-over'));
+      item.addEventListener('drop', e => {
+        e.preventDefault();
+        const destIdx = +item.dataset.idx;
+        if (dragSrcIdx === null || dragSrcIdx === destIdx) return;
+        const [moved] = pubs.splice(dragSrcIdx, 1);
+        pubs.splice(destIdx, 0, moved);
+        const saveBtn = $('#save-order-pub');
+        if (saveBtn) { saveBtn.style.display = ''; saveBtn.className = 'btn btn-primary'; }
+        renderList();
+      });
+    });
+
+    $$('[data-edit]', list).forEach(b => b.onclick = () => pubForm(pubs, pubs[+b.dataset.edit], +b.dataset.edit));
+    $$('[data-del]',  list).forEach(b => b.onclick = () =>
+      deleteItem('publications.js', 'PUBLICATIONS', pubs, +b.dataset.del, 'pub', secPublications));
+  }
 
   el.innerHTML = `
     <div class="section-header">
       <div>
         <h2 class="section-title">Publications</h2>
-        <p class="section-sub">총 ${pubs.length}편 · 저장 시 GitHub Pages 자동 배포 (~2분 소요)</p>
+        <p class="section-sub">총 ${pubs.length}편 · 드래그(⠿)로 순서 변경 가능 · 저장 시 GitHub Pages 자동 배포 (~2분 소요)</p>
       </div>
-      <button class="btn btn-primary" id="add-pub">+ 논문 추가</button>
+      <div style="display:flex;gap:.5rem;align-items:center">
+        <button class="btn btn-outline" id="save-order-pub" style="display:none">순서 저장</button>
+        <button class="btn btn-primary" id="add-pub">+ 논문 추가</button>
+      </div>
     </div>
-    <div class="item-list" id="pub-list">
-      ${pubs.map((p, i) => `
-        <div class="item-row">
-          <div class="item-main">
-            <div class="item-badge">
-              <span class="badge">${p.year}</span>
-              <span>${esc(p.journal)}</span>
-            </div>
-            <div class="item-title">${p.title}</div>
-            <div class="item-sub">${esc(p.authors ?? '')}</div>
-          </div>
-          <div class="item-actions">
-            <button class="btn btn-sm btn-outline" data-edit="${i}">수정</button>
-            <button class="btn btn-sm btn-danger"  data-del="${i}">삭제</button>
-          </div>
-        </div>`).join('')}
-    </div>`;
+    <div class="item-list" id="pub-list"></div>`;
+
+  renderList();
 
   $('#add-pub').onclick = () => pubForm(pubs, null, -1);
-  $$('[data-edit]', el).forEach(b => b.onclick = () => pubForm(pubs, pubs[+b.dataset.edit], +b.dataset.edit));
-  $$('[data-del]',  el).forEach(b => b.onclick = () =>
-    deleteItem('publications.js', 'PUBLICATIONS', pubs, +b.dataset.del, 'pub', secPublications));
+  $('#save-order-pub').onclick = async () => {
+    const btn = $('#save-order-pub');
+    btn.textContent = '저장 중…';
+    btn.disabled = true;
+    try {
+      await saveFile('publications.js', 'PUBLICATIONS', pubs, 'Reorder publications');
+      showToast('순서가 저장됐습니다!');
+      btn.style.display = 'none';
+    } catch (e) {
+      showToast('오류: ' + e.message, 'error');
+    } finally {
+      btn.textContent = '순서 저장';
+      btn.disabled = false;
+    }
+  };
 }
 
 function pubForm(pubs, item, idx) {
@@ -462,60 +518,171 @@ async function secNews() {
   const el = $('#sec');
   el.innerHTML = '<div class="loading">불러오는 중…</div>';
   const { news, media } = await readNewsFile();
+  let newsItems = [...news];
+  let mediaItems = [...media];
+  let dragSrcNews = null;
+  let dragSrcMedia = null;
+
+  function renderNewsList() {
+    const list = $('#news-list');
+    if (!list) return;
+    list.innerHTML = newsItems.map((n, i) => `
+      <div class="item-row" draggable="true" data-idx="${i}">
+        <div class="drag-handle" title="드래그로 순서 변경">⠿</div>
+        <div class="item-main">
+          <div class="item-badge">
+            ${n.date}
+            <span class="badge ${n.category === 'Award' ? 'badge-award' : n.category === 'Honor' ? 'badge-honor' : ''}">${n.category}</span>
+            ${n.body ? '<span class="badge" style="background:#1e3a5f;color:#7dd3fc">📝 게시글</span>' : ''}
+            ${n.pinned ? '<span class="badge badge-pin">📌 고정</span>' : ''}
+          </div>
+          <div class="item-title">${esc(n.title)}</div>
+        </div>
+        <div class="item-actions">
+          <button class="btn btn-sm btn-outline" data-edit="${i}">수정</button>
+          <button class="btn btn-sm btn-danger"  data-del="${i}">삭제</button>
+        </div>
+      </div>`).join('');
+
+    $$('.item-row', list).forEach(item => {
+      item.addEventListener('dragstart', e => {
+        dragSrcNews = +item.dataset.idx;
+        setTimeout(() => item.classList.add('dragging'), 0);
+        e.dataTransfer.effectAllowed = 'move';
+      });
+      item.addEventListener('dragend', () => {
+        $$('.item-row', list).forEach(i => i.classList.remove('dragging', 'drag-over'));
+      });
+      item.addEventListener('dragover', e => {
+        e.preventDefault();
+        e.dataTransfer.dropEffect = 'move';
+        $$('.item-row', list).forEach(i => i.classList.remove('drag-over'));
+        if (+item.dataset.idx !== dragSrcNews) item.classList.add('drag-over');
+      });
+      item.addEventListener('dragleave', () => item.classList.remove('drag-over'));
+      item.addEventListener('drop', e => {
+        e.preventDefault();
+        const destIdx = +item.dataset.idx;
+        if (dragSrcNews === null || dragSrcNews === destIdx) return;
+        const [moved] = newsItems.splice(dragSrcNews, 1);
+        newsItems.splice(destIdx, 0, moved);
+        const saveBtn = $('#save-order-news');
+        if (saveBtn) { saveBtn.style.display = ''; saveBtn.className = 'btn btn-primary'; }
+        renderNewsList();
+      });
+    });
+
+    $$('[data-edit]', list).forEach(b => b.onclick = () => newsForm(newsItems, mediaItems, newsItems[+b.dataset.edit], +b.dataset.edit));
+    $$('[data-del]',  list).forEach(b => b.onclick = () => deleteNewsItem(newsItems, mediaItems, +b.dataset.del));
+  }
+
+  function renderMediaList() {
+    const list = $('#media-list');
+    if (!list) return;
+    list.innerHTML = mediaItems.map((m, i) => `
+      <div class="item-row" draggable="true" data-idx="${i}">
+        <div class="drag-handle" title="드래그로 순서 변경">⠿</div>
+        <div class="item-main">
+          <div class="item-badge">YouTube · ${m.date || ''}</div>
+          <div class="item-title">${esc(m.title)}</div>
+          <div class="item-sub">ID: ${esc(m.youtube_id)}</div>
+        </div>
+        <div class="item-actions">
+          <button class="btn btn-sm btn-outline" data-medit="${i}">수정</button>
+          <button class="btn btn-sm btn-danger"  data-mdel="${i}">삭제</button>
+        </div>
+      </div>`).join('');
+
+    $$('.item-row', list).forEach(item => {
+      item.addEventListener('dragstart', e => {
+        dragSrcMedia = +item.dataset.idx;
+        setTimeout(() => item.classList.add('dragging'), 0);
+        e.dataTransfer.effectAllowed = 'move';
+      });
+      item.addEventListener('dragend', () => {
+        $$('.item-row', list).forEach(i => i.classList.remove('dragging', 'drag-over'));
+      });
+      item.addEventListener('dragover', e => {
+        e.preventDefault();
+        e.dataTransfer.dropEffect = 'move';
+        $$('.item-row', list).forEach(i => i.classList.remove('drag-over'));
+        if (+item.dataset.idx !== dragSrcMedia) item.classList.add('drag-over');
+      });
+      item.addEventListener('dragleave', () => item.classList.remove('drag-over'));
+      item.addEventListener('drop', e => {
+        e.preventDefault();
+        const destIdx = +item.dataset.idx;
+        if (dragSrcMedia === null || dragSrcMedia === destIdx) return;
+        const [moved] = mediaItems.splice(dragSrcMedia, 1);
+        mediaItems.splice(destIdx, 0, moved);
+        const saveBtn = $('#save-order-media');
+        if (saveBtn) { saveBtn.style.display = ''; saveBtn.className = 'btn btn-sm btn-primary'; }
+        renderMediaList();
+      });
+    });
+
+    $$('[data-medit]', list).forEach(b => b.onclick = () => mediaForm(newsItems, mediaItems, mediaItems[+b.dataset.medit], +b.dataset.medit));
+    $$('[data-mdel]',  list).forEach(b => b.onclick = () => deleteMediaItem(newsItems, mediaItems, +b.dataset.mdel));
+  }
 
   el.innerHTML = `
     <div class="section-header">
       <div>
         <h2 class="section-title">News</h2>
-        <p class="section-sub">뉴스 ${news.length}건 · 미디어 ${media.length}건</p>
+        <p class="section-sub">뉴스 ${newsItems.length}건 · 미디어 ${mediaItems.length}건 · 드래그(⠿)로 순서 변경 가능</p>
       </div>
-      <button class="btn btn-primary" id="add-news">+ 뉴스 추가</button>
+      <div style="display:flex;gap:.5rem;align-items:center">
+        <button class="btn btn-outline" id="save-order-news" style="display:none">순서 저장</button>
+        <button class="btn btn-primary" id="add-news">+ 뉴스 추가</button>
+      </div>
     </div>
-    <div class="item-list" id="news-list">
-      ${news.map((n, i) => `
-        <div class="item-row">
-          <div class="item-main">
-            <div class="item-badge">
-              ${n.date}
-              <span class="badge ${n.category === 'Award' ? 'badge-award' : n.category === 'Honor' ? 'badge-honor' : ''}">${n.category}</span>
-              ${n.body ? '<span class="badge" style="background:#1e3a5f;color:#7dd3fc">📝 게시글</span>' : ''}
-              ${n.pinned ? '<span class="badge badge-pin">📌 고정</span>' : ''}
-            </div>
-            <div class="item-title">${esc(n.title)}</div>
-          </div>
-          <div class="item-actions">
-            <button class="btn btn-sm btn-outline" data-edit="${i}">수정</button>
-            <button class="btn btn-sm btn-danger"  data-del="${i}">삭제</button>
-          </div>
-        </div>`).join('')}
-    </div>
+    <div class="item-list" id="news-list"></div>
 
     <div class="news-sub-title">
       📹 미디어 (YouTube)
-      <button class="btn btn-sm btn-primary" id="add-media">+ 미디어 추가</button>
+      <div style="display:flex;gap:.5rem;align-items:center">
+        <button class="btn btn-sm btn-outline" id="save-order-media" style="display:none">순서 저장</button>
+        <button class="btn btn-sm btn-primary" id="add-media">+ 미디어 추가</button>
+      </div>
     </div>
-    <div class="item-list" id="media-list">
-      ${media.map((m, i) => `
-        <div class="item-row">
-          <div class="item-main">
-            <div class="item-badge">YouTube · ${m.date || ''}</div>
-            <div class="item-title">${esc(m.title)}</div>
-            <div class="item-sub">ID: ${esc(m.youtube_id)}</div>
-          </div>
-          <div class="item-actions">
-            <button class="btn btn-sm btn-outline" data-medit="${i}">수정</button>
-            <button class="btn btn-sm btn-danger"  data-mdel="${i}">삭제</button>
-          </div>
-        </div>`).join('')}
-    </div>`;
+    <div class="item-list" id="media-list"></div>`;
 
-  $('#add-news').onclick = () => newsForm(news, media, null, -1);
-  $$('[data-edit]', el).forEach(b => b.onclick = () => newsForm(news, media, news[+b.dataset.edit], +b.dataset.edit));
-  $$('[data-del]',  el).forEach(b => b.onclick = () => deleteNewsItem(news, media, +b.dataset.del));
+  renderNewsList();
+  renderMediaList();
 
-  $('#add-media').onclick = () => mediaForm(news, media, null, -1);
-  $$('[data-medit]', el).forEach(b => b.onclick = () => mediaForm(news, media, media[+b.dataset.medit], +b.dataset.medit));
-  $$('[data-mdel]',  el).forEach(b => b.onclick = () => deleteMediaItem(news, media, +b.dataset.mdel));
+  $('#add-news').onclick = () => newsForm(newsItems, mediaItems, null, -1);
+  $('#save-order-news').onclick = async () => {
+    const btn = $('#save-order-news');
+    btn.textContent = '저장 중…';
+    btn.disabled = true;
+    try {
+      await saveNewsFile(newsItems, mediaItems, 'Reorder news');
+      showToast('순서가 저장됐습니다!');
+      btn.style.display = 'none';
+    } catch (e) {
+      showToast('오류: ' + e.message, 'error');
+    } finally {
+      btn.textContent = '순서 저장';
+      btn.disabled = false;
+    }
+  };
+
+  $('#add-media').onclick = () => mediaForm(newsItems, mediaItems, null, -1);
+  $('#save-order-media').onclick = async () => {
+    const btn = $('#save-order-media');
+    btn.textContent = '저장 중…';
+    btn.disabled = true;
+    try {
+      await saveNewsFile(newsItems, mediaItems, 'Reorder media');
+      showToast('순서가 저장됐습니다!');
+      btn.style.display = 'none';
+    } catch (e) {
+      showToast('오류: ' + e.message, 'error');
+    } finally {
+      btn.textContent = '순서 저장';
+      btn.disabled = false;
+    }
+  };
 }
 
 async function deleteNewsItem(news, media, idx) {
@@ -846,46 +1013,104 @@ async function secMembers() {
   const el = $('#sec');
   el.innerHTML = '<div class="loading">불러오는 중…</div>';
   const { data: m } = await readFile('members.js', 'MEMBERS', { professor: [], students: [], alumni: [] });
-  const members = { professor: m.professor || [], students: m.students || [], alumni: m.alumni || [] };
+  const members = { professor: [...(m.professor || [])], students: [...(m.students || [])], alumni: [...(m.alumni || [])] };
 
   const groupLabel = { professor: '교수', students: '재학생 / 연구원', alumni: '졸업생 · Alumni' };
+  let dragSrc = { grp: null, idx: null };
+
+  function renderGroup(grp) {
+    const list = $(`#mem-list-${grp}`);
+    if (!list) return;
+    list.innerHTML = (members[grp] || []).map((p, i) => `
+      <div class="item-row" draggable="true" data-grp="${grp}" data-idx="${i}">
+        <div class="drag-handle" title="드래그로 순서 변경">⠿</div>
+        <div class="item-main">
+          <div class="item-title">${esc(p.name)}</div>
+          <div class="item-sub">${esc(p.title || p.degree || '')} ${(p.affiliation || p.research || p.current) ? '· ' + esc(p.affiliation || p.research || p.current) : ''}</div>
+        </div>
+        <div class="item-actions">
+          <button class="btn btn-sm btn-outline" data-edit="${grp}-${i}">수정</button>
+          <button class="btn btn-sm btn-danger"  data-del="${grp}-${i}">삭제</button>
+        </div>
+      </div>`).join('') || '<div class="empty-state">멤버 없음</div>';
+
+    $$('.item-row', list).forEach(item => {
+      item.addEventListener('dragstart', e => {
+        dragSrc = { grp, idx: +item.dataset.idx };
+        setTimeout(() => item.classList.add('dragging'), 0);
+        e.dataTransfer.effectAllowed = 'move';
+      });
+      item.addEventListener('dragend', () => {
+        $$('.item-row', list).forEach(i => i.classList.remove('dragging', 'drag-over'));
+      });
+      item.addEventListener('dragover', e => {
+        e.preventDefault();
+        e.dataTransfer.dropEffect = 'move';
+        $$('.item-row', list).forEach(i => i.classList.remove('drag-over'));
+        if (+item.dataset.idx !== dragSrc.idx || item.dataset.grp !== dragSrc.grp) item.classList.add('drag-over');
+      });
+      item.addEventListener('dragleave', () => item.classList.remove('drag-over'));
+      item.addEventListener('drop', e => {
+        e.preventDefault();
+        if (dragSrc.grp !== grp) return;
+        const destIdx = +item.dataset.idx;
+        if (dragSrc.idx === null || dragSrc.idx === destIdx) return;
+        const [moved] = members[grp].splice(dragSrc.idx, 1);
+        members[grp].splice(destIdx, 0, moved);
+        const saveBtn = $(`#save-order-${grp}`);
+        if (saveBtn) { saveBtn.style.display = ''; saveBtn.className = 'btn btn-primary'; }
+        renderGroup(grp);
+      });
+    });
+
+    $$('[data-edit]', list).forEach(b => {
+      const [g, i] = b.dataset.edit.split('-');
+      b.onclick = () => memberForm(members, g, members[g][+i], +i);
+    });
+    $$('[data-del]', list).forEach(b => {
+      const [g, i] = b.dataset.del.split('-');
+      b.onclick = () => deleteMember(members, g, +i);
+    });
+  }
 
   el.innerHTML = `
     <div class="section-header">
       <div>
         <h2 class="section-title">Members</h2>
-        <p class="section-sub">교수 ${members.professor.length} · 재학생 ${members.students.length} · 졸업생 ${members.alumni.length}</p>
+        <p class="section-sub">교수 ${members.professor.length} · 재학생 ${members.students.length} · 졸업생 ${members.alumni.length} · 드래그(⠿)로 순서 변경 가능</p>
       </div>
     </div>
     ${['professor', 'students', 'alumni'].map(grp => `
       <div class="member-group">
         <div class="member-group-header">
           <span class="member-group-title">${groupLabel[grp]}</span>
-          <button class="btn btn-sm btn-primary" data-add="${grp}">+ 추가</button>
+          <div style="display:flex;gap:.5rem;align-items:center">
+            <button class="btn btn-outline" id="save-order-${grp}" style="display:none">순서 저장</button>
+            <button class="btn btn-sm btn-primary" data-add="${grp}">+ 추가</button>
+          </div>
         </div>
-        <div class="item-list">
-          ${(members[grp] || []).map((p, i) => `
-            <div class="item-row">
-              <div class="item-main">
-                <div class="item-title">${esc(p.name)}</div>
-                <div class="item-sub">${esc(p.title || p.degree || '')} ${(p.affiliation || p.research || p.current) ? '· ' + esc(p.affiliation || p.research || p.current) : ''}</div>
-              </div>
-              <div class="item-actions">
-                <button class="btn btn-sm btn-outline" data-edit="${grp}-${i}">수정</button>
-                <button class="btn btn-sm btn-danger"  data-del="${grp}-${i}">삭제</button>
-              </div>
-            </div>`).join('') || '<div class="empty-state">멤버 없음</div>'}
-        </div>
+        <div class="item-list" id="mem-list-${grp}"></div>
       </div>`).join('')}`;
 
+  ['professor', 'students', 'alumni'].forEach(grp => renderGroup(grp));
+
   $$('[data-add]', el).forEach(b => b.onclick = () => memberForm(members, b.dataset.add, null, -1));
-  $$('[data-edit]', el).forEach(b => {
-    const [grp, i] = b.dataset.edit.split('-');
-    b.onclick = () => memberForm(members, grp, members[grp][+i], +i);
-  });
-  $$('[data-del]', el).forEach(b => {
-    const [grp, i] = b.dataset.del.split('-');
-    b.onclick = () => deleteMember(members, grp, +i);
+  ['professor', 'students', 'alumni'].forEach(grp => {
+    $(`#save-order-${grp}`).onclick = async () => {
+      const btn = $(`#save-order-${grp}`);
+      btn.textContent = '저장 중…';
+      btn.disabled = true;
+      try {
+        await saveFile('members.js', 'MEMBERS', members, `Reorder ${grp}`);
+        showToast('순서가 저장됐습니다!');
+        btn.style.display = 'none';
+      } catch (e) {
+        showToast('오류: ' + e.message, 'error');
+      } finally {
+        btn.textContent = '순서 저장';
+        btn.disabled = false;
+      }
+    };
   });
 }
 
