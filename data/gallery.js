@@ -90,15 +90,15 @@ var GALLERY = [
     "year": 2022
   },
   {
-    "src": "https://epa.kentech.ac.kr/files/attach/images/2083/984/003/49d9effa33bd4ebba531c21480926af4.jpg",
-    "caption": "EPA summer retreat",
-    "category": "Group",
-    "year": 2014
-  },
-  {
     "src": "https://epa.kentech.ac.kr/files/attach/images/2083/982/003/6b6ecba41a7636c490bfc9ab3a68ab3b.png",
     "caption": "2020 Doosan Yonkang Environment Award",
     "category": "Award",
     "year": 2020
+  },
+  {
+    "src": "https://epa.kentech.ac.kr/files/attach/images/2083/984/003/49d9effa33bd4ebba531c21480926af4.jpg",
+    "caption": "EPA summer retreat",
+    "category": "Group",
+    "year": 2014
   }
 ];
