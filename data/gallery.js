@@ -82,5 +82,11 @@ var GALLERY = [
     "caption": "EPA summer retreat",
     "category": "Group",
     "year": 2014
+  },
+  {
+    "src": "https://epa.kentech.ac.kr/files/attach/images/2083/716/004/cbfd0db935c21463ddd1f499431b814c.jpg",
+    "caption": "2022 Korean Society of PhotoScience",
+    "category": "Seminar",
+    "year": 2022
   }
 ];
