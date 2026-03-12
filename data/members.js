@@ -2,7 +2,7 @@ var MEMBERS = {
   "professor": [
     {
       "name": "Wonyong Choi",
-      "photo": "images/members/wychoi.jpg",
+      "photo": "https://raw.githubusercontent.com/joechaeik/epa-homepage/main/images/members/1773291777009_Choi2018.jpg",
       "title": "Professor",
       "email": "wchoi@kentech.ac.kr",
       "affiliation": "Department of Energy Engineering, KENTECH",
