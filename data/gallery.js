@@ -136,5 +136,11 @@ var GALLERY = [
     "caption": "EPA Homecoming day for W. choi's 20th",
     "category": "Group",
     "year": 2018
+  },
+  {
+    "src": "https://epa.kentech.ac.kr/files/attach/images/2083/839/002/04c119677064a0c0b6cfa0000deb6c2f.png",
+    "caption": "W. choi's 20th anniversary",
+    "category": "Group",
+    "year": 2018
   }
 ];
