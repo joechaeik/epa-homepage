@@ -21,10 +21,10 @@ var MEMBERS = {
   "students": [
     {
       "name": "Bupmo Kim",
+      "photo": "https://raw.githubusercontent.com/joechaeik/epa-homepage/main/images/members/1773291797231_Bupmo_Kim.jpg",
       "title": "Ph.D. Student",
-      "research": "Photocatalysis for water treatment",
-      "photo": "",
-      "email": "bupmokim@postech.ac.kr"
+      "email": "bupmokim@postech.ac.kr",
+      "research": "Photocatalysis for water treatment"
     },
     {
       "name": "Minhyung Lee",
