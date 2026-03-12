@@ -142,5 +142,11 @@ var GALLERY = [
     "caption": "W. choi's 20th anniversary",
     "category": "Group",
     "year": 2018
+  },
+  {
+    "src": "https://epa.kentech.ac.kr/files/attach/images/2083/986/003/cad45586f54fcd1bfc938a317e15fd85.jpg",
+    "caption": "ICP 2015 conference",
+    "category": "Seminar",
+    "year": 2015
   }
 ];
