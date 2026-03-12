@@ -29,11 +29,13 @@ function setPAT(t) { sessionStorage.setItem('epa_pat', t); }
 async function ghFetch(path, options = {}) {
   const url = `https://api.github.com/repos/${CONFIG.owner}/${CONFIG.repo}/contents/${path}`;
   const res = await fetch(url, {
+    cache: 'no-store',
     ...options,
     headers: {
       'Authorization': `token ${getPAT()}`,
       'Accept': 'application/vnd.github.v3+json',
       'Content-Type': 'application/json',
+      'Cache-Control': 'no-cache',
       ...(options.headers || {}),
     },
   });
