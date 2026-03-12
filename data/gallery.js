@@ -36,6 +36,12 @@ var GALLERY = [
     "year": 2025
   },
   {
+    "src": "https://epa.kentech.ac.kr/files/attach/images/2083/119/005/5de6daa89e11722cd0f88ed6cfbfe017.jpg",
+    "caption": "2024 7th Korea Toray Science & Technology Award",
+    "category": "Prize",
+    "year": 2025
+  },
+  {
     "src": "https://raw.githubusercontent.com/joechaeik/epa-homepage/main/images/gallery/1773274352755_240207_group_photo.jpg",
     "caption": "240207 group photo",
     "category": "Group",
@@ -52,11 +58,5 @@ var GALLERY = [
     "caption": "EPA summer retreat",
     "category": "Group",
     "year": 2014
-  },
-  {
-    "src": "https://epa.kentech.ac.kr/files/attach/images/2083/119/005/5de6daa89e11722cd0f88ed6cfbfe017.jpg",
-    "caption": "2024 7th Korea Toray Science & Technology Award",
-    "category": "Prize",
-    "year": 2025
   }
 ];
