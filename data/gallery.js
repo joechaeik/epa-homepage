@@ -66,15 +66,15 @@ var GALLERY = [
     "year": 2023
   },
   {
-    "src": "https://epa.kentech.ac.kr/files/attach/images/2083/984/003/49d9effa33bd4ebba531c21480926af4.jpg",
-    "caption": "EPA summer retreat",
-    "category": "Group",
-    "year": 2014
-  },
-  {
     "src": "https://epa.kentech.ac.kr/files/attach/images/2083/731/004/ce70256d42248e9083a6ac799f5f0d9f.jpg",
     "caption": "2022.12 EPA Workshop in Yeosu",
     "category": "Group",
     "year": 2022
+  },
+  {
+    "src": "https://epa.kentech.ac.kr/files/attach/images/2083/984/003/49d9effa33bd4ebba531c21480926af4.jpg",
+    "caption": "EPA summer retreat",
+    "category": "Group",
+    "year": 2014
   }
 ];
