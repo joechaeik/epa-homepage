@@ -45,7 +45,7 @@ var GALLERY = [
     "src": "https://epa.kentech.ac.kr/files/attach/images/2083/086/005/9aeb9837c706ea27ef1fa3ea0d623cfe.jpg",
     "caption": "2024 Teachers' Day",
     "category": "Group",
-    "year": 2026
+    "year": 2024
   },
   {
     "src": "https://raw.githubusercontent.com/joechaeik/epa-homepage/main/images/gallery/1773274352755_240207_group_photo.jpg",
