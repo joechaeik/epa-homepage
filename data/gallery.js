@@ -102,12 +102,6 @@ var GALLERY = [
     "year": 2020
   },
   {
-    "src": "https://epa.kentech.ac.kr/files/attach/images/2083/984/003/49d9effa33bd4ebba531c21480926af4.jpg",
-    "caption": "EPA summer retreat",
-    "category": "Group",
-    "year": 2014
-  },
-  {
     "src": "https://epa.kentech.ac.kr/files/attach/images/2083/107/003/2f6c9dda02e92e7a4ea9584599c83278.jpg",
     "caption": "2019 EPA Workshop group photo-1",
     "category": "Group",
@@ -148,5 +142,11 @@ var GALLERY = [
     "caption": "ICP 2015 conference",
     "category": "Seminar",
     "year": 2015
+  },
+  {
+    "src": "https://epa.kentech.ac.kr/files/attach/images/2083/984/003/49d9effa33bd4ebba531c21480926af4.jpg",
+    "caption": "EPA summer retreat",
+    "category": "Group",
+    "year": 2014
   }
 ];
