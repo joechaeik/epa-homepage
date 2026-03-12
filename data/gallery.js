@@ -94,5 +94,11 @@ var GALLERY = [
     "caption": "EPA summer retreat",
     "category": "Group",
     "year": 2014
+  },
+  {
+    "src": "https://epa.kentech.ac.kr/files/attach/images/2083/982/003/6b6ecba41a7636c490bfc9ab3a68ab3b.png",
+    "caption": "2020 Doosan Yonkang Environment Award",
+    "category": "Award",
+    "year": 2020
   }
 ];
