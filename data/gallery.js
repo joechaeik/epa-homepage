@@ -130,5 +130,11 @@ var GALLERY = [
     "caption": "3rd Seminar of the NSFC-NRF Major International Joint Research Project-1",
     "category": "Seminar",
     "year": 2019
+  },
+  {
+    "src": "https://epa.kentech.ac.kr/files/attach/images/2083/842/002/7c13e867a88576c70766a7ad199234e0.jpg",
+    "caption": "EPA Homecoming day for W. choi's 20th",
+    "category": "Group",
+    "year": 2018
   }
 ];
