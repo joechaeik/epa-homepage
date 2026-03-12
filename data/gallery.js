@@ -39,7 +39,7 @@ var GALLERY = [
     "src": "https://epa.kentech.ac.kr/files/attach/images/2083/119/005/5de6daa89e11722cd0f88ed6cfbfe017.jpg",
     "caption": "2024 7th Korea Toray Science & Technology Award",
     "category": "Prize",
-    "year": 2025
+    "year": 2024
   },
   {
     "src": "https://epa.kentech.ac.kr/files/attach/images/2083/086/005/9aeb9837c706ea27ef1fa3ea0d623cfe.jpg",
