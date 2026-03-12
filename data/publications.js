@@ -1,14 +1,5 @@
 var PUBLICATIONS = [
   {
-    "year": 2017,
-    "title": "Visible light sensitization of TiO<sub>2</sub> nanoparticles by a dietary pigment, curcumin, for environmental photochemical transformations",
-    "journal": "",
-    "journal_info": "7, 32488-32495, 2017",
-    "authors": "Jonghun Lim, Alok D. Bokare, Wonyong Choi",
-    "doi": "https://pubs.rsc.org/en/content/articlehtml/2017/ra/c7ra05276f",
-    "image": "https://raw.githubusercontent.com/joechaeik/epa-homepage/main/images/publications/1773213475987_Visible_light_sensitization_of_TiO2_nanoparticles_by_a_dietary_pigment%2C_curcumin%2C_for_environmental_photochemical_transformations.gif"
-  },
-  {
     "year": 2025,
     "title": "Photo-assisted technologies for environmental remediation",
     "journal": "Nature Reviews Clean Technology",
@@ -142,5 +133,14 @@ var PUBLICATIONS = [
     "authors": "T. H. Jeon, M. S. Koo, H. Kim, W. Choi*",
     "doi": "https://doi.org/10.1021/acscatal.8b03521",
     "image": ""
+  },
+  {
+    "year": 2017,
+    "title": "Visible light sensitization of TiO<sub>2</sub> nanoparticles by a dietary pigment, curcumin, for environmental photochemical transformations",
+    "journal": "",
+    "journal_info": "7, 32488-32495, 2017",
+    "authors": "Jonghun Lim, Alok D. Bokare, Wonyong Choi",
+    "doi": "https://pubs.rsc.org/en/content/articlehtml/2017/ra/c7ra05276f",
+    "image": "https://raw.githubusercontent.com/joechaeik/epa-homepage/main/images/publications/1773213475987_Visible_light_sensitization_of_TiO2_nanoparticles_by_a_dietary_pigment%2C_curcumin%2C_for_environmental_photochemical_transformations.gif"
   }
 ];
