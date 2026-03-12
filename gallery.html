@@ -127,8 +127,6 @@
   </div>
 </footer>
 
-<script src="data/gallery.js"></script>
-
 <script>
 let activeGalCat = 'all';
 let currentIndex = 0;
@@ -163,7 +161,7 @@ function renderGallery() {
   ph.classList.add('hidden');
 
   el.innerHTML = filteredImages.map((g, i) => `
-    <div class="gallery-item reveal" style="transition-delay:${(i%12)*40}ms" onclick="openLightbox(${i})">
+    <div class="gallery-item reveal visible" style="transition-delay:${(i%12)*40}ms" onclick="openLightbox(${i})">
       <img src="${g.src}" alt="${g.caption}" loading="lazy" />
       <div class="gallery-overlay">
         <div>
@@ -205,8 +203,13 @@ document.addEventListener('keydown', e => {
   if (e.key === 'ArrowRight') nextImage();
 });
 
-renderGalleryTabs();
-renderGallery();
+// 캐시 우회: 매 페이지 로드마다 최신 데이터를 강제로 가져옴
+(function () {
+  var s = document.createElement('script');
+  s.src = 'data/gallery.js?v=' + Date.now();
+  s.onload = function () { renderGalleryTabs(); renderGallery(); };
+  document.head.appendChild(s);
+})();
 </script>
 <script src="assets/js/main.js"></script>
 <script>
