@@ -51,8 +51,8 @@ var NEWS = [
     "date": "2025-11-18",
     "title": "Prof. Wonyong Choi selected as a Highly Cited Researcher 2025",
     "category": "Honor",
-    "link": "#",
-    "pinned": true
+    "pinned": true,
+    "link": "#"
   },
   {
     "id": "notice-2",
